@@ -1,0 +1,17 @@
+[class^="tag"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 12px;
+  border-radius: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.015em;
+}
+
+.tag-white {
+  background-color: var(--color-white);
+  color: var(--color-text-primary);
+}

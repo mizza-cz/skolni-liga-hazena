@@ -1,0 +1,14 @@
+{% extends "@components/base/base.twig" %}
+
+{% set title = "01.0_homepage" %}
+
+{% block main %}
+  {# {% include "@components/hp-tournaments/hp-tournaments.twig" %} #}
+   {% include "@components/hp-news/hp-news.twig" %}
+      {% include "@components/hp-social/hp-social.twig" %}
+  {% include "@components/partnersSlider/partnersSlider.twig" %}
+
+{% endblock %}
+
+
+hp-tournaments

@@ -1,0 +1,31 @@
+.partners-swiper {
+  .swiper-slide {
+    width: max-content;
+    img {
+      height: 72px;
+      object-fit: contain;
+      max-width: 180px;
+      width: auto;
+      // @include media-breakpoint-down(md) {
+      //   height: 110px;
+      //   width: 110px;
+      // }
+    }
+  }
+}
+.infinite-scroll-swiper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+.partnersSlider {
+  padding: 68px 0 100px;
+  @include media-breakpoint-only(md) {
+    padding-bottom: 68px;
+  }
+  @include media-breakpoint-down(md) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
