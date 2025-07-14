@@ -1,18 +1,27 @@
-{% extends "@components/base/base.twig" %}
+{% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
+block main %} {% include "@components/hero/hero.twig" %} {% include
+"@components/linksBoard/linksBoard.twig" %} {% include
+"@components/hp-news/hp-news.twig" %} {% include
+"@components/hp-map/hp-map.twig" %} {% include
+"@components/hp-tournaments/hp-tournaments.twig" %} {% include
+"@components/hp-social/hp-social.twig" %} {% include
+"@components/partnersSlider/partnersSlider.twig" %}
 
-{% set title = "01.0_homepage" %}
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const parallaxElems = document.querySelectorAll("[data-speed]");
 
-{% block main %}
-{% include "@components/hero/hero.twig" %}
- {% include "@components/linksBoard/linksBoard.twig" %}
-  
-   {% include "@components/hp-news/hp-news.twig" %}
-    {% include "@components/hp-map/hp-map.twig" %}
-    {% include "@components/hp-tournaments/hp-tournaments.twig" %}
-      {% include "@components/hp-social/hp-social.twig" %}
-  {% include "@components/partnersSlider/partnersSlider.twig" %}
+    function onScroll() {
+      const scrollY = window.scrollY;
+      parallaxElems.forEach((el) => {
+        const speed = parseFloat(el.getAttribute("data-speed"));
+        // смещение: чем выше speed, тем сильнее движение
+        const yOffset = scrollY * speed;
+        el.style.transform = `translate3d(0, ${yOffset}px, 0)`;
+      });
+    }
 
+    window.addEventListener("scroll", onScroll);
+  });
+</script>
 {% endblock %}
-
-
- 

@@ -38,22 +38,6 @@
     @include media-breakpoint-down(sm) {
       gap: 4rem;
     }
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../images/content/hero-stars.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      bottom: -6rem;
-      left: 20px;
-      width: 120px;
-      height: 120px;
-      z-index: 2;
-      @include media-breakpoint-down(md) {
-        width: 100px;
-        height: 100px;
-      }
-    }
   }
   &__content {
     max-width: 30.5rem;
@@ -218,7 +202,7 @@
     left: -5rem;
     top: 6.4rem;
     @include media-breakpoint-down(sm) {
-      top: 0;
+      top: -18px;
       transform: translateY(-50%);
       left: 0;
       right: 0;
@@ -245,12 +229,11 @@
     top: -12px;
     right: -58px;
     @include media-breakpoint-down(sm) {
-      transform: translateY(-50%);
       left: 0;
       right: 0;
       margin: 0 auto;
       width: fit-content;
-      top: 0;
+      top: -18px;
     }
   }
   .stat-card__label-left {
@@ -262,7 +245,7 @@
       right: 0;
       margin: 0 auto;
       width: fit-content;
-      bottom: 0;
+      bottom: -18px;
     }
   }
   &::before {
@@ -298,15 +281,13 @@
   }
   .stat-card__label {
     right: 44px;
-    bottom: 0;
+    bottom: -18px;
     transform: translateY(50%);
     @include media-breakpoint-down(sm) {
-      transform: translateY(50%);
       left: 0;
       right: 0;
       margin: 0 auto;
       width: fit-content;
-      bottom: 0;
     }
   }
   &::before {
@@ -323,5 +304,19 @@
       left: -20px;
       bottom: -6rem;
     }
+  }
+}
+
+.hero__decore {
+  position: absolute;
+  object-fit: contain;
+  bottom: -6rem;
+  left: 20px;
+  width: 120px;
+  height: 120px;
+  z-index: 2;
+  @include media-breakpoint-down(md) {
+    width: 100px;
+    height: 100px;
   }
 }
