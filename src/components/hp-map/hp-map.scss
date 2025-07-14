@@ -1,0 +1,190 @@
+.map {
+  color: var(--color-white);
+  padding: 54px 0;
+  position: relative;
+  margin-bottom: 56px;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &::before {
+    background-image: url("../images/content/map-top.png");
+    top: -0;
+    height: 54px;
+  }
+  &::after {
+    background-image: url("../images/content/map-bottom.png");
+    bottom: -0px;
+    height: 80px;
+  }
+  &__inner {
+    padding: 100px 0;
+    background-color: var(--color-primary);
+    position: relative;
+    @include media-breakpoint-down(lg) {
+      padding: 2.5rem 0;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 2rem;
+      background-image: url("../images/content/map-mice.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 7.5rem;
+      height: 7.5rem;
+      @include media-breakpoint-down(lg) {
+        bottom: 0;
+      }
+    }
+  }
+  &-title {
+    position: relative;
+    padding: 0 68px;
+    width: fit-content;
+    z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background-image: url("../images/ico/map-title.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 165px;
+      height: 18px;
+      right: 60px;
+      bottom: 0;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/content/map-heart.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 68px;
+      height: 68px;
+      right: 0;
+      top: -38px;
+    }
+  }
+}
+
+.map-wrapper {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+
+    background-image: url("../images/content/map-run.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    bottom: -5rem;
+    right: 0;
+    z-index: 1;
+    @include media-breakpoint-up(xxl) {
+      bottom: 1rem;
+    }
+    @include media-breakpoint-up(xl) {
+      right: 6.3rem;
+    }
+    @include media-breakpoint-down(md) {
+      width: 72px;
+      height: 72px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -6rem;
+    left: 2.5rem;
+    background-image: url("../images/content/map-start.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 11rem;
+    height: 11rem;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+}
+
+.map-wrapper__item {
+  position: relative;
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
+  &::after {
+    background-image: url("../images/content/emoce.png");
+    content: "";
+    position: absolute;
+    bottom: -72px;
+    left: 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 9rem;
+    height: 9rem;
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+  }
+  &::before {
+    background-image: url("../images/content/map-mice-2.png");
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 5px;
+    top: -42px;
+    width: 8rem;
+    height: 8rem;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}
+.map-text {
+  position: relative;
+  &::before {
+    background-image: url("../images/content/branka.png");
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 3rem;
+    top: -5.625rem;
+    width: 10rem;
+    height: 10rem;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+}
+
+.map__img {
+  height: auto;
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+  }
+  svg a path {
+    cursor: pointer;
+    transition: fill 0.2s, stroke 0.2s;
+  }
+
+  svg a:hover path {
+    stroke: var(--color-accent);
+    stroke-opacity: 1;
+  }
+}

@@ -1,10 +1,21 @@
+.h1,
+.o-content h1 {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 110.00000000000001%;
+  @include media-breakpoint-down(md) {
+    font-size: 48px;
+    line-height: 120%;
+  }
+}
+
 .h2,
 .o-content h2 {
   font-weight: 600;
   font-size: 48px;
   line-height: 120%;
   @include media-breakpoint-down(md) {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 
@@ -16,6 +27,17 @@
   letter-spacing: 0.015em;
 }
 
+.text-xl-semibold {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+}
+.text-base-normal {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.015em;
+}
 .text-base-semibold {
   font-weight: 600;
   font-size: 16px;

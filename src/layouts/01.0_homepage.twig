@@ -3,12 +3,16 @@
 {% set title = "01.0_homepage" %}
 
 {% block main %}
-  {# {% include "@components/hp-tournaments/hp-tournaments.twig" %} #}
+{% include "@components/hero/hero.twig" %}
+ {% include "@components/linksBoard/linksBoard.twig" %}
+  
    {% include "@components/hp-news/hp-news.twig" %}
+    {% include "@components/hp-map/hp-map.twig" %}
+    {% include "@components/hp-tournaments/hp-tournaments.twig" %}
       {% include "@components/hp-social/hp-social.twig" %}
   {% include "@components/partnersSlider/partnersSlider.twig" %}
 
 {% endblock %}
 
 
-hp-tournaments
+ 

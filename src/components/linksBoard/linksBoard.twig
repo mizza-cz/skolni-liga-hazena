@@ -1,0 +1,70 @@
+<section class="linksBoard">
+  <div class="container">
+    <h2 class="h2 text-center mb-md-10 mb-8 linksBoard__title">
+      Začni ještě dnes!
+    </h2>
+    <div class="linksBoard__inner">
+      <div class="row g-6 justify-content-center">
+        <div class="col-xl-4 col-md-6">
+          <a href="#" class="linksBoard__item">
+            Chci registrovat školu {% include "@images/chevron-right.svg" %}
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <a href="#" class="linksBoard__item">
+            Chci hrát {% include "@images/chevron-right.svg" %}
+          </a>
+        </div>
+        <div class="col-xl-4 col-md-6">
+          <a href="#" class="linksBoard__item">
+            O miniházené {% include "@images/chevron-right.svg" %}
+          </a>
+        </div>
+      </div>
+    </div>
+    <h3 class="h2 text-center mb-md-12 mb-8">Tohle je miniházená!</h3>
+
+    <div class="linksBoard__video">
+      <div class="linksBoard__video-wrap">
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalVideo"
+          class="linksBoard__video-item btn"
+        >
+          <img
+            loading="lazy"
+            width="850"
+            height="478"
+            srcset="https://picsum.photos/850/478 478w"
+            alt="video"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# modal #}
+<div
+  class="modal fade"
+  id="modalVideo"
+  tabindex="-1"
+  aria-labelledby="modalVideoLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <iframe
+        id="videoFrame"
+        width="740"
+        height="440"
+        src="https://www.youtube.com/embed/OSX28mBoywo?si=d6Zv2XRofnk8PYj3"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>

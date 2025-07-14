@@ -5,7 +5,21 @@
     padding: 100px 0 74px;
     background: var(--color-secondary);
     @include media-breakpoint-down(md) {
-      padding: 40px 0 14px;
+      padding: 3.5rem 0 1rem;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/content/social-heart-2.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 6rem;
+      height: 6rem;
+      left: 21%;
+      bottom: 5rem;
+      @include media-breakpoint-down(md) {
+        left: 20px;
+      }
     }
   }
   &::before,
@@ -79,5 +93,33 @@
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     overflow: hidden;
+  }
+}
+
+.social-title {
+  position: relative;
+  width: fit-content;
+  @include media-breakpoint-up(lg) {
+    padding: 0 128px;
+  }
+  @include media-breakpoint-up(md) {
+    padding: 0 80px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/content/social-heart.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 9rem;
+    height: 9rem;
+    top: -94px;
+    right: -16px;
+    @include media-breakpoint-down(md) {
+      width: 6rem;
+      height: 6rem;
+      top: -4.875rem;
+      right: -2rem;
+    }
   }
 }

@@ -18,8 +18,11 @@
 .bg-white {
   background-color: var(--color-white) !important;
 }
+.text-accent {
+  color: var(--color-accent) !important;
+}
 .rounded-4 {
-  border-radius: 16px;
+  border-radius: 16px !important;
 }
 .text-secondary {
   color: var(--color-text-secondary) !important;

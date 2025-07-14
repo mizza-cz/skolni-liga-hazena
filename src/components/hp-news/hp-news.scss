@@ -36,5 +36,8 @@
   }
 }
 .hp-news {
-  padding-bottom: 100px;
+  padding-bottom: 4.25rem;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 40px;
+  }
 }

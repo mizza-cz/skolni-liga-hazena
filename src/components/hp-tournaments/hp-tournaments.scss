@@ -1,0 +1,106 @@
+.tournamentItem__list {
+  display: grid;
+
+  grid-template-columns:
+    84px
+    minmax(140px, 16rem)
+    minmax(140px, 15rem)
+    minmax(120px, 19rem);
+  column-gap: 40px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: calc(100% - 40px);
+  @include media-breakpoint-up(xxl) {
+    column-gap: 80px;
+  }
+  @include media-breakpoint-only(lg) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: auto;
+    column-gap: 24px;
+    row-gap: 12px;
+  }
+  @include media-breakpoint-only(md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: auto;
+    column-gap: 24px;
+    row-gap: 12px;
+  }
+  @include media-breakpoint-down(md) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-auto-rows: auto;
+    column-gap: 24px;
+    row-gap: 12px;
+  }
+}
+
+.tournamentItem__list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.tournamentItem__list li:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  width: 1px;
+  height: 16px;
+  background-color: var(--color-light);
+  left: -20px;
+  @include media-breakpoint-up(xxl) {
+    left: -40px;
+  }
+}
+.tournamentItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background-color: var(--color-white);
+  border-radius: 16px;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  text-decoration: none;
+  &:hover {
+    border-color: var(--color-accent);
+  }
+}
+
+.hp-tournaments {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    background-image: url("../images/content/turnaje-stars-2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 9.625rem;
+    height: 9.625rem;
+
+    @include media-breakpoint-down(lg) {
+      top: 0;
+    }
+  }
+  .h2 {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 2.2rem;
+      top: -2.2rem;
+      background-image: url("../images/content/turnaje-stars-1.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 86px;
+      height: 86px;
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+  }
+}
