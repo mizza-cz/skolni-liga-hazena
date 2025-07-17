@@ -1,0 +1,140 @@
+.article-section {
+  padding-bottom: 2rem;
+  position: relative;
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    background-image: url("../images/content/turnaje-stars-2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 9.625rem;
+    height: 9.625rem;
+
+    @include media-breakpoint-down(xl) {
+      bottom: -4rem;
+      z-index: 2;
+    }
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+  }
+  &__categorie {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+    padding: 2px 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.015em;
+    width: fit-content;
+    border-radius: 4px;
+  }
+  &__tags {
+    display: flex;
+    align-items: center;
+    gap: 16px 48px;
+    flex-wrap: wrap;
+    li {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      letter-spacing: 0.015em;
+      color: var(--color-text-secondary);
+      display: flex;
+      align-items: center;
+    }
+    li + li {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: -24px;
+        background-color: var(--color-light);
+        width: 1px;
+        height: 16px;
+      }
+    }
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1440/450;
+    margin-bottom: 64px;
+    position: relative;
+    @include media-breakpoint-down(lg) {
+      aspect-ratio: 3/2;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__header {
+    padding-bottom: 24px;
+    border-bottom: 8px solid var(--color-primary);
+    margin-bottom: 40px;
+  }
+  &__news {
+    margin-top: 100px;
+    @include media-breakpoint-down(md) {
+      margin-top: 48px;
+    }
+  }
+}
+
+img.article-section__img-heart {
+  position: absolute;
+  bottom: -3.5rem;
+  height: 8rem;
+  width: 8rem;
+  object-fit: contain;
+  left: 32px;
+  @include media-breakpoint-up(xl) {
+    left: 25.7%;
+    height: 12.2rem;
+    width: 12.2rem;
+    bottom: -4.8rem;
+  }
+}
+img.article-section__img-stars {
+  position: absolute;
+  bottom: -5rem;
+  height: 12rem;
+  width: 12rem;
+  object-fit: contain;
+  right: 32px;
+  @include media-breakpoint-up(xl) {
+    right: 17%;
+    bottom: -7.6rem;
+    height: 16.5rem;
+    width: 16.5rem;
+  }
+}
+
+.galleryBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 25px;
+  @include media-breakpoint-down(lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  a {
+    display: block;
+    width: 100%;
+    aspect-ratio: 306/187;
+  }
+  img {
+    margin-bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

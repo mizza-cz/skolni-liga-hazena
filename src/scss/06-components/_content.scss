@@ -10,4 +10,27 @@
   > :last-child {
     margin-bottom: 0;
   }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 24px;
+  }
+  p {
+    margin-bottom: 24px;
+  }
+  img {
+    margin-bottom: 24px;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .ratio {
+    margin-bottom: 24px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+  }
 }
