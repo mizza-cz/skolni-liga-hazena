@@ -1,0 +1,85 @@
+<section class="contacts-section">
+  <div class="header-section">
+    <div class="container">
+      <div class="header-section__inner">
+        <h1 class="h1 text-white title-decore">Kontakty</h1>
+      </div>
+    </div>
+  </div>
+  <div class="contacts-section__inner">
+    <div class="container">
+      <div class="contacts-section__content">
+        <h2 class="h4 mb-md-6 mb-4">Hlavní administrátor</h2>
+        <div class="row g-6 mb-10">
+          <div class="col-xl-4 col-md-6">
+            <div class="contactItem">
+              <div class="d-flex gap-4 align-items-center mb-6">
+                <div class="contactItem__img">
+                  <img
+                    src="images/content/ava.png"
+                    width="80"
+                    height="80"
+                    alt="avatar"
+                  />
+                </div>
+                <h5 class="h5">Jméno Příjmení</h5>
+              </div>
+              <div class="d-grid gap-2">
+                <a href="mailto:email@email.com"> email@email.com </a>
+                <a href="tel:+420123456789">+420 123 456 789</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contacts-section--decore">
+          <h3 class="h4 mb-md-6 mb-4">Krajští manažeři</h3>
+          <div class="row g-6 mb-10">
+            {% for i in 1..5 %}
+            <div class="col-xl-4 col-md-6">
+              <div class="contactItem">
+                <div class="d-flex gap-4 align-items-center mb-6">
+                  <div class="contactItem__img">
+                    <img
+                      src="images/content/ava.png"
+                      width="80"
+                      height="80"
+                      alt="avatar"
+                    />
+                  </div>
+                  <div class="d-grid gap-1">
+                    <h5 class="h5">Jméno Příjmení</h5>
+                    <div class="text-base-semibold text-primary">
+                      Název kraje
+                    </div>
+                  </div>
+                </div>
+                <div class="d-grid gap-2">
+                  <a href="mailto:email@email.com"> email@email.com </a>
+                  <a href="tel:+420123456789">+420 123 456 789</a>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <h4 class="h4 mb-md-6 mb-4">Šéfové školních lig</h4>
+          <div class="row g-6">
+            {% for i in 1..5 %}
+            <div class="col-xl-4 col-md-6">
+              <div class="contactItem">
+                <div class="d-grid gap-1 mb-6">
+                  <h5 class="h5">Jméno Příjmení</h5>
+                  <div class="text-base-semibold text-primary">Název kraje</div>
+                </div>
+                <div class="d-grid gap-2">
+                  <a href="mailto:email@email.com"> email@email.com </a>
+                  <a href="tel:+420123456789">+420 123 456 789</a>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

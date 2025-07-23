@@ -1,0 +1,51 @@
+.header-section {
+  background-color: var(--color-primary);
+
+  &__inner {
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+    @include media-breakpoint-down(md) {
+      padding: 48px 0;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background-image: url("../images/content/heart-article.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 16.5rem;
+      height: 16.5rem;
+      right: 3rem;
+      bottom: -6rem;
+      @include media-breakpoint-down(md) {
+        width: 10rem;
+        height: 10rem;
+        right: 0;
+        bottom: -4rem;
+      }
+    }
+  }
+
+  .title-decore {
+    position: relative;
+    z-index: 2;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 54px;
+      z-index: -1;
+      background-image: url("../images/ico/hero-title.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 394px;
+      height: 48px;
+      left: 12px;
+      @include media-breakpoint-down(md) {
+        top: 2.375rem;
+        width: 17.625rem;
+      }
+    }
+  }
+}
