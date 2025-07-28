@@ -42,4 +42,10 @@
 .text-white {
   color: var(--color-white) !important;
 }
+.text-body-secondary {
+  color: var(--color-body-secondary) !important;
+}
+.border-bottom-secondary-1 {
+  border-bottom: 1px solid var(--color-body-secondary);
+}
 /*! purgecss end ignore */

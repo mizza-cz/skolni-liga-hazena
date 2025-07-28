@@ -1,0 +1,211 @@
+.ambassadors-news {
+  padding: 100px 0 32px;
+  .h2 {
+    position: relative;
+    width: fit-content;
+    @include media-breakpoint-up(lg) {
+      padding: 0 128px;
+    }
+    @include media-breakpoint-up(md) {
+      padding: 0 80px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/content/social-heart.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 9rem;
+      height: 9rem;
+      top: -94px;
+      right: -16px;
+      @include media-breakpoint-down(md) {
+        width: 6rem;
+        height: 6rem;
+        top: -4.875rem;
+        right: -2rem;
+      }
+    }
+  }
+}
+.ambassadors-section__content {
+  padding: 100px 0;
+  .tournamentItem {
+    width: inherit;
+  }
+  .tournamentItem__list {
+    display: grid;
+
+    grid-template-columns:
+      84px
+      minmax(140px, 16rem)
+      minmax(140px, 15rem)
+      minmax(2rem, 2rem);
+    column-gap: 40px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: calc(100% - 40px);
+    @include media-breakpoint-up(xxl) {
+      column-gap: 80px;
+    }
+    @include media-breakpoint-only(lg) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-auto-rows: auto;
+      column-gap: 24px;
+      row-gap: 12px;
+    }
+    @include media-breakpoint-only(md) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-auto-rows: auto;
+      column-gap: 24px;
+      row-gap: 12px;
+    }
+    @include media-breakpoint-down(md) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      grid-auto-rows: auto;
+      column-gap: 24px;
+      row-gap: 12px;
+    }
+  }
+  .linksBoard__video-wrap:before {
+    display: none;
+  }
+  .linksBoard__video:before {
+    width: 10rem;
+    height: 10rem;
+
+    left: 0;
+    bottom: -60px;
+    background-image: url("../images/content/hero-stars.png");
+    @include media-breakpoint-up(xxl) {
+      left: -10.5rem;
+      bottom: 0rem;
+    }
+  }
+}
+
+.ambassadorsList {
+  background-color: var(--color-primary);
+  .swiper-slide {
+    max-width: 14.9rem;
+    padding: 0 12px;
+  }
+  .h2 {
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 3.6875rem;
+      top: -37px;
+      width: 4.25rem;
+      height: 4.25rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("../images/content/hero-star-2.png");
+      @include media-breakpoint-down(lg) {
+        top: -64px;
+      }
+    }
+  }
+  &__inner {
+    padding: 100px 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 6rem;
+      bottom: 0;
+      transform: translateY(50%);
+      background-image: url("../images/content/turnaje-stars-1.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 11.625rem;
+      height: 11.625rem;
+      @include media-breakpoint-down(lg) {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+  }
+  &__items {
+    display: flex;
+    //  grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+  }
+  &__img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 244/250;
+    display: block;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    &:hover img {
+      transform: scale(1.05);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s;
+    }
+  }
+  &__insta {
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-white);
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      transform: none !important;
+    }
+  }
+}
+
+.ambassadors-tournaments {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    right: -12rem;
+    top: -6rem;
+    background-image: url("../images/content/turnaje-stars-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12.625rem;
+    height: 12.625rem;
+    transform: rotate(15deg);
+    @include media-breakpoint-down(lg) {
+      top: 0;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../images/content/social-heart.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 10rem;
+    height: 10rem;
+    bottom: -5.875rem;
+    left: -12rem;
+    transform: rotate(14deg);
+    @include media-breakpoint-down(md) {
+      width: 6rem;
+      height: 6rem;
+      top: -4.875rem;
+      right: -2rem;
+    }
+  }
+}
