@@ -1,0 +1,95 @@
+<section class="formular-section">
+  <div class="header-section">
+    <div class="container">
+      <div class="header-section__inner">
+        <h1 class="h1 text-white title-decore">Školní liga xyz</h1>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="decore-bottom">
+      <h2 class="h2 text-center mb-xl-10 mb-md-8 mb-6">Registrace školy</h2>
+      <div class="formular">
+        <form
+          class="d-grid gap-6"
+          action="https://mizza-cz.github.io/skolni-liga-hazena/build/01.0_homepage.html"
+          method="post"
+        >
+          <div class="row g-6">
+            <div class="col-lg-6">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="name"
+                >Jméno a příjmení *</label
+              >
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="col-lg-6">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="date"
+                >Datum narození *</label
+              >
+              <input type="text" name="date" id="date" />
+            </div>
+            <div class="col-12">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="address"
+                >Adresa bydliště *</label
+              >
+              <input type="text" name="address" id="address" />
+            </div>
+            <div class="col-lg-6">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="email"
+                >E-mail zákonného zástupce *</label
+              >
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="col-lg-6">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="phone"
+                >Telefon zákonného zástupce *</label
+              >
+              <input type="tel" name="phone" id="phone" />
+            </div>
+            <div class="col-12">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="club"
+              >
+                Preferovaný klub
+              </label>
+              <div class="formular__select">
+                <select class="js-select" id="club" name="club">
+                  <option>Název klubu</option>
+                  <option>CZE</option>
+                  <option>GBA</option>
+                  <option>SVK</option>
+                  <option>CZE</option>
+                  <option>GBA</option>
+                  <option>SVK</option>
+                  <option>CZE</option>
+                  <option>GBA</option>
+                  <option>SVK</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <label class="formular__checkbox">
+            <input name="agree" type="checkbox" />
+            <span class="custom-checkbox"></span>
+            Odesláním fomuláře souhlasím se
+            <a href="#">zpracováním osobních údajů.</a>
+          </label>
+          <div class="text-center">
+            <button class="button-accent">Registrovat</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
