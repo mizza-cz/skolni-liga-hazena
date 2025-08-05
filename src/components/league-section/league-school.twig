@@ -1,0 +1,88 @@
+<section class="league-section">
+  <div class="header-section">
+    <div class="container">
+      <div class="header-section__inner">
+        <h1 class="h1 text-white title-decore">Školní ligy</h1>
+      </div>
+    </div>
+  </div>
+  <div class="league-section__content">
+    <div class="container">
+      <div class="decore-bottom">
+        <ul class="menuLinks">
+          <li>
+            <a class="active" href="#">Školní ligy</a>
+          </li>
+          <li>
+            <a href="#">Turnaje </a>
+          </li>
+          <li>
+            <a href="#">Databáze škol </a>
+          </li>
+          <li>
+            <a href="#">Databáze klubů </a>
+          </li>
+        </ul>
+        <h2 class="h2 text-center mb-xl-10 mb-md-8 mb-6">
+          Školní ligy miniházené
+        </h2>
+        <form class="menuFilter">
+          <div class="menuFilter__select">
+            <select class="js-select" id="kraj" name="kraj">
+              <option>Kraj</option>
+              <option>Plzeňský kraj</option>
+              <option>Karlovarský kraj</option>
+              <option>Ústecký kraj</option>
+              <option>Pardubický kraj</option>
+            </select>
+          </div>
+          <div class="menuFilter__select">
+            <select class="js-select" id="city" name="city">
+              <option>Město</option>
+              <option>Praha</option>
+              <option>Brno</option>
+              <option>Ostrava</option>
+              <option>Plzeň</option>
+              <option>Liberec,</option>
+            </select>
+          </div>
+        </form>
+        <div class="row g-6">
+          {% for i in 1..5 %}
+          <div class="col-lg-4 col-sm-6">
+            <ul class="leagueItem">
+              <li>
+                <div class="h5 mb-2">ZŠ Pertoldova</div>
+                <div class="d-flex gap-4 align-items-center">
+                  <div class="text-base-semibold text-primary">Název kraje</div>
+                  <div class="text-base-normal">Liberec</div>
+                </div>
+              </li>
+              <li>
+                <div class="leagueItem__tags">
+                  <div class="tag-deco-3">Škol: 12</div>
+                  <div class="tag-deco-2">1. třída</div>
+                  <div class="tag-deco-2">2. třída</div>
+                  <div class="tag-deco-2">4. třída</div>
+                </div>
+              </li>
+              <li>
+                <div class="text-base-normal mb-2">Jméno Příjmení</div>
+                <a
+                  href="tel:+420123456789"
+                  class="text-base-normal hover-underline d-block"
+                >
+                  +420 123 456 789
+                </a>
+              </li>
+              <li>
+                <a href="#" class="button-accent">Školní liga</a>
+              </li>
+            </ul>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

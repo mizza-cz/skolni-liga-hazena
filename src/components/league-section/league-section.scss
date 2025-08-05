@@ -1,0 +1,60 @@
+.league-section {
+  &__content {
+  }
+}
+
+.leagueItem {
+  color: #131313;
+  border-radius: 24px;
+  padding: 24px;
+  background: var(--color-light);
+  li + li {
+    padding-top: 16px;
+    margin-top: 16px;
+    border-top: 1px solid var(--color-stroke-secondary);
+  }
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  [class^="tag"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.015em;
+    height: fit-content;
+  }
+  .tag-deco-3 {
+    background-color: var(--color-main-deco-3);
+    color: var(--color-text-deco-3);
+  }
+  .tag-deco-2 {
+    background-color: var(--color-main-deco-2);
+    color: var(--color-text-deco-2);
+  }
+  .tag-deco-1 {
+    background-color: var(--color-main-deco-1);
+    color: var(--color-text-deco-1);
+  }
+  &__logo {
+    width: 104px;
+    height: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: var(--color-white);
+
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+<section class="league-section">
+  <div class="header-section">
+    <div class="container">
+      <div class="header-section__inner">
+        <h1 class="h1 text-white title-decore">Školní ligy</h1>
+      </div>
+    </div>
+  </div>
+  <div class="league-section__content">
+    <div class="container">
+      <div class="decore-bottom">
+        <ul class="menuLinks">
+          <li>
+            <a href="#">Školní ligy</a>
+          </li>
+          <li>
+            <a href="#">Turnaje </a>
+          </li>
+          <li>
+            <a href="#">Databáze škol </a>
+          </li>
+          <li>
+            <a class="active" href="#">Databáze klubů </a>
+          </li>
+        </ul>
+        <h2 class="h2 text-center mb-xl-10 mb-md-8 mb-6">
+          Školy zapojené do Školních lig
+        </h2>
+        <form class="menuFilter">
+          <div class="menuFilter__select">
+            <select class="js-select" id="kraj" name="kraj">
+              <option>Kraj</option>
+              <option>Plzeňský kraj</option>
+              <option>Karlovarský kraj</option>
+              <option>Ústecký kraj</option>
+              <option>Pardubický kraj</option>
+            </select>
+          </div>
+          <div class="menuFilter__select">
+            <select class="js-select" id="city" name="city">
+              <option>Město</option>
+              <option>Praha</option>
+              <option>Brno</option>
+              <option>Ostrava</option>
+              <option>Plzeň</option>
+              <option>Liberec,</option>
+            </select>
+          </div>
+          <div class="menuFilter__search">
+            <input type="text" placeholder="Vyhledat" />
+            <button>
+              <img src="images/ico/search.svg" width="16" height="16" alt="" />
+            </button>
+          </div>
+        </form>
+        <div class="row g-6">
+          {% for i in 1..5 %}
+          <div class="col-xl-4 col-md-6">
+            <ul class="leagueItem">
+              <li>
+                <div class="d-flex gap-4 flex-sm-nowrap flex-wrap">
+                  <div class="leagueItem__logo">
+                    <img src="images/content/slavia.png" alt="slavia" />
+                  </div>
+                  <div class="d-grid gap-2">
+                    <div class="leagueItem__tags">
+                      <div class="tag-deco-1">Dívky</div>
+                      <div class="tag-deco-2">Chlapci</div>
+                      <div class="tag-deco-3">Smíšený</div>
+                    </div>
+                    <div class="h5">ZŠ Slavia Praha</div>
+                    <p class="text-base-normal">
+                      K Botyči 128/8, Praha 1, 10100
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="mailto:email@email.com"
+                  class="text-base-normal hover-underline mb-2 d-block"
+                  >email@email.com</a
+                >
+                <a
+                  href="tel:+420123456789"
+                  class="text-base-normal hover-underline d-block"
+                >
+                  +420 123 456 789
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-base-normal hover-underline d-flex gap-4 align-items-center"
+                >
+                  Sportoviště (3)
+                  <img
+                    src="images/ico/link.svg"
+                    width="16"
+                    height="16"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="button-accent">Školní liga</a>
+              </li>
+            </ul>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

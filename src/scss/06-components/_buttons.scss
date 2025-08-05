@@ -9,6 +9,11 @@
   transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
   text-decoration-color: transparent !important;
   cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.015em;
+
   svg path {
     transition: all 0.2s;
   }

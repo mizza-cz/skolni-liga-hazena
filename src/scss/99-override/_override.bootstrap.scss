@@ -21,6 +21,12 @@
   max-width: 100% !important;
   max-width: 65.6rem !important;
 }
+.hover-underline {
+  text-decoration-color: transparent;
+  &:hover {
+    text-decoration-color: inherit;
+  }
+}
 .bg-light {
   background-color: var(--color-light) !important;
 }
@@ -48,4 +54,5 @@
 .border-bottom-secondary-1 {
   border-bottom: 1px solid var(--color-body-secondary);
 }
+
 /*! purgecss end ignore */

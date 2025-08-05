@@ -1,0 +1,77 @@
+<section class="league-section">
+  <div class="header-section">
+    <div class="container">
+      <div class="header-section__inner">
+        <h1 class="h1 text-white title-decore">Školní ligy</h1>
+      </div>
+    </div>
+  </div>
+  <div class="league-section__content">
+    <div class="container">
+      <div class="decore-bottom">
+        <ul class="menuLinks">
+          <li>
+            <a href="#">Školní ligy</a>
+          </li>
+          <li>
+            <a href="#">Turnaje </a>
+          </li>
+          <li>
+            <a class="active" href="#">Databáze škol </a>
+          </li>
+          <li>
+            <a href="#">Databáze klubů </a>
+          </li>
+        </ul>
+        <h2 class="h2 text-center mb-xl-10 mb-md-8 mb-6">
+          Školy zapojené do Školních lig
+        </h2>
+        <form class="menuFilter">
+          <div class="menuFilter__select">
+            <select class="js-select" id="kraj" name="kraj">
+              <option>Kraj</option>
+              <option>Plzeňský kraj</option>
+              <option>Karlovarský kraj</option>
+              <option>Ústecký kraj</option>
+              <option>Pardubický kraj</option>
+            </select>
+          </div>
+          <div class="menuFilter__select">
+            <select class="js-select" id="city" name="city">
+              <option>Město</option>
+              <option>Praha</option>
+              <option>Brno</option>
+              <option>Ostrava</option>
+              <option>Plzeň</option>
+              <option>Liberec,</option>
+            </select>
+          </div>
+          <div class="menuFilter__search">
+            <input type="text" placeholder="Vyhledat" />
+            <button>
+              <img src="images/ico/search.svg" width="16" height="16" alt="" />
+            </button>
+          </div>
+        </form>
+        <div class="row g-6">
+          {% for i in 1..5 %}
+          <div class="col-lg-4 col-sm-6">
+            <ul class="leagueItem">
+              <li>
+                <div class="h5 mb-2">ZŠ Pertoldova</div>
+                <div class="text-base-semibold text-primary mb-2">
+                  Název kraje
+                </div>
+                <p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
+              </li>
+              <li>
+                <a href="#" class="button-accent">Školní liga</a>
+              </li>
+            </ul>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
