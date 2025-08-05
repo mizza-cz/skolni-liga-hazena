@@ -137,7 +137,7 @@
     background-color: transparent;
     top: 100%;
     min-width: 180px;
-    padding: 16px 0px 0px;
+    padding: 0px 0px 0px;
     box-shadow: 0px 0px 20px 0px rgba(16, 24, 40, 0.05);
     border-radius: 10px;
     flex-direction: column;
@@ -213,5 +213,4 @@
 .is-nav-open .header .navbar {
   visibility: visible;
   opacity: 1;
- 
 }
