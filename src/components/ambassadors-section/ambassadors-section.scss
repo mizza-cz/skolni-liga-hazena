@@ -223,3 +223,22 @@
     }
   }
 }
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 100%;
+  background: rgba(#fff, 0.5);
+  cursor: pointer;
+}
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 48px;
+  flex-wrap: wrap;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #fff;
+}
