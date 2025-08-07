@@ -42,7 +42,13 @@
   &__content {
     max-width: 30.5rem;
     position: relative;
-
+    @include media-breakpoint-down(lg) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -105,7 +111,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         z-index: 1;
-        @include media-breakpoint-down(sm) {
+        @include media-breakpoint-down(md) {
           top: -5.5rem;
           right: -1.5rem;
         }

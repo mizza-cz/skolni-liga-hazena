@@ -66,11 +66,22 @@
   background-color: var(--color-white);
   border-radius: 16px;
   border: 1px solid transparent;
-  transition: all 0.3s;
   width: 100%;
   text-decoration: none;
+  svg {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s;
+  }
   &:hover {
-    border-color: var(--color-accent);
+    background: var(--color-accent);
+    color: var(--color-white);
+    .icon-pin path {
+      fill: var(--color-white);
+    }
+    .icon-chevron-right path {
+      stroke: var(--color-white);
+    }
   }
 }
 
