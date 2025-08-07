@@ -1,0 +1,165 @@
+<section class="join-section">
+  <div class="header-section">
+    <div class="container">
+      <div class="header-section__inner">
+        <h1 class="h1 text-white title-decore">Chci se zapojit</h1>
+      </div>
+    </div>
+  </div>
+  <div class="join-section__content">
+    <div class="container">
+      <div class="decore-bottom">
+        <ul class="menuLinks">
+          <li>
+            <a href="#">Jsem žák </a>
+          </li>
+          <li>
+            <a href="#">Jsem rodič </a>
+          </li>
+          <li>
+            <a class="active" href="#">Jsem učitel </a>
+          </li>
+        </ul>
+        <div class="o-content mb-10">
+          <p>
+            Pokud jsi o házené uvažoval(a), nejjednodušší je na začátek vzít
+            rodiče nebo partu třeba do parku a jít si házet. Nepotřebuješ
+            speciální míč ani vybavení. Trénovat můžeš klidně také sám, dá se to
+            doma, venku i v hale. Poradit ti může také tvoje paní učitelka, nebo
+            pan učitel ve škole, můžeš ho poprosit, jestli byste si házenou
+            nemohli zahrát přímo na hodině.
+          </p>
+          <p>
+            Pokud bys chtěla, aby se tvoje škola zapojila do projektu Školních
+            lig, nejrychlejší cesta je požádat paní učitelku, nebo pana učitele
+            o registraci školy. Můžeš také mrknout na mapu na webu, kde je
+            nejbližší školní liga, nebo klub v okolí. Právě tam tě mohou rodiče
+            přihlásit, aby ses zlepšoval a zapojil do dalších zápasů. Začít se
+            dá úplně v kterémkoliv věku.
+          </p>
+          <p>
+            Pamatuj, že házená se dá hrát kdekoliv a nepotřebuješ k tomu ani
+            branky, stačí třeba stromy, žíněnky, lavičky, nebo láhve. Na začátek
+            můžeš zkusit i verzi s pokládáním míče místo střelby. Víc se o tom
+            dozvíš v sekci Jak trénovat.
+          </p>
+        </div>
+        <div class="join-section__invite">
+          <div class="text-white h4 mb-6">Registruj se a začni hrát!</div>
+          <a href="#" class="button-accent">Chci hrát</a>
+        </div>
+        <h2 class="h2 text-center mb-xl-10 mb-md-8 mb-6">
+          Najdi kluby ve svém okolí
+        </h2>
+        <div class="join-section__map">
+          <img
+            src="images/content/join-map.png"
+            width="900"
+            height="500"
+            alt="map"
+          />
+          <div class="map-decore">
+            <img src="images/content/turnaje-stars-1.png" alt="" />
+          </div>
+        </div>
+
+        <div class="row g-6 mb-md-20 mb-15">
+          {% for i in 1..5 %}
+          <div class="col-lg-4 col-sm-6">
+            <ul class="leagueItem">
+              <li>
+                <div class="h5 mb-2">ZŠ Pertoldova</div>
+                <div class="d-flex gap-1-4 align-items-center flex-wrap">
+                  <div class="text-base-semibold text-primary">Název kraje</div>
+                  <div class="text-base-normal">Liberec</div>
+                </div>
+              </li>
+              <li>
+                <div class="leagueItem__tags">
+                  <div class="tag-deco-3">Škol: 12</div>
+                  <div class="tag-deco-2">1. třída</div>
+                  <div class="tag-deco-2">2. třída</div>
+                  <div class="tag-deco-2">4. třída</div>
+                </div>
+              </li>
+              <li>
+                <div class="text-base-normal mb-2">Jméno Příjmení</div>
+                <a
+                  href="tel:+420123456789"
+                  class="text-base-normal hover-underline d-block"
+                >
+                  +420 123 456 789
+                </a>
+              </li>
+              <li>
+                <a href="#" class="button-accent">Školní liga</a>
+              </li>
+            </ul>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="join-section__invite">
+          <div class="text-white h4 mb-6">Registruj se a začni hrát!</div>
+          <a href="#" class="button-accent">Chci hrát</a>
+        </div>
+        <h4 class="h2 mb-md-12 mb-8 text-center">Novinky z kraje</h4>
+        <div class="row g-6 mb-12">
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="postItem">
+              <div class="postItem__img">
+                <img
+                  loading="lazy"
+                  width="422"
+                  height="250"
+                  srcset="https://picsum.photos/422/250 320w"
+                  alt="post"
+                />
+                <div class="tag-white">12.5.2024</div>
+              </div>
+              <div class="h5">
+                ČEPS Cup chlapců má nového šampiona. Dramatické finále ovládly..
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="postItem">
+              <div class="postItem__img">
+                <img
+                  loading="lazy"
+                  width="422"
+                  height="250"
+                  srcset="https://picsum.photos/422/250 320w"
+                  alt="post"
+                />
+                <div class="tag-white">12.5.2024</div>
+              </div>
+              <div class="h5">
+                ČEPS Cup znovu zůstal "doma". Obhajobu slaví dívky ze ZŠ
+                Campanus
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="postItem">
+              <div class="postItem__img">
+                <img
+                  loading="lazy"
+                  width="422"
+                  height="250"
+                  srcset="https://picsum.photos/422/250 320w"
+                  alt="post"
+                />
+                <div class="tag-white">12.5.2024</div>
+              </div>
+              <div class="h5">
+                ČEPS Cup zná finalisty a finalistk EPS Cup zná finalisty a
+                finalistk EPS Cup zná finalisty a finalistky! O vítězství v
+                poháru základních škol...
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
