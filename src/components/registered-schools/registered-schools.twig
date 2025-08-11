@@ -1,0 +1,64 @@
+<section class="registered-schools">
+  <div class="header-section">
+    <div class="container">
+      <div class="header-section__inner">
+        <h1 class="h1 text-white title-decore">Školní liga xyz</h1>
+      </div>
+    </div>
+  </div>
+  <div class="registered-schools__inner">
+    <div class="container">
+      <div class="decore-bottom">
+        <h5 class="h5 mb-lg-10 mb-6">Liga je pořádaná klubem Slavia Praha.</h5>
+        <p class="text-base-normal">
+          Lorem ipsum dolor sit amet consectetur. Accumsan id vitae ut bibendum.
+          Felis at et commodo lorem phasellus proin. Pharetra diam ultrices
+          neque congue. Rutrum ipsum gravida justo adipiscing risus quis
+          volutpat. Lorem ipsum dolor sit amet consectetur. Accumsan id vitae ut
+          bibendum. Felis at et commodo lorem phasellus proin. Pharetra diam
+          ultrices neque congue. Rutrum ipsum gravida justo adipiscing risus
+          quis volutpat. Lorem ipsum dolor sit amet consectetur. Accumsan id
+          vitae ut bibendum. Felis at et commodo lorem phasellus proin. Pharetra
+          diam ultrices neque congue. Rutrum ipsum gravida justo adipiscing
+          risus quis volutpat.
+        </p>
+        <ul class="menuLinks mt-lg-16 mt-10">
+          <li>
+            <a href="#">Turnaje </a>
+          </li>
+          <li>
+            <a class="active" href="#">Registrované školy </a>
+          </li>
+        </ul>
+        <div class="row g-6">
+          {% for i in 1..5 %}
+          <div class="col-lg-4 col-sm-6">
+            <ul class="leagueItem">
+              <li>
+                <div class="h5 mb-2">ZŠ Pertoldova</div>
+                <div class="d-grid gap-2">
+                  <div class="text-base-semibold text-primary">Název kraje</div>
+                  <div class="text-base-normal">
+                    K Botyči 128/8, Praha 1, 10100
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="leagueItem__tags">
+                  <div class="tag-deco-1">Dívky</div>
+                  <div class="tag-deco-2">Chlapci</div>
+                  <div class="tag-deco-3">Smíšený</div>
+                </div>
+              </li>
+
+              <li>
+                <a href="#" class="button-accent">Detail školy </a>
+              </li>
+            </ul>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
