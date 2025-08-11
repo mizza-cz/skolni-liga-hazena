@@ -1,0 +1,240 @@
+<section class="join-section">
+  <div class="header-section">
+    <div class="container">
+      <div class="header-section__inner">
+        <h1 class="h1 text-white title-decore">Chci se zapojit</h1>
+      </div>
+    </div>
+  </div>
+  <div class="join-section__content">
+    <div class="container">
+      <div class="decore-bottom">
+        <ul class="menuLinks">
+          <li>
+            <a href="#">Jsem rodič </a>
+          </li>
+          <li>
+            <a class="active" href="#">Jsem rodič </a>
+          </li>
+          <li>
+            <a href="#">Jsem učitel </a>
+          </li>
+        </ul>
+        <div class="o-content mb-10">
+          <h4>Uvažujete o házené a nevíte, co dál?</h4>
+          <p>
+            Začít je snazší, než se zdá. Házená se dá hrát prakticky kdekoliv a
+            na začátek k ní nepotřebujete vůbec nic. Vezměte míč (jakýkoliv),
+            běžte s dítětem na zahradu, do parku nebo na hřiště a zkuste si jen
+            tak házet. Nebo můžete hrát na babu, zkoušet přihrávky, mířit na
+            cíl.
+          </p>
+          <p>
+            Důležité je, že se dítě hýbe a má z pohybu radost. Jestli má vztah k
+            míči, poznáte rychle, a i kdyby ne, pořád se může zapojit pro
+            zábavu. Házená totiž není jen o sportu. Děti se díky ní učí
+            spolupráci, komunikaci a fungování v týmu. A to se hodí nejen na
+            hřišti.
+          </p>
+          <h4>Největší plusy házené</h4>
+          <h5>Zdravotní benefity</h5>
+          <p>
+            Jde o komplexní sport, který rozvíjí všechny pohybové složky
+            (silovou, hod i obecnou kondici). Házená nabídne dítěti všestranný
+            pohybový rozvoj, který využije také při ostatních sportech.
+          </p>
+          <h5>Kolektiv</h5>
+          <p>
+            Zlepšuje sociální dovednosti, vytváří a buduje vztahy i sociální
+            vazby mezi dětmi podobného věku. Mají společný cíl, motivaci a
+            vzájemnou interakci, naučí je principů fungování ve skupině (týmu).
+          </p>
+          <h5>Zážiky, zábava a emoce</h5>
+          <p>
+            Každý trénink nebo zápas přináší něco nového. Děti zažívají radost z
+            pohybu, zlepšování i z výzev. Učí se překonávat samy sebe, zvládat
+            výhry i prohry a mít sport jako radost, ne povinnost.
+          </p>
+          <h5>Dostupný (i cenově) sport</h5>
+          <p>
+            Na první trénink stačí sportovní oblečení, tenisky a láhev na pití.
+            Míč i další vybavení bývá v klubech k dispozici. Házená je finančně
+            dostupná a otevřená všem, bez ohledu na předchozí zkušenosti. Začít
+            může dítě v podstatě ve kterémkoliv věku.
+          </p>
+          <h5>Mentální odolnost</h5>
+          <p>
+            Díky házené se děti učí zvládat stres, soustředit se a zachovat klid
+            i ve vypjatých chvílích. Rozvíjí nejen tělo, ale i hlavu sportem,
+            který je hravý, přirozený a napínavý.
+          </p>
+          <p>
+            Pokud stojíte o zapojení školy Vaší ratolesti do projektu Školních
+            lig, neváhejte kontaktovat paní učitelku, nebo pana učitele. Přímo
+            na webu si můžete vyhledat nejbližší Školní ligu, nebo nejbližší
+            klub v okolí. Házená má nábory celoročně. A pokud byste potřebovali
+            poradit, neváhejte se obrátit na manažery jednotlivých krajů,
+            kontakty naleznete níže.
+          </p>
+          <p>
+            <strong>A pamatujte, že začít se dá kdykoliv a kdekoliv.</strong>
+          </p>
+        </div>
+        <div class="join-section__invite">
+          <div class="text-white h4 mb-6">Registruj se a začni hrát!</div>
+          <a href="#" class="button-accent">Chci hrát</a>
+        </div>
+        <h2 class="h2 text-center mb-xl-10 mb-md-8 mb-6">
+          Najdi kluby ve svém okolí
+        </h2>
+        <div class="join-section__map">
+          <img
+            src="images/content/join-map.png"
+            width="900"
+            height="500"
+            alt="map"
+          />
+        </div>
+
+        <form class="menuFilter">
+          <div class="menuFilter__select">
+            <select class="js-select" id="kraj" name="kraj">
+              <option>Kraj</option>
+              <option>Plzeňský kraj</option>
+              <option>Karlovarský kraj</option>
+              <option>Ústecký kraj</option>
+              <option>Pardubický kraj</option>
+            </select>
+          </div>
+          <div class="menuFilter__select">
+            <select class="js-select" id="city" name="city">
+              <option>Město</option>
+              <option>Praha</option>
+              <option>Brno</option>
+              <option>Ostrava</option>
+              <option>Plzeň</option>
+              <option>Liberec,</option>
+            </select>
+          </div>
+        </form>
+        <div class="row g-6 mb-md-20 mb-15">
+          {% for i in 1..5 %}
+          <div class="col-xl-4 col-md-6">
+            <ul class="leagueItem">
+              <li>
+                <div class="d-flex gap-4 flex-sm-nowrap flex-wrap">
+                  <div class="leagueItem__logo">
+                    <img src="images/content/slavia.png" alt="slavia" />
+                  </div>
+                  <div class="d-grid gap-2">
+                    <div class="leagueItem__tags">
+                      <div class="tag-deco-1">Dívky</div>
+                      <div class="tag-deco-2">Chlapci</div>
+                      <div class="tag-deco-3">Smíšený</div>
+                    </div>
+                    <div class="h5">ZŠ Slavia Praha</div>
+                    <p class="text-base-normal">
+                      K Botyči 128/8, Praha 1, 10100
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="mailto:email@email.com"
+                  class="text-base-normal hover-underline mb-2 d-block"
+                  >email@email.com</a
+                >
+                <a
+                  href="tel:+420123456789"
+                  class="text-base-normal hover-underline d-block"
+                >
+                  +420 123 456 789
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-base-normal hover-underline d-flex gap-4 align-items-center"
+                >
+                  Sportoviště (3)
+                  <img
+                    src="images/ico/link.svg"
+                    width="16"
+                    height="16"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="button-accent">Školní liga</a>
+              </li>
+            </ul>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="join-section__invite">
+          <div class="text-white h4 mb-6">Registruj se a začni hrát!</div>
+          <a href="#" class="button-accent">Chci hrát</a>
+        </div>
+        <h4 class="h2 mb-md-12 mb-8 text-center">Novinky z kraje</h4>
+        <div class="row g-6 mb-12">
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="postItem">
+              <div class="postItem__img">
+                <img
+                  loading="lazy"
+                  width="422"
+                  height="250"
+                  srcset="https://picsum.photos/422/250 320w"
+                  alt="post"
+                />
+                <div class="tag-white">12.5.2024</div>
+              </div>
+              <div class="h5">
+                ČEPS Cup chlapců má nového šampiona. Dramatické finále ovládly..
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="postItem">
+              <div class="postItem__img">
+                <img
+                  loading="lazy"
+                  width="422"
+                  height="250"
+                  srcset="https://picsum.photos/422/250 320w"
+                  alt="post"
+                />
+                <div class="tag-white">12.5.2024</div>
+              </div>
+              <div class="h5">
+                ČEPS Cup znovu zůstal "doma". Obhajobu slaví dívky ze ZŠ
+                Campanus
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="postItem">
+              <div class="postItem__img">
+                <img
+                  loading="lazy"
+                  width="422"
+                  height="250"
+                  srcset="https://picsum.photos/422/250 320w"
+                  alt="post"
+                />
+                <div class="tag-white">12.5.2024</div>
+              </div>
+              <div class="h5">
+                ČEPS Cup zná finalisty a finalistk EPS Cup zná finalisty a
+                finalistk EPS Cup zná finalisty a finalistky! O vítězství v
+                poháru základních škol...
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
