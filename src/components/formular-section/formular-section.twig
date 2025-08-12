@@ -16,56 +16,21 @@
           method="post"
         >
           <div class="row g-6">
-            <div class="col-lg-6">
-              <label
-                class="text-sm-regular d-block mb-1 text-primary"
-                for="name"
-                >Jméno a příjmení *</label
-              >
-              <input type="text" name="name" id="name" />
-            </div>
-            <div class="col-lg-6">
-              <label
-                class="text-sm-regular d-block mb-1 text-primary"
-                for="date"
-                >Datum narození *</label
-              >
-              <input type="text" name="date" id="date" />
-            </div>
             <div class="col-12">
-              <label
-                class="text-sm-regular d-block mb-1 text-primary"
-                for="address"
-                >Adresa bydliště *</label
-              >
-              <input type="text" name="address" id="address" />
+              <h3 class="h5">
+                Najděte svojí školu a automaticky vyplňte základní údaje
+              </h3>
             </div>
             <div class="col-lg-6">
               <label
                 class="text-sm-regular d-block mb-1 text-primary"
-                for="email"
-                >E-mail zákonného zástupce *</label
+                for="school"
               >
-              <input type="email" name="email" id="email" />
-            </div>
-            <div class="col-lg-6">
-              <label
-                class="text-sm-regular d-block mb-1 text-primary"
-                for="phone"
-                >Telefon zákonného zástupce *</label
-              >
-              <input type="tel" name="phone" id="phone" />
-            </div>
-            <div class="col-12">
-              <label
-                class="text-sm-regular d-block mb-1 text-primary"
-                for="club"
-              >
-                Preferovaný klub
+                Škola
               </label>
               <div class="formular__select">
-                <select class="js-select" id="club" name="club">
-                  <option>Název klubu</option>
+                <select class="js-select" id="school" name="club">
+                  <option>Vyberte školu z databáze</option>
                   <option>CZE</option>
                   <option>GBA</option>
                   <option>SVK</option>
@@ -77,6 +42,155 @@
                   <option>SVK</option>
                 </select>
               </div>
+            </div>
+            <div class="col-12">
+              <h4 class="h5">Základní informace</h4>
+            </div>
+
+            <div class="col-lg-6">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="name-school"
+                >Název školy *</label
+              >
+              <input type="text" name="name-school" id="name-school" />
+            </div>
+            <div class="col-lg-6">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="street"
+                >Ulice a č.p. *</label
+              >
+              <input type="text" name="street" id="street" />
+            </div>
+            <div class="col-lg-6">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="city"
+                >Město *</label
+              >
+              <input type="text" name="city" id="city" />
+            </div>
+            <div class="col-lg-6">
+              <label class="text-sm-regular d-block mb-1 text-primary" for="psc"
+                >PSČ *</label
+              >
+              <input type="text" name="psc" id="psc" />
+            </div>
+            <div class="col-lg-6">
+              <label class="text-sm-regular d-block mb-1 text-primary" for="ico"
+                >IČO *</label
+              >
+              <input type="text" name="ico" id="ico" />
+            </div>
+            <div class="col-lg-6">
+              <label class="text-sm-regular d-block mb-1 text-primary" for="dic"
+                >DIČ *</label
+              >
+              <input type="text" name="dic" id="dic" />
+            </div>
+            <div class="col-lg-6">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="kraj"
+              >
+                Kraj
+              </label>
+              <div class="formular__select">
+                <select class="js-select" id="kraj" name="kraj">
+                  <option>Hlavní město Praha</option>
+                  <option>CZE</option>
+                  <option>GBA</option>
+                  <option>SVK</option>
+                  <option>CZE</option>
+                  <option>GBA</option>
+                  <option>SVK</option>
+                  <option>CZE</option>
+                  <option>GBA</option>
+                  <option>SVK</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12">
+              <h5 class="h5">Školní liga</h5>
+            </div>
+            <div class="col-lg-6">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="liga"
+              >
+                Školní liga
+              </label>
+              <div class="formular__select">
+                <select
+                  class="js-select js-select-multiple"
+                  id="liga"
+                  name="liga[]"
+                  multiple
+                  required
+                >
+                  <option>CZE</option>
+                  <option>GBA</option>
+                  <option>SVK</option>
+                  <option>CZE</option>
+                  <option>GBA</option>
+                  <option>SVK</option>
+                  <option>CZE</option>
+                  <option>GBA</option>
+                  <option>SVK</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12">
+              <h5 class="h5">Kontaktní informace</h5>
+            </div>
+            <div class="col-lg-6">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="name"
+                >Jméno *</label
+              >
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="col-lg-6">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="surname"
+                >Příjmení *</label
+              >
+              <input type="text" name="surname" id="surname" />
+            </div>
+            <div class="col-lg-6">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="email"
+                >E-mail *</label
+              >
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="col-lg-6">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="phone"
+                >Telefon *</label
+              >
+              <input type="tel" name="phone" id="phone" />
+            </div>
+            <div class="col-lg-6">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="pass-1"
+                >Heslo *</label
+              >
+              <input type="password" name="pass-1" id="pass-1" />
+            </div>
+            <div class="col-lg-6">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="pass-2"
+                >Heslo pro kontrolu *</label
+              >
+              <input type="password" name="pass-2" id="pass-2" />
             </div>
           </div>
           <label class="formular__checkbox">

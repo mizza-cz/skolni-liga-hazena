@@ -8,3 +8,7 @@ $(".js-select").select2({
 //     $(this).closest("form").submit();
 //   });
 // });
+$(".js-select-multiple").select2({
+  placeholder: "Vyberte školní ligu",
+  width: "100%",
+});
