@@ -57,6 +57,9 @@
   @include media-breakpoint-up(xxl) {
     left: -40px;
   }
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
 }
 .tournamentItem {
   display: flex;
@@ -99,7 +102,7 @@
     height: 9.625rem;
 
     @include media-breakpoint-down(lg) {
-      top: 0;
+      top: -1rem;
     }
   }
   .h2 {
@@ -117,6 +120,11 @@
       @include media-breakpoint-down(lg) {
         display: none;
       }
+    }
+  }
+  .container {
+    @include media-breakpoint-down(md) {
+      padding: 0 !important;
     }
   }
 }
