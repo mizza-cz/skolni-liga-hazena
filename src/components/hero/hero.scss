@@ -42,7 +42,7 @@
   &__content {
     max-width: 30.5rem;
     position: relative;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
       display: flex;
       flex-direction: column;
       align-items: center;
