@@ -1,61 +1,41 @@
-<section class="league-section">
+{% extends "@components/base/base.twig" %} {% set title = "15.0_tournaments" %}
+{% block main %}
+
+<section class="registered-schools">
   <div class="header-section">
     <div class="container">
       <div class="header-section__inner">
-        <h1 class="h1 text-white title-decore">Školní ligy</h1>
+        <h1 class="h1 text-white title-decore">Školní liga xyz</h1>
       </div>
     </div>
   </div>
-  <div class="league-section__content">
+  <div class="registered-schools__inner">
     <div class="container">
       <div class="decore-bottom">
-        <ul class="menuLinks">
-          <li>
-            <a href="#">Školní ligy</a>
-          </li>
+        <h5 class="h5 mb-lg-10 mb-6">Liga je pořádaná klubem Slavia Praha.</h5>
+        <p class="text-base-normal">
+          Lorem ipsum dolor sit amet consectetur. Accumsan id vitae ut bibendum.
+          Felis at et commodo lorem phasellus proin. Pharetra diam ultrices
+          neque congue. Rutrum ipsum gravida justo adipiscing risus quis
+          volutpat. Lorem ipsum dolor sit amet consectetur. Accumsan id vitae ut
+          bibendum. Felis at et commodo lorem phasellus proin. Pharetra diam
+          ultrices neque congue. Rutrum ipsum gravida justo adipiscing risus
+          quis volutpat. Lorem ipsum dolor sit amet consectetur. Accumsan id
+          vitae ut bibendum. Felis at et commodo lorem phasellus proin. Pharetra
+          diam ultrices neque congue. Rutrum ipsum gravida justo adipiscing
+          risus quis volutpat.
+        </p>
+        <ul class="menuLinks mt-lg-16 mt-10">
           <li>
             <a class="active" href="#">Turnaje </a>
           </li>
           <li>
-            <a href="#">Databáze škol </a>
-          </li>
-          <li>
-            <a href="#">Databáze klubů </a>
+            <a href="#">Registrované školy </a>
           </li>
         </ul>
-        <h2 class="h2 text-center mb-xl-10 mb-md-8 mb-6">
-          Turnaje pro sezónu 2025/26
-        </h2>
-        <form class="menuFilter">
-          <div class="menuFilter__select">
-            <select class="js-select" id="kraj" name="kraj">
-              <option>Kraj</option>
-              <option>Plzeňský kraj</option>
-              <option>Karlovarský kraj</option>
-              <option>Ústecký kraj</option>
-              <option>Pardubický kraj</option>
-            </select>
-          </div>
-          <div class="menuFilter__select">
-            <select class="js-select" id="city" name="city">
-              <option>Kategorie</option>
-              <option>Kategorie 1</option>
-              <option>Kategorie 2</option>
-              <option>Kategorie 3</option>
-              <option>KategorieKategorie</option>
-              <option>Kategorie, Kategorie</option>
-            </select>
-          </div>
-          <div class="menuFilter__search">
-            <input type="text" placeholder="Vyhledat" />
-            <button>
-              <img src="images/ico/search.svg" width="16" height="16" alt="" />
-            </button>
-          </div>
-        </form>
         <div class="tournBoard">
           <ul class="d-grid gap-4">
-            {% for i in 1..10 %}
+            {% for i in 1..4 %}
             <li class="tournItem">
               <a href="#" class="tournItem__link">
                 <h3 class="h5">Název Turnaje</h3>
@@ -116,26 +96,9 @@
             {% endfor %}
           </ul>
         </div>
-        <nav aria-label="Další stránky">
-          <ul
-            class="pagination d-flex flex-wrap pagination-flat pagination-success"
-          >
-            <li class="page-item active">
-              <a class="page-link" href="#" data-abc="true">1</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#" data-abc="true">2</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#" data-abc="true">3</a>
-            </li>
-
-            <li class="page-item">
-              <a class="page-link" href="#" data-abc="true">...</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </div>
   </div>
 </section>
+
+{% include "@components/partnersSlider/partnersSlider.twig" %} {% endblock %}
