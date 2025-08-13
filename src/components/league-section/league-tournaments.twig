@@ -1,0 +1,122 @@
+<section class="league-section">
+  <div class="header-section">
+    <div class="container">
+      <div class="header-section__inner">
+        <h1 class="h1 text-white title-decore">Školní ligy</h1>
+      </div>
+    </div>
+  </div>
+  <div class="league-section__content">
+    <div class="container">
+      <div class="decore-bottom">
+        <ul class="menuLinks">
+          <li>
+            <a href="#">Školní ligy</a>
+          </li>
+          <li>
+            <a class="active" href="#">Turnaje </a>
+          </li>
+          <li>
+            <a href="#">Databáze škol </a>
+          </li>
+          <li>
+            <a href="#">Databáze klubů </a>
+          </li>
+        </ul>
+        <h2 class="h2 text-center mb-xl-10 mb-md-8 mb-6">
+          Turnaje pro sezónu 2025/26
+        </h2>
+        <form class="menuFilter">
+          <div class="menuFilter__select">
+            <select class="js-select" id="kraj" name="kraj">
+              <option>Kraj</option>
+              <option>Plzeňský kraj</option>
+              <option>Karlovarský kraj</option>
+              <option>Ústecký kraj</option>
+              <option>Pardubický kraj</option>
+            </select>
+          </div>
+          <div class="menuFilter__select">
+            <select class="js-select" id="city" name="city">
+              <option>Kategorie</option>
+              <option>Kategorie 1</option>
+              <option>Kategorie 2</option>
+              <option>Kategorie 3</option>
+              <option>KategorieKategorie</option>
+              <option>Kategorie, Kategorie</option>
+            </select>
+          </div>
+          <div class="menuFilter__search">
+            <input type="text" placeholder="Vyhledat" />
+            <button>
+              <img src="images/ico/search.svg" width="16" height="16" alt="" />
+            </button>
+          </div>
+        </form>
+        <div class="tournBoard">
+          <ul class="d-grid gap-4">
+            {% for i in 1..10 %}
+            <li class="tournItem">
+              <a href="#" class="tournItem__link">
+                <h3 class="h5">Název Turnaje</h3>
+                {% include "@images/chevron-right.svg" %}
+              </a>
+              <ul class="tournItem__list">
+                <li class="w-md-auto w-100 text-base-normal">12.5.2024</li>
+                <li class="text-base-semibold w-md-auto w-100">Název kraje</li>
+
+                <li class="w-md-auto w-100">
+                  <div class="d-flex align-items-center gap-2 text-base-normal">
+                    {% include "@images/pin.svg" %} Adresa k Potoku 12/112
+                  </div>
+                </li>
+                <li>
+                  <div class="tag-deco-1">Dívky</div>
+                </li>
+                <li>
+                  <div class="tag-deco-3">Smíšený</div>
+                </li>
+                <li>
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="tag-deco-2">1. třída</div>
+                    <div class="tag-deco-2">2. třída</div>
+                    <div class="tag-deco-2">3. třída</div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="tournItem">
+              <a href="#" class="tournItem__link">
+                <h3 class="h5">Mistrovství družstev mládeže</h3>
+                {% include "@images/chevron-right.svg" %}
+              </a>
+              <ul class="tournItem__list">
+                <li class="w-md-auto w-100 text-base-normal">12.5.2024</li>
+                <li class="text-base-semibold w-md-auto w-100">
+                  Karlovarský kraj
+                </li>
+                <li class="w-md-auto w-100">
+                  <div class="d-flex align-items-center gap-2 text-base-normal">
+                    {% include "@images/pin.svg" %} K Botyči 128/8, Praha 1,
+                    10100
+                  </div>
+                </li>
+                <li>
+                  <div class="tag-deco-1">Dívky</div>
+                </li>
+
+                <li>
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="tag-deco-2">1. třída</div>
+                    <div class="tag-deco-2">2. třída</div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
