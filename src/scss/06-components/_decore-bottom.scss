@@ -31,3 +31,33 @@
     }
   }
 }
+
+.subtitle-decore {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    right: 0rem;
+    background-image: url("../images/content/stars-3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 180px;
+    height: 180px;
+    z-index: -1;
+
+    @include media-breakpoint-up(xl) {
+      bottom: -6rem;
+      right: -1rem;
+    }
+    @include media-breakpoint-down(lg) {
+      top: -100px;
+      bottom: auto;
+      width: 120px;
+      height: 120px;
+    }
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.school-detail {
+  &__stats {
+    margin-bottom: 40px;
+    @include media-breakpoint-up(xl) {
+      margin-bottom: 100px;
+    }
+    @include media-breakpoint-up(md) {
+      margin-bottom: 60px;
+    }
+  }
+  .subtitle-decore {
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+  }
+}

@@ -16,17 +16,20 @@
   color: var(--color-text-primary);
 }
 
-
-  
-  .tag-deco-3 {
-    background-color: var(--color-main-deco-3);
-    color: var(--color-text-deco-3);
-  }
-  .tag-deco-2 {
-    background-color: var(--color-main-deco-2);
-    color: var(--color-text-deco-2);
-  }
-  .tag-deco-1 {
-    background-color: var(--color-main-deco-1);
-    color: var(--color-text-deco-1);
-  }
+[class^="tag-deco"] {
+  border-radius: 4px;
+  padding: 5px 6px;
+  height: fit-content;
+}
+.tag-deco-3 {
+  background-color: var(--color-main-deco-3);
+  color: var(--color-text-deco-3);
+}
+.tag-deco-2 {
+  background-color: var(--color-main-deco-2);
+  color: var(--color-text-deco-2);
+}
+.tag-deco-1 {
+  background-color: var(--color-main-deco-1);
+  color: var(--color-text-deco-1);
+}

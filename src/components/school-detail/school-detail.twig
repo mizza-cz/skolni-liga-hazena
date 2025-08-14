@@ -1,0 +1,133 @@
+<section class="school-detail">
+  <div class="header-section">
+    <div class="container">
+      <div class="header-section__inner">
+        <h1 class="h1 text-white title-decore">Název školy (detail)</h1>
+      </div>
+    </div>
+  </div>
+  <div class="school-detail__inner">
+    <div class="container">
+      <div class="decore-bottom">
+        <div class="school-detail__stats rounded-6 bg-light p-md-10 p-6">
+          <div class="row g-6">
+            <div class="col-lg-3 col-sm-6">
+              <div
+                class="d-flex flex-column gap-4 text-center px-6 py-11 bg-white rounded-6 h-100"
+              >
+                <div class="text-base-normal">Kraj</div>
+                <div class="text-xl-semibold">Hlavní město Praha</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div
+                class="d-flex flex-column gap-4 text-center px-6 py-11 bg-white rounded-6 h-100"
+              >
+                <div class="text-base-normal">Týmů</div>
+                <div class="text-xl-semibold">28</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div
+                class="d-flex flex-column gap-4 text-center px-6 py-11 bg-white rounded-6 h-100"
+              >
+                <div class="text-base-normal">Hráčů</div>
+                <div class="text-xl-semibold">123</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div
+                class="d-flex flex-column gap-4 text-center px-6 py-11 bg-white rounded-6 h-100"
+              >
+                <div class="text-base-normal">Týmy</div>
+                <div class="d-flex gap-1 flex-wrap justify-content-center">
+                  <div class="tag-deco-2">Chlapci</div>
+                  <div class="tag-deco-3">Smíšený</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="school-detail__content">
+          <h2 class="h2 text-center mb-xl-10 mb-md-8 mb-6 subtitle-decore">
+            Školní týmy
+          </h2>
+
+          <div
+            class="d-flex align-items-center flex-wrap gap-6 mb-xl-10 mb-md-8 mb-6"
+          >
+            <h3 class="h3">ZŠ komenského - tým chlapci 2</h3>
+            <div class="tag-deco-3">Chlapci</div>
+          </div>
+          <h5 class="h5 mb-6">Hráči</h5>
+          <div class="row g-6 mb-xl-10 mb-md-8 mb-6">
+            {% for i in 1..10 %}
+            <div class="col-lg-3 col-sm-6">
+              <div class="bg-light rounded-6 p-6 h-100">
+                <div class="text-base-semibold mb-2">Jméno Příjmení</div>
+                <div class="text-base-normal">1A</div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <h5 class="h5 mb-6">Organizační tým</h5>
+          <div class="row g-6 mb-10">
+            {% for i in 1..10 %}
+            <div class="col-lg-3 col-sm-6">
+              <div class="bg-light rounded-6 p-6 h-100">
+                <div class="text-base-semibold mb-2">Jméno Příjmení</div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="d-flex align-items-center gap-6 mb-6 flex-wrap">
+            <h3 class="h3">ZŠ komenského - tým smíšený 1</h3>
+            <div class="tag-deco-3">Smíšený</div>
+          </div>
+          <div class="o-content table-wrap">
+            <table class="table table-pills align-middle mb-0">
+              <colgroup>
+                <col style="width: 3ch" />
+                <col />
+                <col style="width: 5ch" />
+              </colgroup>
+
+              <thead>
+                <tr>
+                  <th class="text-start ps-6 fw-normal">#</th>
+                  <th class="text-start">Hráč</th>
+                  <th class="text-center pe-6">Třída</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="ps-6">12</td>
+                  <td class="d-flex align-items-center">
+                    JménoJméno PříjmeníPříjmení
+                  </td>
+                  <td class="text-center pe-6">1A</td>
+                </tr>
+                <tr>
+                  <td class="ps-6">12</td>
+                  <td class="d-flex align-items-center">Jméno Příjmení</td>
+                  <td class="text-center pe-6">2B</td>
+                </tr>
+                <tr>
+                  <td class="ps-6">12</td>
+                  <td class="d-flex align-items-center">Jméno Příjmení</td>
+                  <td class="text-center pe-6">1B</td>
+                </tr>
+                <tr>
+                  <td class="ps-6">12</td>
+                  <td class="d-flex align-items-center">Jméno Příjmení</td>
+                  <td class="text-center pe-6">5A</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
