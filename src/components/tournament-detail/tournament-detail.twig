@@ -1,0 +1,426 @@
+<section class="tournament-detail">
+  <div class="header-section">
+    <div class="container">
+      <div class="header-section__inner">
+        <h1 class="h1 text-white title-decore">
+          Školní liga Jihomoravského kraje - 1. turnaj
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="tournament-detail __inner">
+    <div class="container">
+      <div class="decore-bottom">
+        <div class="school-detail__stats rounded-6 bg-light p-md-10 p-6">
+          <div class="row g-6">
+            <div class="col-lg-3 col-sm-6">
+              <a href="#" class="detailBox">
+                <div class="text-base-normal">Liga</div>
+                <div class="text-xl-semibold">
+                  Školní liga Jihomoravského kraje
+                </div>
+                <div class="mx-auto">
+                  {% include "@images/chevron-right.svg" %}
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="detailBox">
+                <div class="text-base-normal">Datum turnaje</div>
+                <div class="text-xl-semibold">24.2.2025 - 23.1.2026</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="detailBox">
+                <div class="text-base-normal">Místo konání</div>
+                <div class="text-xl-semibold">Praha</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="detailBox">
+                <div class="text-base-normal">Kraj</div>
+                <div class="text-xl-semibold">Hlavní město Praha</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="detailBox">
+                <div class="text-base-normal">Skupin</div>
+                <div class="text-xl-semibold">2</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="detailBox">
+                <div class="text-base-normal">Kategorie</div>
+                <div class="d-flex gap-1 flex-wrap justify-content-center">
+                  <div class="tag-deco-1">Dívky</div>
+                  <div class="tag-deco-2">Chlapci</div>
+                  <div class="tag-deco-3">Smíšený</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="detailBox">
+                <div class="text-base-normal">Týmů</div>
+                <div class="text-xl-semibold">28</div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="detailBox">
+                <div class="text-base-normal">Kontaktní osoba</div>
+                <div class="text-xl-semibold d-grid gap-1">
+                  <div>Petr Havlíček</div>
+                  <a class="hover-underline" href="tel:+420123456789"
+                    >+420 123 456 789</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="school-detail__content">
+          <h2 class="h2 text-center mb-xl-10 mb-md-8 mb-6">
+            Registrované školy
+          </h2>
+
+          <div class="row g-6 mb-xl-25 mb-md-15 mb-10">
+            {% for i in 1..5 %}
+            <div class="col-lg-4 col-sm-6">
+              <ul class="leagueItem">
+                <li>
+                  <div class="h5 mb-2">ZŠ Pertoldova</div>
+                  <div class="text-base-semibold text-primary mb-2">
+                    Název kraje
+                  </div>
+                  <p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
+                </li>
+                <li>
+                  <a href="#" class="button-accent">Školní liga</a>
+                </li>
+              </ul>
+            </div>
+            {% endfor %}
+          </div>
+
+          <h2 class="h2 text-center mb-xl-10 mb-md-8 mb-6 subtitle-decore">
+            Vypsané zápasy
+          </h2>
+
+          <div class="o-content table-wrap mb-xl-25 mb-md-15 mb-10">
+            <table class="table table-pills align-middle mb-0">
+              <colgroup>
+                <col style="width: 8ch" />
+                <col style="width: 12ch" />
+                <col style="width: 6ch" />
+                <col />
+                <col style="width: 4ch" />
+              </colgroup>
+
+              <thead>
+                <tr>
+                  <th class="ps-6 text-center">Skupina</th>
+                  <th class="text-center">Datum</th>
+                  <th>Čas</th>
+                  <th class="text-start">Týmy</th>
+                  <th class="text-center pe-6 fw-semibold">Výsledek</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="ps-6 text-center">B</td>
+                  <td class="fw-semibold">12.5.2024</td>
+                  <td class="fw-semibold">15:00</td>
+                  <td>ZŠ Ledečkého vs ZŠ U Kostela</td>
+                  <td class="text-center pe-6 fw-semibold">2:3</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">B</td>
+                  <td class="fw-semibold">12.5.2024</td>
+                  <td class="fw-semibold">15:00</td>
+                  <td>ZŠ Ledečkého vs ZŠ U Kostela</td>
+                  <td class="text-center pe-6 fw-semibold">2:3</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">B</td>
+                  <td class="fw-semibold">12.5.2024</td>
+                  <td class="fw-semibold">15:00</td>
+                  <td>ZŠ Ledečkého vs ZŠ U Kostela</td>
+                  <td class="text-center pe-6 fw-semibold">2:3</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">B</td>
+                  <td class="fw-semibold">12.5.2024</td>
+                  <td class="fw-semibold">15:00</td>
+                  <td>ZŠ Ledečkého vs ZŠ U Kostela</td>
+                  <td class="text-center pe-6 fw-semibold">2:3</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">B</td>
+                  <td class="fw-semibold">12.5.2024</td>
+                  <td class="fw-semibold">15:00</td>
+                  <td>ZŠ Ledečkého vs ZŠ U Kostela</td>
+                  <td class="text-center pe-6 fw-semibold">2:3</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">B</td>
+                  <td class="fw-semibold">12.5.2024</td>
+                  <td class="fw-semibold">15:00</td>
+                  <td>ZŠ Ledečkého vs ZŠ U Kostela</td>
+                  <td class="text-center pe-6 fw-semibold">2:3</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">B</td>
+                  <td class="fw-semibold">12.5.2024</td>
+                  <td class="fw-semibold">15:00</td>
+                  <td>ZŠ Ledečkého vs ZŠ U Kostela</td>
+                  <td class="text-center pe-6 fw-semibold">2:3</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">B</td>
+                  <td class="fw-semibold">12.5.2024</td>
+                  <td class="fw-semibold">15:00</td>
+                  <td>ZŠ Ledečkého vs ZŠ U Kostela</td>
+                  <td class="text-center pe-6 fw-semibold">2:3</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">B</td>
+                  <td class="fw-semibold">12.5.2024</td>
+                  <td class="fw-semibold">15:00</td>
+                  <td>ZŠ Ledečkého vs ZŠ U Kostela</td>
+                  <td class="text-center pe-6 fw-semibold">2:3</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">B</td>
+                  <td class="fw-semibold">12.5.2024</td>
+                  <td class="fw-semibold">15:00</td>
+                  <td>ZŠ Ledečkého vs ZŠ U Kostela</td>
+                  <td class="text-center pe-6 fw-semibold">2:3</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">B</td>
+                  <td class="fw-semibold">12.5.2024</td>
+                  <td class="fw-semibold">15:00</td>
+                  <td>ZŠ Ledečkého vs ZŠ U Kostela</td>
+                  <td class="text-center pe-6 fw-semibold">2:3</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">B</td>
+                  <td class="fw-semibold">12.5.2024</td>
+                  <td class="fw-semibold">15:00</td>
+                  <td>ZŠ Ledečkého vs ZŠ U Kostela</td>
+                  <td class="text-center pe-6 fw-semibold">2:3</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2 class="h2 text-center mb-xl-10 mb-md-8 mb-6">Tabulky skupin</h2>
+          <h3 class="h3 mb-4">Skupina A</h3>
+          <div class="o-content table-wrap mb-10">
+            <table class="table table-pills align-middle mb-0">
+              <colgroup>
+                <col style="width: 3ch" />
+                <col />
+                <!-- Tým -->
+                <col style="width: 6ch" />
+                <col style="width: 4ch" />
+                <col style="width: 4ch" />
+                <col style="width: 4ch" />
+                <col style="width: 4ch" />
+              </colgroup>
+
+              <thead>
+                <tr>
+                  <th class="ps-6 text-center">#</th>
+                  <th class="text-start">Tým</th>
+                  <th class="text-center">Zápasů</th>
+                  <th class="text-center">Výher</th>
+                  <th class="text-center">Remíz</th>
+                  <th class="text-center">Proher</th>
+                  <th class="pe-6 text-center">Bodů</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="ps-6 text-center">1.</td>
+                  <td>Základní škola Litomyšl, Zámecká 496, okres Svitavy</td>
+                  <td class="text-center">56</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center pe-6 pts fw-semibold">32</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">2.</td>
+                  <td>Základní škola Litomyšl, Zámecká 496, okres Svitavy</td>
+                  <td class="text-center">56</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center pe-6 pts fw-semibold">32</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">3.</td>
+                  <td>Základní škola Litomyšl, Zámecká 496, okres Svitavy</td>
+                  <td class="text-center">56</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center pe-6 pts fw-semibold">32</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">4.</td>
+                  <td>Základní škola Litomyšl, Zámecká 496, okres Svitavy</td>
+                  <td class="text-center">56</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center pe-6 pts fw-semibold">32</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">5.</td>
+                  <td>Základní škola Litomyšl, Zámecká 496, okres Svitavy</td>
+                  <td class="text-center">56</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center pe-6 pts fw-semibold">32</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">6.</td>
+                  <td>Základní škola Litomyšl, Zámecká 496, okres Svitavy</td>
+                  <td class="text-center">56</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center pe-6 pts fw-semibold">32</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">7.</td>
+                  <td>Základní škola Litomyšl, Zámecká 496, okres Svitavy</td>
+                  <td class="text-center">56</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center pe-6 pts fw-semibold">32</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">8.</td>
+                  <td>Základní škola Litomyšl, Zámecká 496, okres Svitavy</td>
+                  <td class="text-center">56</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center pe-6 pts fw-semibold">32</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3 class="h3 mb-4">Skupina B</h3>
+          <div class="o-content table-wrap mb-10">
+            <table class="table table-pills align-middle mb-0">
+              <colgroup>
+                <col style="width: 3ch" />
+                <col />
+                <!-- Tým -->
+                <col style="width: 6ch" />
+                <col style="width: 4ch" />
+                <col style="width: 4ch" />
+                <col style="width: 4ch" />
+                <col style="width: 4ch" />
+              </colgroup>
+
+              <thead>
+                <tr>
+                  <th class="ps-6 text-center">#</th>
+                  <th class="text-start">Tým</th>
+                  <th class="text-center">Zápasů</th>
+                  <th class="text-center">Výher</th>
+                  <th class="text-center">Remíz</th>
+                  <th class="text-center">Proher</th>
+                  <th class="pe-6 text-center">Bodů</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td class="ps-6 text-center">1.</td>
+                  <td>Základní škola Litomyšl, Zámecká 496, okres Svitavy</td>
+                  <td class="text-center">56</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center pe-6 pts fw-semibold">32</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">2.</td>
+                  <td>Základní škola Litomyšl, Zámecká 496, okres Svitavy</td>
+                  <td class="text-center">56</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center pe-6 pts fw-semibold">32</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">3.</td>
+                  <td>Základní škola Litomyšl, Zámecká 496, okres Svitavy</td>
+                  <td class="text-center">56</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center pe-6 pts fw-semibold">32</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">4.</td>
+                  <td>Základní škola Litomyšl, Zámecká 496, okres Svitavy</td>
+                  <td class="text-center">56</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center pe-6 pts fw-semibold">32</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">5.</td>
+                  <td>Základní škola Litomyšl, Zámecká 496, okres Svitavy</td>
+                  <td class="text-center">56</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center pe-6 pts fw-semibold">32</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">6.</td>
+                  <td>Základní škola Litomyšl, Zámecká 496, okres Svitavy</td>
+                  <td class="text-center">56</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center pe-6 pts fw-semibold">32</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">7.</td>
+                  <td>Základní škola Litomyšl, Zámecká 496, okres Svitavy</td>
+                  <td class="text-center">56</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center pe-6 pts fw-semibold">32</td>
+                </tr>
+                <tr>
+                  <td class="ps-6 text-center">8.</td>
+                  <td>Základní škola Litomyšl, Zámecká 496, okres Svitavy</td>
+                  <td class="text-center">56</td>
+                  <td class="text-center">2</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">12</td>
+                  <td class="text-center pe-6 pts fw-semibold">32</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

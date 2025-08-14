@@ -1,7 +1,7 @@
 .table-pills {
   border-collapse: separate;
   border-spacing: 0 8px;
-  min-width: min-content;
+  min-width: 740px;
   @include media-breakpoint-down(md) {
     overflow-x: auto;
   }
