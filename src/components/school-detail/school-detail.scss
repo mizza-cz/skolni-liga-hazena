@@ -7,6 +7,11 @@
     @include media-breakpoint-up(md) {
       margin-bottom: 60px;
     }
+
+    @include media-breakpoint-down(md) {
+      margin-left: -1.25rem;
+      margin-right: -1.25rem;
+    }
   }
   .subtitle-decore {
     @include media-breakpoint-down(xl) {

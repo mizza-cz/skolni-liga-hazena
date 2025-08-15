@@ -47,8 +47,11 @@
   border-radius: 16px;
   padding: 40px;
   background: var(--color-light);
-  @include media-breakpoint-down(lg) {
-    padding: 24px;
+  @include media-breakpoint-down(md) {
+    padding: 1.25rem;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    border-radius: 0;
   }
 }
 

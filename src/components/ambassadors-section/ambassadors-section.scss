@@ -186,6 +186,10 @@
 
 .ambassadors-tournaments {
   position: relative;
+  @include media-breakpoint-down(md) {
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -200,7 +204,7 @@
     @include media-breakpoint-down(lg) {
       top: 0;
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       display: none;
     }
   }

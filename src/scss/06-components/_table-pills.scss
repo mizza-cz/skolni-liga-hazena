@@ -64,6 +64,8 @@ tr td + td::before {
   border-radius: 24px;
   padding: 24px;
   @include media-breakpoint-down(md) {
-    margin: 0 -32px;
+    margin: 0 -1.25rem;
+    border-radius: 0;
+    padding: 1.25em;
   }
 }
