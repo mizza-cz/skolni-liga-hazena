@@ -81,29 +81,6 @@
   justify-content: center;
 
   position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-
-    background-image: url("../images/content/map-run.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
-    bottom: -5rem;
-    right: 0;
-    z-index: 1;
-    @include media-breakpoint-up(xxl) {
-      bottom: 1rem;
-    }
-    @include media-breakpoint-up(xl) {
-      right: 6.3rem;
-    }
-    @include media-breakpoint-down(md) {
-      width: 72px;
-      height: 72px;
-    }
-  }
 
   &::after {
     content: "";
@@ -187,5 +164,25 @@
     fill: var(--color-accent);
     fill-opacity: 1;
     opacity: 1;
+  }
+}
+
+.icon-run-2 {
+  position: absolute;
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+  bottom: -5rem;
+  right: 0;
+  z-index: 1;
+  @include media-breakpoint-up(xxl) {
+    bottom: 1rem;
+  }
+  @include media-breakpoint-up(xl) {
+    right: 6.3rem;
+  }
+  @include media-breakpoint-down(md) {
+    width: 72px;
+    height: 72px;
   }
 }
