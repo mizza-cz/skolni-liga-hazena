@@ -50,6 +50,8 @@
       width: 1px;
       height: 16px;
       align-self: center;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
   tr th + th::before {
