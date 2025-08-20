@@ -1,0 +1,79 @@
+{% extends "@components/base/base.twig" %} {% set title = "18.0_archive" %} {%
+block main %}
+
+<section class="archive-section">
+  <div class="header-section">
+    <div class="container">
+      <div class="header-section__inner">
+        <h1 class="h1 text-white title-decore">Archiv článků</h1>
+      </div>
+    </div>
+  </div>
+  <div class="archive-section__content">
+    <div class="container">
+      <div class="decore-bottom">
+        <form class="menuFilter">
+          <div class="menuFilter__select">
+            <select class="js-select" id="city" name="city">
+              <option>Kategorie</option>
+              <option>Kategorie 1</option>
+              <option>Kategorie 2</option>
+              <option>Kategorie 3</option>
+              <option>KategorieKategorie</option>
+              <option>Kategorie, Kategorie</option>
+            </select>
+          </div>
+          <div class="menuFilter__search">
+            <input type="text" placeholder="Vyhledat" />
+            <button>
+              <img src="images/ico/search.svg" width="16" height="16" alt="" />
+            </button>
+          </div>
+        </form>
+
+        <div class="row g-6 mb-12">
+          {% for i in 1..10 %}
+          <div class="col-lg-4 col-md-6">
+            <a href="#" class="postItem">
+              <div class="postItem__img">
+                <img
+                  loading="lazy"
+                  width="422"
+                  height="250"
+                  srcset="https://picsum.photos/422/250 320w"
+                  alt="post"
+                />
+                <div class="tag-white">12.5.2024</div>
+              </div>
+              <div class="h5">
+                ČEPS Cup chlapců má nového šampiona. Dramatické finále ovládly..
+              </div>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+        <nav aria-label="Další stránky">
+          <ul
+            class="pagination d-flex flex-wrap pagination-flat pagination-success"
+          >
+            <li class="page-item active">
+              <a class="page-link" href="#" data-abc="true">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-abc="true">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-abc="true">3</a>
+            </li>
+
+            <li class="page-item">
+              <a class="page-link" href="#" data-abc="true">...</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "@components/partnersSlider/partnersSlider.twig" %} {% endblock %}
