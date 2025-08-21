@@ -4,6 +4,9 @@
     width: 100%;
 
     position: relative;
+    .map-wrapper:after {
+      display: none;
+    }
     &::before {
       content: "";
       position: absolute;

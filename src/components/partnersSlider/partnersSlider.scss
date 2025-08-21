@@ -1,12 +1,12 @@
 .partners-swiper {
   .swiper-slide {
     width: max-content;
+    margin: 0 1.25rem;
     img {
       height: 72px;
       object-fit: contain;
       max-width: 180px;
       width: auto;
-     
     }
   }
 }
