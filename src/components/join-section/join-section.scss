@@ -40,7 +40,7 @@
     border-radius: 24px;
     max-width: 960px;
     margin: 0 auto 80px;
-    background: var(--color-primary);
+    // background: var(--color-primary);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -53,39 +53,46 @@
     &::before {
       content: "";
       position: absolute;
-      left: 5rem;
+      // left: 5rem;
       bottom: 0;
-      background-image: url("../images/content/map-mice.png");
+      left: 0;
+      // background-image: url("../images/content/map-mice.png");
+      background-image: url("../images/content/join-banner.png");
       background-repeat: no-repeat;
-      background-size: contain;
-      width: 7.5rem;
-      height: 7.5rem;
+      // background-size: contain;
+      background-size: cover;
+      background-position: center;
+      // width: 7.5rem;
+      // height: 7.5rem;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
       @include media-breakpoint-down(md) {
-        width: 6rem;
-        height: 6rem;
-        left: 0;
+        // width: 6rem;
+        // height: 6rem;
+        // left: 0;
       }
     }
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../images/content/card-decore-1.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 10rem;
-      height: 10rem;
-      transform: rotate(-16deg);
-      right: 3rem;
-      top: 1rem;
-      bottom: auto;
-      @include media-breakpoint-down(md) {
-        width: 7rem;
-        height: 7rem;
-        top: auto;
-        bottom: 0;
-        right: 1rem;
-      }
-    }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   background-image: url("../images/content/card-decore-1.png");
+    //   background-size: contain;
+    //   background-repeat: no-repeat;
+    //   width: 10rem;
+    //   height: 10rem;
+    //   transform: rotate(-16deg);
+    //   right: 3rem;
+    //   top: 1rem;
+    //   bottom: auto;
+    //   @include media-breakpoint-down(md) {
+    //     width: 7rem;
+    //     height: 7rem;
+    //     top: auto;
+    //     bottom: 0;
+    //     right: 1rem;
+    //   }
+    // }
   }
 }
 
