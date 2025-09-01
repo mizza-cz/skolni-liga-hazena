@@ -40,7 +40,13 @@
               <a href="#" class="navbar__menu-item"> Kontakty </a>
             </li>
           </ul>
-          <a href="#" class="button button-accent"> Přihlášení </a>
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+            class="button button-accent"
+          >
+            Přihlášení
+          </button>
         </nav>
         <button class="c-header__opener js-header__opener" type="button">
           <span></span>
@@ -49,3 +55,4 @@
     </div>
   </div>
 </header>
+{% include "@components/modal/modal-login.twig" %}

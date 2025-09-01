@@ -75,7 +75,9 @@
 									<a href="#" class="navbar__menu-item"> Kontakty </a>
 								</li>
 							</ul>
-							<a href="#" class="button button-accent"> Přihlášení </a>
+							<button data-bs-toggle="modal" data-bs-target="#loginModal" class="button button-accent">
+								Přihlášení
+							</button>
 						</nav>
 						<button class="c-header__opener js-header__opener" type="button">
 							<span></span>
@@ -84,6 +86,43 @@
 				</div>
 			</div>
 		</header>
+		<div class="modal fade" id="loginModal" aria-labelledby="loginModalLabel" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+						<img src="images/ico/close.svg" alt="" />
+					</button>
+					<h4 class="h4 text-gray-700 fw-semibold mb-6" id="loginModalLabel">
+						Přihlásit se
+					</h4>
+					<form class="mb-8 formular p-0">
+						<label class="text-sm-regular d-block mb-1 text-primary" for="mail">E-mail</label>
+						<div class="input-icon mb-3">
+							<input id="mail" type="email" />
+						</div>
+
+						<label class="text-sm-regular d-block mb-1 text-primary" for="password">Heslo</label>
+						<div class="input-icon">
+							<input name="password" type="password" />
+						</div>
+						<div class="d-flex my-5 justify-content-between gap-3 flex-wrap align-items-center">
+							<div class="text-sm-semibold text-gray-500">
+								Zapamatovat přihlášení?
+							</div>
+							<input name="agree" checked type="checkbox" class="inputCheck" />
+						</div>
+						<button class="button button-accent w-100">Přihlásit se</button>
+					</form>
+
+					<div class="text-center">
+						Ještě nemáte účet?
+						<a href="#" class="d-block text-base-semibold text-accent">
+							Vytvořte si ho
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 		<main class="main" aria-label="Hlavní obsah">
 			<section class="formular-section">
 				<div class="header-section">
