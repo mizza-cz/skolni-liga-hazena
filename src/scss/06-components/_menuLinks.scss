@@ -12,9 +12,11 @@
   .active::before {
     background-color: var(--color-accent);
   }
+  button:hover:not(.active),
   a:hover:not(.active) {
     color: var(--color-accent);
   }
+  button,
   a {
     display: block;
     font-weight: 600;
@@ -24,6 +26,10 @@
     position: relative;
     padding-bottom: 16px;
     text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    padding-inline: 0;
     @include media-breakpoint-down(md) {
       font-size: 18px;
       line-height: 120%;

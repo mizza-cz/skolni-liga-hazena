@@ -131,6 +131,13 @@
       display: none;
     }
   }
+  .active {
+    path {
+      fill: var(--color-accent);
+      fill-opacity: 1;
+      opacity: 1;
+    }
+  }
 }
 .map-text {
   position: relative;
