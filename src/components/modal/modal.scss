@@ -28,6 +28,7 @@
     position: relative;
     border-radius: 12px;
     overflow: hidden;
+    border: none;
   }
 
   .close {
@@ -57,7 +58,7 @@ body.no-scroll {
   overflow: hidden;
 }
 
-#contactModal {
+#clubModal {
   .modal-dialog {
     max-width: 51.4rem !important;
   }
