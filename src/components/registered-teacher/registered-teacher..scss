@@ -1,0 +1,22 @@
+#registered-tabContent {
+  .tournamentItem__list {
+    justify-content: space-between;
+    width: 100%;
+    grid-template-columns:
+      22.875rem minmax(2.25rem, 12rem) minmax(6.75rem, 11rem)
+      minmax(7.5rem, 16rem);
+    @include media-breakpoint-down(md) {
+      grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  .formular.formular-player {
+    .tournamentItem__list {
+      grid-template-columns: 22.875rem minmax(2.25rem, 12rem) minmax(
+          6.75rem,
+          11rem
+        );
+    }
+  }
+}

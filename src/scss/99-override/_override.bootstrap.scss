@@ -71,5 +71,27 @@
 .gap-1-4 {
   gap: 4px 16px;
 }
-
+.nav-tabs .nav-link {
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+  font-size: 14px;
+  font-weight: 400;
+  padding: 4px 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 0.015em;
+  &:hover {
+    background: var(--color-secondary);
+  }
+}
+.nav-tabs {
+  border: none;
+}
+.nav-tabs .nav-link.active {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+.alert {
+  border-radius: 1rem;
+}
 /*! purgecss end ignore */

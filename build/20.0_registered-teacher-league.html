@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>19.0_registered-teacher - Školní liga miniházené</title>
+	<title>20.0_registered-teacher-league - Školní liga miniházené</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 
@@ -138,10 +138,10 @@
 						<div class="decore-bottom">
 							<ul class="menuLinks">
 								<li>
-									<a class="active" href="#">Základní informace </a>
+									<a href="#">Základní informace </a>
 								</li>
 								<li>
-									<a href="#">Školní ligy </a>
+									<a class="active" href="#">Školní ligy </a>
 								</li>
 								<li>
 									<a href="#" data-bs-toggle="modal" data-bs-target="#passwordModal">Změna hesla
@@ -184,31 +184,296 @@
 								</div>
 							</div>
 							<section class="registered-teacher">
-								<ul class="leagueItem">
-									<li>
-										<div class="h5 mb-2">Název školy</div>
-										<div class="text-base-semibold text-primary">SHC Maloměřice Brno</div>
+								<h2 class="h2 text-center mb-xl-10 mb-md-8 mb-6 subtitle-decore">
+									Chance Extraliga mužů
+								</h2>
+								<ul class="nav gap-2 nav-tabs justify-content-center flex-wrap mb-6" id="myTab" role="tablist">
+									<li class="nav-item" role="presentation">
+										<button class="nav-link active" id="boys-tab" data-bs-toggle="tab" data-bs-target="#boys" type="button" role="tab" aria-controls="boys" aria-selected="true">
+											Tým chlapci
+										</button>
 									</li>
-									<li>
-										<div class="h5 mb-2">Ulice</div>
-										<div class="text-base-semibold text-primary">
-											hala Maloměřice Obřanská 13
-										</div>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="girls-tab" data-bs-toggle="tab" data-bs-target="#girls" type="button" role="tab" aria-controls="girls" aria-selected="false">
+											Tým dívky
+										</button>
 									</li>
-									<li>
-										<div class="h5 mb-2">Město</div>
-										<div class="text-base-semibold text-primary">Brno</div>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="mix-tab" data-bs-toggle="tab" data-bs-target="#mix" type="button" role="tab" aria-controls="mix" aria-selected="false">
+											Smíšený tým
+										</button>
 									</li>
-									<li>
-										<div class="h5 mb-2">PSČ</div>
-										<div class="text-base-semibold text-primary">61400</div>
-									</li>
-									<li>
-										<div class="h5 mb-2">Kraj</div>
-										<div class="text-base-semibold text-primary">Jihomoravský kraj</div>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link" id="games-tab" data-bs-toggle="tab" data-bs-target="#games" type="button" role="tab" aria-controls="games" aria-selected="false">
+											Turnaje a zápasy
+										</button>
 									</li>
 								</ul>
+								<div class="tab-content" id="registered-tabContent">
+									<div class="tab-pane fade show active" id="boys" role="tabpanel" aria-labelledby="boys-tab">
+										<div class="formular formular-player mb-8">
+											<div class="alert alert-success text-center mb-6" role="alert">
+												Družstvo spadá do 1.-3. třídy
+											</div>
+											<h3 class="h5 mb-6">Hráči</h3>
+											<div class="d-grid gap-4 mb-8">
+												<div class="tournamentItem">
+													<ul class="tournamentItem__list">
+														<li class="fw-semibold justify-content-center justify-content-md-start">
+															Moješcik AlexandrAlexandr-Alexandr
+														</li>
+														<li class="justify-content-center">1921</li>
+														<li>
+															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
+																Smazat hráče
+															</button>
+														</li>
+													</ul>
+												</div>
+												<div class="tournamentItem">
+													<ul class="tournamentItem__list">
+														<li class="fw-semibold justify-content-center justify-content-md-start">
+															Moješcik AlexandrAlexandr-Alexandr
+														</li>
+														<li class="justify-content-center">1921</li>
+														<li>
+															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
+																Smazat hráče
+															</button>
+														</li>
+													</ul>
+												</div>
+												<div class="tournamentItem">
+													<ul class="tournamentItem__list">
+														<li class="fw-semibold justify-content-center justify-content-md-start">
+															Moješcik AlexandrAlexandr
+														</li>
+														<li class="justify-content-center">1921</li>
+														<li>
+															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
+																Smazat hráče
+															</button>
+														</li>
+													</ul>
+												</div>
+												<div class="tournamentItem">
+													<ul class="tournamentItem__list">
+														<li class="fw-semibold justify-content-center justify-content-md-start">
+															Moješcik Alexandr
+														</li>
+														<li class="justify-content-center">1921</li>
+														<li>
+															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
+																Smazat hráče
+															</button>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<form class="d-flex flex-column gap-6" action="https://mizza-cz.github.io/skolni-liga-hazena/build/01.0_homepage.html" method="post">
+												<div class="row g-6">
+													<div class="col-12">
+														<h3 class="h5">Nový hráč</h3>
+													</div>
+													<div class="col-lg-6 col-xl-4">
+														<label class="text-sm-regular d-block mb-1 text-primary" for="boysPlayer-name">Jméno *</label>
+														<input required type="text" name="boysPlayer-name" id="boysPlayer-name" />
+													</div>
+													<div class="col-lg-6 col-xl-4">
+														<label class="text-sm-regular d-block mb-1 text-primary" for="boysPlayer-surname">příjmení *</label>
+														<input required type="text" name="boysPlayer-surname" id="boysPlayer-surname" />
+													</div>
+													<div class="col-lg-6 col-xl-4">
+														<label class="text-sm-regular d-block mb-1 text-primary" for="boysPlayer-date">Datum narození
+														</label>
+														<input type="date" name="boysPlayer-date" id="boysPlayer-date" />
+													</div>
+													<div class="col-lg-6 col-xl-4">
+														<label class="text-sm-regular d-block mb-1 text-primary" for="boysPlayer-class">
+															Třída *
+														</label>
+														<div class="formular__select">
+															<select required class="js-select" id="boysPlayer-class" name="boysPlayer-class">
+																<option>Vyberte třídu</option>
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+																<option>5</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 col-xl-4">
+														<label class="text-sm-regular d-block mb-1 text-primary" for="boysPlayer-state">
+															Národnost
+														</label>
+														<div class="formular__select">
+															<select required class="js-select" id="boysPlayer-state" name="boysPlayer-state">
+																<option>CZ</option>
+																<option>DE</option>
+																<option>SK</option>
+																<option>RU</option>
+																<option>EN</option>
+																<option>KZ</option>
+															</select>
+														</div>
+													</div>
+													<div class="col-lg-6 col-xl-4">
+														<label class="text-sm-regular d-block mb-1 text-primary" for="boysPlayer-numberid">
+															Rodné číslo
+														</label>
+														<input type="text" name="boysPlayer-numberid" id="boysPlayer-numberid" placeholder="123456/7890" />
+													</div>
+													<div class="col-lg-6 col-xl-4">
+														<label class="formular__checkbox">
+															<input id="boysPlayer-agree" name="boysPlayer-agree" type="checkbox" onchange="toggleClubInput()" />
+															<span class="custom-checkbox"></span>
+															Hráč hraje miniházenou v klubu
+														</label>
+
+														<div id="clubInputContainer" style="display: none; margin-top: 10px">
+															<label class="text-sm-regular d-block mb-1 text-primary" for="clubName">Název klubu
+															</label>
+															<input type="text" id="clubName" name="clubName" placeholder="Zadejte název klubu" />
+														</div>
+													</div>
+												</div>
+
+												<div class="text-center">
+													<button class="button-accent">Přidat hráče</button>
+												</div>
+											</form>
+										</div>
+
+										<div class="formular mt-6">
+											<h3 class="h5 mb-6">Trenéři</h3>
+											<div class="d-grid gap-4 mb-8">
+												<div class="tournamentItem">
+													<ul class="tournamentItem__list">
+														<li class="fw-semibold justify-content-center justify-content-md-start">
+															Moješcik AlexandrAlexandr-Alexandr
+														</li>
+														<li class="justify-content-center">1921</li>
+														<li class="justify-content-center">trenér</li>
+														<li>
+															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
+																Smazat trenéra
+															</button>
+														</li>
+													</ul>
+												</div>
+												<div class="tournamentItem">
+													<ul class="tournamentItem__list">
+														<li class="fw-semibold justify-content-center justify-content-md-start">
+															Moješcik AlexandrAlexandr-Alexandr
+														</li>
+														<li class="justify-content-center">1921</li>
+														<li class="justify-content-center">trenér</li>
+														<li>
+															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
+																Smazat trenéra
+															</button>
+														</li>
+													</ul>
+												</div>
+												<div class="tournamentItem">
+													<ul class="tournamentItem__list">
+														<li class="fw-semibold justify-content-center justify-content-md-start">
+															Moješcik AlexandrAlexandr-Alexandr
+														</li>
+														<li class="justify-content-center">1921</li>
+														<li class="justify-content-center">trenér</li>
+														<li>
+															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
+																Smazat trenéra
+															</button>
+														</li>
+													</ul>
+												</div>
+												<div class="tournamentItem">
+													<ul class="tournamentItem__list">
+														<li class="fw-semibold justify-content-center justify-content-md-start">
+															Moješcik Alexandr
+														</li>
+														<li class="justify-content-center">1921</li>
+														<li class="justify-content-center">trenér</li>
+														<li>
+															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
+																Smazat trenéra
+															</button>
+														</li>
+													</ul>
+												</div>
+												<div class="tournamentItem">
+													<ul class="tournamentItem__list">
+														<li class="fw-semibold justify-content-center justify-content-md-start">
+															Moješcik AlexandrAlexandr-Alexandr
+														</li>
+														<li class="justify-content-center">1921</li>
+														<li class="justify-content-center">Hl. trenér</li>
+														<li>
+															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
+																Smazat trenéra
+															</button>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<form class="d-flex flex-column gap-6" action="https://mizza-cz.github.io/skolni-liga-hazena/build/01.0_homepage.html" method="post">
+												<div class="row g-6">
+													<div class="col-12">
+														<h3 class="h5">Nový trenér</h3>
+													</div>
+													<div class="col-lg-6 col-xl-4">
+														<label class="text-sm-regular d-block mb-1 text-primary" for="boysTrainer-name">Jméno *</label>
+														<input required type="text" name="boysTrainer-name" id="boysTrainer-name" />
+													</div>
+													<div class="col-lg-6 col-xl-4">
+														<label class="text-sm-regular d-block mb-1 text-primary" for="boysTrainer-surname">příjmení *</label>
+														<input required type="text" name="boysTrainer-surname" id="boysTrainer-surname" />
+													</div>
+													<div class="col-lg-6 col-xl-4">
+														<label class="text-sm-regular d-block mb-1 text-primary" for="boysTrainer-date">Datum narození
+														</label>
+														<input type="date" name="boysTrainer-date" id="boysTrainer-date" />
+													</div>
+													<div class="col-lg-6 col-xl-4">
+														<label class="text-sm-regular d-block mb-1 text-primary" for="boysTrainer-numberid">
+															Rodné číslo
+														</label>
+														<input type="text" name="boysTrainer-numberid" id="boysTrainer-numberid" placeholder="123456/7890" />
+													</div>
+													<div class="col-lg-6 col-xl-4">
+														<label class="text-sm-regular d-block mb-1 text-primary" for="boysTrainer-function">Název funkce
+														</label>
+														<input type="text" value="Trenér" name="boysTrainer-function" id="boysTrainer-function" />
+													</div>
+												</div>
+
+												<div class="text-center">
+													<button class="button-accent">Přidat trenéra</button>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="girls" role="tabpanel" aria-labelledby="girls-tab">
+										girls
+									</div>
+									<div class="tab-pane fade" id="mix" role="tabpanel" aria-labelledby="mix-tab">
+										mix
+									</div>
+									<div class="tab-pane fade" id="games" role="tabpanel" aria-labelledby="games-tab">
+										Turnaje a zápasy
+									</div>
+								</div>
 							</section>
+							<script>
+								function toggleClubInput() {
+									const checkbox = document.getElementById("boysPlayer-agree");
+									const inputContainer = document.getElementById("clubInputContainer");
+									inputContainer.style.display = checkbox.checked ? "block" : "none";
+								}
+							</script>
 						</div>
 					</div>
 				</div>

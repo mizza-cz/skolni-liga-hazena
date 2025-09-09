@@ -76,18 +76,17 @@
     height: 24px;
     transition: all 0.3s;
   }
-  &:hover {
-    background: var(--color-accent);
-    color: var(--color-white);
-    .icon-pin path {
-      fill: var(--color-white);
-    }
-    .icon-chevron-right path {
-      stroke: var(--color-white);
-    }
+}
+a.tournamentItem:hover {
+  background: var(--color-accent);
+  color: var(--color-white);
+  .icon-pin path {
+    fill: var(--color-white);
+  }
+  .icon-chevron-right path {
+    stroke: var(--color-white);
   }
 }
-
 .hp-tournaments {
   position: relative;
   &::before {
