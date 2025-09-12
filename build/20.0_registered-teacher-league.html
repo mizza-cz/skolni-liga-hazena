@@ -184,13 +184,24 @@
 								</div>
 							</div>
 							<section class="registered-teacher">
+								<form class="menuFilter">
+									<div class="menuFilter__select">
+										<select class="js-select" id="kraj" name="kraj">
+											<option>Školní liga</option>
+											<option>Plzeňský kraj</option>
+											<option>Karlovarský kraj</option>
+											<option>Ústecký kraj</option>
+											<option>Pardubický kraj</option>
+										</select>
+									</div>
+								</form>
 								<h2 class="h2 text-center mb-xl-10 mb-md-8 mb-6 subtitle-decore">
 									Školní liga Jihomoravského kraje
 								</h2>
 
 								<ul class="nav gap-2 nav-tabs justify-content-center flex-wrap mb-6" id="myTab" role="tablist">
 									<li class="nav-item" role="presentation">
-										<button class="nav-link active" id="boys-tab" data-bs-toggle="tab" data-bs-target="#boys" type="button" role="tab" aria-controls="boys" aria-selected="true">
+										<button class="nav-link" id="boys-tab" data-bs-toggle="tab" data-bs-target="#boys" type="button" role="tab" aria-controls="boys" aria-selected="true">
 											Tým chlapci
 										</button>
 									</li>
@@ -205,28 +216,17 @@
 										</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="games-tab" data-bs-toggle="tab" data-bs-target="#games" type="button" role="tab" aria-controls="games" aria-selected="false">
+										<button class="nav-link active" id="games-tab" data-bs-toggle="tab" data-bs-target="#games" type="button" role="tab" aria-controls="games" aria-selected="false">
 											Turnaje a zápasy
 										</button>
 									</li>
 								</ul>
-								<div class="d-flex justify-content-between gap-4 flex-wrap align-items-center mb-6">
-									<form class="menuFilter mb-0">
-										<div class="menuFilter__select">
-											<select class="js-select" id="kraj" name="kraj">
-												<option>Školní liga</option>
-												<option>Plzeňský kraj</option>
-												<option>Karlovarský kraj</option>
-												<option>Ústecký kraj</option>
-												<option>Pardubický kraj</option>
-											</select>
-										</div>
-									</form>
-									<a href="#" class="button-accent">Nová soupiska</a>
-								</div>
 
 								<div class="tab-content" id="registered-tabContent">
-									<div class="tab-pane fade show active" id="boys" role="tabpanel" aria-labelledby="boys-tab">
+									<div class="tab-pane fade" id="boys" role="tabpanel" aria-labelledby="boys-tab">
+										<div class="text-end mb-6">
+											<a href="#" class="button-accent">Nová soupiska</a>
+										</div>
 										<div class="formular formular-player mb-8">
 											<div class="alert alert-success text-center mb-6" role="alert">
 												Družstvo spadá do 1.-3. třídy
@@ -481,8 +481,185 @@
 									<div class="tab-pane fade" id="mix" role="tabpanel" aria-labelledby="mix-tab">
 										mix
 									</div>
-									<div class="tab-pane fade" id="games" role="tabpanel" aria-labelledby="games-tab">
-										Turnaje a zápasy
+									<div class="tab-pane show active" id="games" role="tabpanel" aria-labelledby="games-tab">
+										<h3 class="h3 text-center my-xl-10 my-md-8 my-6">Školní liga Jihomoravského kraje </h2>
+											<div class="mb-xl-25 mb-md-15 mb-10">
+												<div class="row g-6  ">
+													<div class="col-lg-4 col-sm-6">
+														<ul class="leagueItem">
+															<li>
+																<a href="#" class="h5 mb-2 hover-underline ">Školní liga Jihomoravského kraje </a>
+																<div class="text-base-semibold text-primary mb-2">10.12.2025 - 12.12.2025</div>
+																<p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
+															</li>
+															<li>
+																<button data-bs-toggle="modal" data-bs-target="#tournamentModal" class="button-accent">Přihlášení</button>
+															</li>
+														</ul>
+													</div>
+													<div class="col-lg-4 col-sm-6">
+														<ul class="leagueItem">
+															<li>
+																<a href="#" class="h5 mb-2 hover-underline ">Školní liga Jihomoravského kraje </a>
+																<div class="text-base-semibold text-primary mb-2">10.12.2025 - 12.12.2025</div>
+																<p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
+															</li>
+															<li>
+																<a href="#" class="button-accent">Soupiska</a>
+															</li>
+														</ul>
+													</div>
+													<div class="col-lg-4 col-sm-6">
+														<ul class="leagueItem">
+															<li>
+																<a href="#" class="h5 mb-2 hover-underline ">Školní liga Jihomoravského kraje </a>
+																<div class="text-base-semibold text-primary mb-2">10.12.2025 - 12.12.2025</div>
+																<p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
+															</li>
+															<li>
+																<button data-bs-toggle="modal" data-bs-target="#tournamentModal" class="button-accent">Přihlášení</button>
+															</li>
+														</ul>
+													</div>
+													<div class="col-lg-4 col-sm-6">
+														<ul class="leagueItem">
+															<li>
+																<a href="#" class="h5 mb-2 hover-underline ">Školní liga Jihomoravského kraje </a>
+																<div class="text-base-semibold text-primary mb-2">10.12.2025 - 12.12.2025</div>
+																<p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
+															</li>
+															<li>
+																<a href="#" class="button-accent">Soupiska</a>
+															</li>
+														</ul>
+													</div>
+													<div class="col-lg-4 col-sm-6">
+														<ul class="leagueItem">
+															<li>
+																<a href="#" class="h5 mb-2 hover-underline ">Školní liga Jihomoravského kraje </a>
+																<div class="text-base-semibold text-primary mb-2">10.12.2025 - 12.12.2025</div>
+																<p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
+															</li>
+															<li>
+																<button data-bs-toggle="modal" data-bs-target="#tournamentModal" class="button-accent">Přihlášení</button>
+															</li>
+														</ul>
+													</div>
+													<div class="col-lg-4 col-sm-6">
+														<ul class="leagueItem">
+															<li>
+																<a href="#" class="h5 mb-2 hover-underline ">Školní liga Jihomoravského kraje </a>
+																<div class="text-base-semibold text-primary mb-2">10.12.2025 - 12.12.2025</div>
+																<p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
+															</li>
+															<li>
+																<a href="#" class="button-accent">Soupiska</a>
+															</li>
+														</ul>
+													</div>
+													<div class="col-lg-4 col-sm-6">
+														<ul class="leagueItem">
+															<li>
+																<a href="#" class="h5 mb-2 hover-underline ">Školní liga Jihomoravského kraje </a>
+																<div class="text-base-semibold text-primary mb-2">10.12.2025 - 12.12.2025</div>
+																<p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
+															</li>
+															<li>
+																<button data-bs-toggle="modal" data-bs-target="#tournamentModal" class="button-accent">Přihlášení</button>
+															</li>
+														</ul>
+													</div>
+													<div class="col-lg-4 col-sm-6">
+														<ul class="leagueItem">
+															<li>
+																<a href="#" class="h5 mb-2 hover-underline ">Školní liga Jihomoravského kraje </a>
+																<div class="text-base-semibold text-primary mb-2">10.12.2025 - 12.12.2025</div>
+																<p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
+															</li>
+															<li>
+																<a href="#" class="button-accent">Soupiska</a>
+															</li>
+														</ul>
+													</div>
+													<div class="col-lg-4 col-sm-6">
+														<ul class="leagueItem">
+															<li>
+																<a href="#" class="h5 mb-2 hover-underline ">Školní liga Jihomoravského kraje </a>
+																<div class="text-base-semibold text-primary mb-2">10.12.2025 - 12.12.2025</div>
+																<p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
+															</li>
+															<li>
+																<button data-bs-toggle="modal" data-bs-target="#tournamentModal" class="button-accent">Přihlášení</button>
+															</li>
+														</ul>
+													</div>
+													<div class="col-lg-4 col-sm-6">
+														<ul class="leagueItem">
+															<li>
+																<a href="#" class="h5 mb-2 hover-underline ">Školní liga Jihomoravského kraje </a>
+																<div class="text-base-semibold text-primary mb-2">10.12.2025 - 12.12.2025</div>
+																<p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
+															</li>
+															<li>
+																<a href="#" class="button-accent">Soupiska</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<nav aria-label="Další stránky">
+													<ul class="pagination d-flex flex-wrap pagination-flat pagination-success">
+														<li class="page-item active">
+															<a class="page-link" href="#" data-abc="true">1</a>
+														</li>
+														<li class="page-item">
+															<a class="page-link" href="#" data-abc="true">2</a>
+														</li>
+														<li class="page-item">
+															<a class="page-link" href="#" data-abc="true">3</a>
+														</li>
+
+														<li class="page-item">
+															<a class="page-link" href="#" data-abc="true">...</a>
+														</li>
+													</ul>
+												</nav>
+											</div>
+
+											<div class="modal fade" id="tournamentModal" aria-labelledby="tournamentModalLabel" tabindex="-1" role="dialog">
+												<div class="modal-dialog modal-dialog-centered">
+													<div class="modal-content">
+														<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+															<img src="images/ico/close.svg" alt="" />
+														</button>
+														<h4 class="h4 text-gray-700 fw-semibold mb-6" id="tournamentModalLabel">
+															Seznam zápasů
+														</h4>
+														<ul class="leagueItem px-0">
+															<li>
+																<div class="h5 mb-2">
+																	ZŠ Petra Bezruče <span class="fw-semibold text-accent"> - </span> ZŠ
+																	Marie Kudeříkové
+																</div>
+																<p class="text-base-normal">18:00, 22.12.2025</p>
+															</li>
+															<li>
+																<div class="h5 mb-2">
+																	ZŠ Petra Bezruče <span class="fw-semibold text-accent"> - </span> ZŠ
+																	Marie Kudeříkové
+																</div>
+																<p class="text-base-normal">18:00, 22.12.2025</p>
+															</li>
+															<li>
+																<div class="h5 mb-2">
+																	ZŠ Petra Bezruče <span class="fw-semibold text-accent"> - </span> ZŠ
+																	Marie Kudeříkové
+																</div>
+																<p class="text-base-normal">18:00, 22.12.2025</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
 									</div>
 								</div>
 							</section>
