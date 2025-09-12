@@ -1,0 +1,48 @@
+<div
+  class="modal fade"
+  id="registrationModal"
+  tabindex="-1"
+  aria-labelledby=" "
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button
+        type="button"
+        class="close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      >
+        <img src="images/ico/close.svg" alt="close" />
+      </button>
+      <h4 class="h4 text-gray-700 fw-semibold mb-4" id="registrationModalLabel">
+        Přihlášení na turnaj
+      </h4>
+      <form id="registrationForm">
+        <div class="formular__select">
+          <select
+            class="js-select js-select-multiple"
+            id="club"
+            name="club"
+            name="liga[]"
+            multiple
+          >
+            <option>Název soupisky</option>
+            <option>soupiska 1</option>
+            <option>soupiska 2</option>
+            <option>soupiska 3</option>
+            <option>soupiska 44</option>
+          </select>
+        </div>
+        <div class="mt-4 text-end">
+          <button
+            type="button"
+            class="button-accent"
+            onclick="submitRegistration()"
+          >
+            Potvrdit přihlášení
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

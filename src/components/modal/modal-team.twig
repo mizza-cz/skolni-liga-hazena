@@ -1,0 +1,38 @@
+<div
+  class="modal fade"
+  id="soupiskaModal"
+  tabindex="-1"
+  aria-labelledby="soupiskaModalLabel"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button
+        type="button"
+        class="close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      >
+        <img src="images/ico/close.svg" alt="close" />
+      </button>
+      <h4 class="h4 text-gray-700 fw-semibold mb-4" id="soupiskaModalLabel">
+        Vybrané soupisky
+      </h4>
+      <form id="soupiskaForm">
+        <select id="editSoupiska" class="form-select" multiple>
+          <option value="1" selected>ZŠ Petra Bezruče</option>
+          <option value="2">ZŠ Marie Kudeříkové</option>
+          <option value="3">ZŠ Nová Škola</option>
+        </select>
+        <div class="mt-4 text-end">
+          <button
+            type="button"
+            class="button-accent"
+            onclick="updateSoupiska()"
+          >
+            Uložit změny
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

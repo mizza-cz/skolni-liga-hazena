@@ -2,31 +2,19 @@
 <div class="mb-xl-25 mb-md-15 mb-10">
 <div class="row g-6  ">
   {% for i in 1..5 %}
-  <div class="col-lg-4 col-sm-6">
-    <ul class="leagueItem">
+   <div class="col-lg-4 col-sm-6">
+   <ul class="leagueItem">
       <li>
-        <a href="#" class="h5 mb-2 hover-underline ">Školní liga Jihomoravského kraje  </a>
-        <div class="text-base-semibold text-primary mb-2">10.12.2025 - 12.12.2025</div>
-        <p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
+         <a href="#" class="h5 mb-2 hover-underline">Školní liga Jihomoravského kraje</a>
+         <div class="text-base-semibold text-primary mb-2">10.12.2025 - 12.12.2025</div>
+         <p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
       </li>
-      <li>
-        <button   data-bs-toggle="modal"
-            data-bs-target="#tournamentModal" class="button-accent">Přihlášení</button>
+      <li class="d-flex gap-3 flex-wrap">
+         <button data-bs-toggle="modal" data-bs-target="#registrationModal" class="button-accent">Přihlášení</button>
+         <button class="button-accent  " data-bs-toggle="modal" data-bs-target="#tournamentModal">Zápasy</button>
       </li>
-    </ul>
-  </div>
-    <div class="col-lg-4 col-sm-6">
-    <ul class="leagueItem">
-      <li>
-        <a href="#" class="h5 mb-2 hover-underline ">Školní liga Jihomoravského kraje  </a>
-        <div class="text-base-semibold text-primary mb-2">10.12.2025 - 12.12.2025</div>
-        <p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
-      </li>
-      <li>
-        <a href="#" class="button-accent">Soupiska</a>
-      </li>
-    </ul>
-  </div>
+   </ul>
+   </div>
   {% endfor %}
 </div>
  <nav aria-label="Další stránky">
@@ -51,3 +39,5 @@
 </div>
  
 {% include "@components/modal/modal-tournament.twig" %}
+{% include "@components/modal/modal-team.twig" %}
+{% include "@components/modal/modal-registration.twig" %}

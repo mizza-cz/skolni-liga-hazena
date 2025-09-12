@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>20.0_registered-teacher-league - Školní liga miniházené</title>
+	<title>21.0_registered-teacher-league-2 - Školní liga miniházené</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 
@@ -483,6 +483,9 @@
 									</div>
 									<div class="tab-pane show active" id="games" role="tabpanel" aria-labelledby="games-tab">
 										<h3 class="h3 text-center my-xl-10 my-md-8 my-6">Školní liga Jihomoravského kraje </h2>
+											<div class="alert alert-success text-center mb-6" role="alert">
+												Přihlášení proběhlo úspěšně
+											</div>
 											<div class="mb-xl-25 mb-md-15 mb-10">
 												<div class="row g-6  ">
 													<div class="col-lg-4 col-sm-6">
@@ -493,7 +496,7 @@
 																<p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
 															</li>
 															<li class="d-flex gap-3 flex-wrap">
-																<button data-bs-toggle="modal" data-bs-target="#registrationModal" class="button-accent">Přihlášení</button>
+																<button data-bs-toggle="modal" data-bs-target="#registrationModal" class="button-accent">Soupiska</button>
 																<button class="button-accent  " data-bs-toggle="modal" data-bs-target="#tournamentModal">Zápasy</button>
 															</li>
 														</ul>
@@ -506,7 +509,7 @@
 																<p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
 															</li>
 															<li class="d-flex gap-3 flex-wrap">
-																<button data-bs-toggle="modal" data-bs-target="#registrationModal" class="button-accent">Přihlášení</button>
+																<button data-bs-toggle="modal" data-bs-target="#registrationModal" class="button-accent">Soupiska</button>
 																<button class="button-accent  " data-bs-toggle="modal" data-bs-target="#tournamentModal">Zápasy</button>
 															</li>
 														</ul>
@@ -519,7 +522,7 @@
 																<p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
 															</li>
 															<li class="d-flex gap-3 flex-wrap">
-																<button data-bs-toggle="modal" data-bs-target="#registrationModal" class="button-accent">Přihlášení</button>
+																<button data-bs-toggle="modal" data-bs-target="#registrationModal" class="button-accent">Soupiska</button>
 																<button class="button-accent  " data-bs-toggle="modal" data-bs-target="#tournamentModal">Zápasy</button>
 															</li>
 														</ul>
@@ -532,7 +535,7 @@
 																<p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
 															</li>
 															<li class="d-flex gap-3 flex-wrap">
-																<button data-bs-toggle="modal" data-bs-target="#registrationModal" class="button-accent">Přihlášení</button>
+																<button data-bs-toggle="modal" data-bs-target="#registrationModal" class="button-accent">Soupiska</button>
 																<button class="button-accent  " data-bs-toggle="modal" data-bs-target="#tournamentModal">Zápasy</button>
 															</li>
 														</ul>
@@ -545,11 +548,40 @@
 																<p class="text-base-normal">K Botyči 128/8, Praha 1, 10100</p>
 															</li>
 															<li class="d-flex gap-3 flex-wrap">
-																<button data-bs-toggle="modal" data-bs-target="#registrationModal" class="button-accent">Přihlášení</button>
+																<button data-bs-toggle="modal" data-bs-target="#registrationModal" class="button-accent">Soupiska</button>
 																<button class="button-accent  " data-bs-toggle="modal" data-bs-target="#tournamentModal">Zápasy</button>
 															</li>
 														</ul>
 													</div>
+													<div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby=" ">
+														<div class="modal-dialog modal-dialog-centered">
+															<div class="modal-content">
+																<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+																	<img src="images/ico/close.svg" alt="close" />
+																</button>
+																<h4 class="h4 text-gray-700 fw-semibold mb-4" id="registrationModalLabel">
+																	Přihlášení na turnaj
+																</h4>
+																<form id="registrationForm">
+																	<div class="formular__select">
+																		<select class="js-select js-select-multiple" id="soupiska" name="soupiska" name="liga[]" multiple>
+																			<option>Název soupisky</option>
+																			<option>soupiska 1</option>
+																			<option selected>soupiska 2</option>
+																			<option selected>soupiska 3</option>
+																			<option>soupiska 44</option>
+																		</select>
+																	</div>
+																	<div class="mt-4 text-end">
+																		<button type="button" class="button-accent" onclick="submitRegistration()">
+																			Potvrdit přihlášení
+																		</button>
+																	</div>
+																</form>
+															</div>
+														</div>
+													</div>
+
 												</div>
 												<nav aria-label="Další stránky">
 													<ul class="pagination d-flex flex-wrap pagination-flat pagination-success">
@@ -570,100 +602,14 @@
 												</nav>
 											</div>
 
-											<div class="modal fade" id="tournamentModal" aria-labelledby="tournamentModalLabel" tabindex="-1" role="dialog">
-												<div class="modal-dialog modal-dialog-centered">
-													<div class="modal-content">
-														<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-															<img src="images/ico/close.svg" alt="" />
-														</button>
-														<h4 class="h4 text-gray-700 fw-semibold mb-6" id="tournamentModalLabel">
-															Seznam zápasů
-														</h4>
-														<ul class="leagueItem px-0">
-															<li>
-																<div class="h5 mb-2">
-																	ZŠ Petra Bezruče <span class="fw-semibold text-accent"> - </span> ZŠ
-																	Marie Kudeříkové
-																</div>
-																<p class="text-base-normal">18:00, 22.12.2025</p>
-															</li>
-															<li>
-																<div class="h5 mb-2">
-																	ZŠ Petra Bezruče <span class="fw-semibold text-accent"> - </span> ZŠ
-																	Marie Kudeříkové
-																</div>
-																<p class="text-base-normal">18:00, 22.12.2025</p>
-															</li>
-															<li>
-																<div class="h5 mb-2">
-																	ZŠ Petra Bezruče <span class="fw-semibold text-accent"> - </span> ZŠ
-																	Marie Kudeříkové
-																</div>
-																<p class="text-base-normal">18:00, 22.12.2025</p>
-															</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-											<div class="modal fade" id="soupiskaModal" tabindex="-1" aria-labelledby="soupiskaModalLabel">
-												<div class="modal-dialog modal-dialog-centered">
-													<div class="modal-content">
-														<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-															<img src="images/ico/close.svg" alt="close" />
-														</button>
-														<h4 class="h4 text-gray-700 fw-semibold mb-4" id="soupiskaModalLabel">
-															Vybrané soupisky
-														</h4>
-														<form id="soupiskaForm">
-															<select id="editSoupiska" class="form-select" multiple>
-																<option value="1" selected>ZŠ Petra Bezruče</option>
-																<option value="2">ZŠ Marie Kudeříkové</option>
-																<option value="3">ZŠ Nová Škola</option>
-															</select>
-															<div class="mt-4 text-end">
-																<button type="button" class="button-accent" onclick="updateSoupiska()">
-																	Uložit změny
-																</button>
-															</div>
-														</form>
-													</div>
-												</div>
-											</div>
-											<div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby=" ">
-												<div class="modal-dialog modal-dialog-centered">
-													<div class="modal-content">
-														<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-															<img src="images/ico/close.svg" alt="close" />
-														</button>
-														<h4 class="h4 text-gray-700 fw-semibold mb-4" id="registrationModalLabel">
-															Přihlášení na turnaj
-														</h4>
-														<form id="registrationForm">
-															<div class="formular__select">
-																<select class="js-select js-select-multiple" id="club" name="club" name="liga[]" multiple>
-																	<option>Název soupisky</option>
-																	<option>soupiska 1</option>
-																	<option>soupiska 2</option>
-																	<option>soupiska 3</option>
-																	<option>soupiska 44</option>
-																</select>
-															</div>
-															<div class="mt-4 text-end">
-																<button type="button" class="button-accent" onclick="submitRegistration()">
-																	Potvrdit přihlášení
-																</button>
-															</div>
-														</form>
-													</div>
-												</div>
-											</div>
 									</div>
 								</div>
 							</section>
 							<script>
 								function toggleClubInput() {
 									const checkbox = document.getElementById("boysPlayer-agree");
-									const inputContainer = document.getElementById("clubInputContainer");
+									const inputContainer =
+										document.getElementById("clubInputContainer");
 									inputContainer.style.display = checkbox.checked ? "block" : "none";
 								}
 							</script>
