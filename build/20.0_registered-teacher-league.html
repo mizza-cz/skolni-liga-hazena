@@ -201,7 +201,7 @@
 
 								<ul class="nav gap-2 nav-tabs justify-content-center flex-wrap mb-6" id="myTab" role="tablist">
 									<li class="nav-item" role="presentation">
-										<button class="nav-link" id="boys-tab" data-bs-toggle="tab" data-bs-target="#boys" type="button" role="tab" aria-controls="boys" aria-selected="true">
+										<button class="nav-link active" id="boys-tab" data-bs-toggle="tab" data-bs-target="#boys" type="button" role="tab" aria-controls="boys" aria-selected="true">
 											Tým chlapci
 										</button>
 									</li>
@@ -216,14 +216,14 @@
 										</button>
 									</li>
 									<li class="nav-item" role="presentation">
-										<button class="nav-link active" id="games-tab" data-bs-toggle="tab" data-bs-target="#games" type="button" role="tab" aria-controls="games" aria-selected="false">
+										<button class="nav-link" id="games-tab" data-bs-toggle="tab" data-bs-target="#games" type="button" role="tab" aria-controls="games" aria-selected="false">
 											Turnaje a zápasy
 										</button>
 									</li>
 								</ul>
 
 								<div class="tab-content" id="registered-tabContent">
-									<div class="tab-pane fade" id="boys" role="tabpanel" aria-labelledby="boys-tab">
+									<div class="tab-pane show active" id="boys" role="tabpanel" aria-labelledby="boys-tab">
 										<div class="text-end mb-6">
 											<a href="#" class="button-accent">Nová soupiska</a>
 										</div>
@@ -302,11 +302,7 @@
 														<label class="text-sm-regular d-block mb-1 text-primary" for="boysPlayer-surname">příjmení *</label>
 														<input required type="text" name="boysPlayer-surname" id="boysPlayer-surname" />
 													</div>
-													<div class="col-lg-6 col-xl-4">
-														<label class="text-sm-regular d-block mb-1 text-primary" for="boysPlayer-date">Datum narození
-														</label>
-														<input type="date" name="boysPlayer-date" id="boysPlayer-date" />
-													</div>
+
 													<div class="col-lg-6 col-xl-4">
 														<label class="text-sm-regular d-block mb-1 text-primary" for="boysPlayer-class">
 															Třída *
@@ -321,6 +317,11 @@
 																<option>5</option>
 															</select>
 														</div>
+													</div>
+													<div class="col-lg-6 col-xl-4">
+														<label class="text-sm-regular d-block mb-1 text-primary" for="boysPlayer-date">Datum narození <i>(nepovinný údaj)</i>
+														</label>
+														<input type="date" name="boysPlayer-date" id="boysPlayer-date" />
 													</div>
 													<div class="col-lg-6 col-xl-4">
 														<label class="text-sm-regular d-block mb-1 text-primary" for="boysPlayer-state">
@@ -339,15 +340,15 @@
 													</div>
 													<div class="col-lg-6 col-xl-4">
 														<label class="text-sm-regular d-block mb-1 text-primary" for="boysPlayer-numberid">
-															Rodné číslo
+															Rodné číslo <i>(nepovinný údaj)</i>
 														</label>
 														<input type="text" name="boysPlayer-numberid" id="boysPlayer-numberid" placeholder="123456/7890" />
 													</div>
-													<div class="col-lg-6 col-xl-4">
+													<div class="col-lg-7 col-xl-5">
 														<label class="formular__checkbox">
 															<input id="boysPlayer-agree" name="boysPlayer-agree" type="checkbox" onchange="toggleClubInput()" />
 															<span class="custom-checkbox"></span>
-															Hráč hraje miniházenou v klubu
+															Hráč hraje miniházenou v klubu <i>(nepovinný údaj)</i>
 														</label>
 
 														<div id="clubInputContainer" style="display: none; margin-top: 10px">
@@ -452,7 +453,7 @@
 														<input required type="text" name="boysTrainer-surname" id="boysTrainer-surname" />
 													</div>
 													<div class="col-lg-6 col-xl-4">
-														<label class="text-sm-regular d-block mb-1 text-primary" for="boysTrainer-date">Datum narození
+														<label class="text-sm-regular d-block mb-1 text-primary" for="boysTrainer-date">Datum narození <i>(nepovinný údaj)</i>
 														</label>
 														<input type="date" name="boysTrainer-date" id="boysTrainer-date" />
 													</div>
@@ -485,7 +486,7 @@
 											<a href="#" class="button-accent">Nová soupiska</a>
 										</div>
 									</div>
-									<div class="tab-pane show active" id="games" role="tabpanel" aria-labelledby="games-tab">
+									<div class="tab-pane fade" id="games" role="tabpanel" aria-labelledby="games-tab">
 										<h3 class="h3 text-center my-xl-10 my-md-8 my-6">Školní liga Jihomoravského kraje </h2>
 											<div class="mb-xl-25 mb-md-15 mb-10">
 												<div class="row g-6  ">

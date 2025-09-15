@@ -59,7 +59,7 @@
           >
             <li class="nav-item" role="presentation">
               <button
-                class="nav-link"
+                class="nav-link active"
                 id="boys-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#boys"
@@ -101,7 +101,7 @@
             </li>
             <li class="nav-item" role="presentation">
               <button
-                class="nav-link active"
+                class="nav-link  "
                 id="games-tab"
                 data-bs-toggle="tab"
                 data-bs-target="#games"
@@ -117,7 +117,7 @@
 
           <div class="tab-content" id="registered-tabContent">
             <div
-              class="tab-pane fade"
+              class="tab-pane show active"
               id="boys"
               role="tabpanel"
               aria-labelledby="boys-tab"
@@ -240,18 +240,7 @@
                         id="boysPlayer-surname"
                       />
                     </div>
-                    <div class="col-lg-6 col-xl-4">
-                      <label
-                        class="text-sm-regular d-block mb-1 text-primary"
-                        for="boysPlayer-date"
-                        >Datum narození
-                      </label>
-                      <input
-                        type="date"
-                        name="boysPlayer-date"
-                        id="boysPlayer-date"
-                      />
-                    </div>
+                    
                     <div class="col-lg-6 col-xl-4">
                       <label
                         class="text-sm-regular d-block mb-1 text-primary"
@@ -274,6 +263,18 @@
                           <option>5</option>
                         </select>
                       </div>
+                    </div>
+                     <div class="col-lg-6 col-xl-4">
+                      <label
+                        class="text-sm-regular d-block mb-1 text-primary"
+                        for="boysPlayer-date"
+                        >Datum narození <i>(nepovinný údaj)</i>
+                      </label>
+                      <input
+                        type="date"
+                        name="boysPlayer-date"
+                        id="boysPlayer-date"
+                      />
                     </div>
                     <div class="col-lg-6 col-xl-4">
                       <label
@@ -303,7 +304,7 @@
                         class="text-sm-regular d-block mb-1 text-primary"
                         for="boysPlayer-numberid"
                       >
-                        Rodné číslo
+                        Rodné číslo <i>(nepovinný údaj)</i>
                       </label>
                       <input
                         type="text"
@@ -312,7 +313,7 @@
                         placeholder="123456/7890"
                       />
                     </div>
-                    <div class="col-lg-6 col-xl-4">
+                    <div class="col-lg-7 col-xl-5">
                       <label class="formular__checkbox">
                         <input
                           id="boysPlayer-agree"
@@ -321,7 +322,7 @@
                           onchange="toggleClubInput()"
                         />
                         <span class="custom-checkbox"></span>
-                        Hráč hraje miniházenou v klubu
+                        Hráč hraje miniházenou v klubu <i>(nepovinný údaj)</i>
                       </label>
 
                       <div
@@ -495,7 +496,7 @@
                         class="text-sm-regular d-block mb-1 text-primary"
                         for="boysTrainer-numberid"
                       >
-                        Rodné číslo
+                        Rodné číslo <i>(nepovinný údaj)</i>
                       </label>
                       <input
                         type="text"
@@ -546,7 +547,7 @@
       </div>
             </div>
             <div
-              class="tab-pane show active"
+              class="tab-pane fade"
               id="games"
               role="tabpanel"
               aria-labelledby="games-tab"
