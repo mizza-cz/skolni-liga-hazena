@@ -2,21 +2,24 @@
   .tournamentItem__list {
     justify-content: space-between;
     width: 100%;
-    grid-template-columns:
-      22.875rem minmax(2.25rem, 12rem) minmax(6.75rem, 11rem)
-      minmax(7.5rem, 16rem);
+    display: flex;
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+      text-align: center;
+      flex-direction: column-reverse;
+    }
+  }
+
+  .tournamentItem__list-bottom.tournamentItem__list {
+    display: grid;
+    margin-top: 16px;
+    grid-template-columns: repeat(5, 1fr);
     @include media-breakpoint-down(md) {
       grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
       justify-content: center;
       text-align: center;
-    }
-  }
-  .formular.formular-player {
-    .tournamentItem__list {
-      grid-template-columns: 22.875rem minmax(2.25rem, 12rem) minmax(
-          6.75rem,
-          11rem
-        );
+      gap: 8px;
+      margin-top: 8px;
     }
   }
 }

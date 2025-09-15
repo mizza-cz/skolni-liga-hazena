@@ -236,58 +236,106 @@
 											</h3>
 											<h3 class="h5 mb-6">Hráči</h3>
 											<div class="d-grid gap-4 mb-8">
-												<div class="tournamentItem">
+												<div class="tournamentItem flex-wrap">
 													<ul class="tournamentItem__list">
 														<li class="fw-semibold justify-content-center justify-content-md-start">
 															Moješcik AlexandrAlexandr-Alexandr
 														</li>
-														<li class="justify-content-center">1921</li>
-														<li>
+
+													</ul>
+													<ul class="tournamentItem__list tournamentItem__list-bottom">
+														<li class=" justify-content-center justify-content-md-start">
+															Název třídy
+														</li>
+														<li class="justify-content-center">17.05.1997</li>
+														<li class="justify-content-center">
+															CZ
+														</li>
+														<li class=" justify-content-center">
+															123456/7890
+														</li>
+														<li class="justify-content-md-end justify-content-center">
 															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
 																Smazat hráče
 															</button>
 														</li>
 													</ul>
 												</div>
-												<div class="tournamentItem">
+												<div class="tournamentItem flex-wrap">
 													<ul class="tournamentItem__list">
 														<li class="fw-semibold justify-content-center justify-content-md-start">
 															Moješcik AlexandrAlexandr-Alexandr
 														</li>
-														<li class="justify-content-center">1921</li>
-														<li>
+
+													</ul>
+													<ul class="tournamentItem__list tournamentItem__list-bottom">
+														<li class=" justify-content-center justify-content-md-start">
+															Název třídy
+														</li>
+														<li class="justify-content-center">17.05.1997</li>
+														<li class="justify-content-center">
+															DE
+														</li>
+														<li class=" justify-content-center">
+
+														</li>
+														<li class="justify-content-md-end justify-content-center">
 															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
 																Smazat hráče
 															</button>
 														</li>
 													</ul>
 												</div>
-												<div class="tournamentItem">
+												<div class="tournamentItem flex-wrap">
 													<ul class="tournamentItem__list">
 														<li class="fw-semibold justify-content-center justify-content-md-start">
-															Moješcik AlexandrAlexandr
+															Moješcik AlexandrAlexandr-Alexandr
 														</li>
-														<li class="justify-content-center">1921</li>
-														<li>
+
+													</ul>
+													<ul class="tournamentItem__list tournamentItem__list-bottom">
+														<li class=" justify-content-center justify-content-md-start">
+															Název třídy
+														</li>
+														<li class="justify-content-center"></li>
+														<li class="justify-content-center">
+															CZ
+														</li>
+														<li class=" justify-content-center">
+															123456/7890
+														</li>
+														<li class="justify-content-md-end justify-content-center">
 															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
 																Smazat hráče
 															</button>
 														</li>
 													</ul>
 												</div>
-												<div class="tournamentItem">
+												<div class="tournamentItem flex-wrap">
 													<ul class="tournamentItem__list">
 														<li class="fw-semibold justify-content-center justify-content-md-start">
-															Moješcik Alexandr
+															Moješcik AlexandrAlexandr-Alexandr
 														</li>
-														<li class="justify-content-center">1921</li>
-														<li>
+
+													</ul>
+													<ul class="tournamentItem__list tournamentItem__list-bottom">
+														<li class=" justify-content-center justify-content-md-start">
+															Název třídy
+														</li>
+														<li class="justify-content-center"></li>
+														<li class="justify-content-center">
+															CZ
+														</li>
+														<li class=" justify-content-center">
+														</li>
+														<li class="justify-content-md-end justify-content-center">
 															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
 																Smazat hráče
 															</button>
 														</li>
 													</ul>
 												</div>
+
 											</div>
 											<form class="d-flex flex-column gap-6" action="https://mizza-cz.github.io/skolni-liga-hazena/build/01.0_homepage.html" method="post">
 												<div class="row g-6">
@@ -319,7 +367,7 @@
 														</div>
 													</div>
 													<div class="col-lg-6 col-xl-4">
-														<label class="text-sm-regular d-block mb-1 text-primary" for="boysPlayer-date">Datum narození <i>(nepovinný údaj)</i>
+														<label class="text-sm-regular d-block mb-1 text-primary" for="boysPlayer-date">Datum narození <i class="text-sm-regular">(nepovinný údaj)</i>
 														</label>
 														<input type="date" name="boysPlayer-date" id="boysPlayer-date" />
 													</div>
@@ -340,7 +388,7 @@
 													</div>
 													<div class="col-lg-6 col-xl-4">
 														<label class="text-sm-regular d-block mb-1 text-primary" for="boysPlayer-numberid">
-															Rodné číslo <i>(nepovinný údaj)</i>
+															Rodné číslo <i class="text-sm-regular">(nepovinný údaj)</i>
 														</label>
 														<input type="text" name="boysPlayer-numberid" id="boysPlayer-numberid" placeholder="123456/7890" />
 													</div>
@@ -348,7 +396,7 @@
 														<label class="formular__checkbox">
 															<input id="boysPlayer-agree" name="boysPlayer-agree" type="checkbox" onchange="toggleClubInput()" />
 															<span class="custom-checkbox"></span>
-															Hráč hraje miniházenou v klubu <i>(nepovinný údaj)</i>
+															Hráč hraje miniházenou v klubu <i class="text-sm-regular">(nepovinný údaj)</i>
 														</label>
 
 														<div id="clubInputContainer" style="display: none; margin-top: 10px">
@@ -368,13 +416,19 @@
 										<div class="formular mt-6">
 											<h3 class="h5 mb-6">Trenéři</h3>
 											<div class="d-grid gap-4 mb-8">
-												<div class="tournamentItem">
+												<div class="tournamentItem flex-wrap">
 													<ul class="tournamentItem__list">
 														<li class="fw-semibold justify-content-center justify-content-md-start">
 															Moješcik AlexandrAlexandr-Alexandr
 														</li>
-														<li class="justify-content-center">1921</li>
-														<li class="justify-content-center">trenér</li>
+
+													</ul>
+													<ul class="tournamentItem__list tournamentItem__list-bottom">
+														<li class=" justify-content-center justify-content-md-start">
+															19.04.1985
+														</li>
+														<li class="justify-content-center">123456/7890</li>
+														<li class="justify-content-center">Trenér</li>
 														<li>
 															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
 																Smazat trenéra
@@ -382,13 +436,19 @@
 														</li>
 													</ul>
 												</div>
-												<div class="tournamentItem">
+												<div class="tournamentItem flex-wrap">
 													<ul class="tournamentItem__list">
 														<li class="fw-semibold justify-content-center justify-content-md-start">
 															Moješcik AlexandrAlexandr-Alexandr
 														</li>
-														<li class="justify-content-center">1921</li>
-														<li class="justify-content-center">trenér</li>
+
+													</ul>
+													<ul class="tournamentItem__list tournamentItem__list-bottom">
+														<li class=" justify-content-center justify-content-md-start">
+															19.04.1985
+														</li>
+														<li class="justify-content-center">123456/7890</li>
+														<li class="justify-content-center">Trenér</li>
 														<li>
 															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
 																Smazat trenéra
@@ -396,13 +456,19 @@
 														</li>
 													</ul>
 												</div>
-												<div class="tournamentItem">
+												<div class="tournamentItem flex-wrap">
 													<ul class="tournamentItem__list">
 														<li class="fw-semibold justify-content-center justify-content-md-start">
 															Moješcik AlexandrAlexandr-Alexandr
 														</li>
-														<li class="justify-content-center">1921</li>
-														<li class="justify-content-center">trenér</li>
+
+													</ul>
+													<ul class="tournamentItem__list tournamentItem__list-bottom">
+														<li class=" justify-content-center justify-content-md-start">
+															19.04.1985
+														</li>
+														<li class="justify-content-center"></li>
+														<li class="justify-content-center">Trenér</li>
 														<li>
 															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
 																Smazat trenéra
@@ -410,34 +476,7 @@
 														</li>
 													</ul>
 												</div>
-												<div class="tournamentItem">
-													<ul class="tournamentItem__list">
-														<li class="fw-semibold justify-content-center justify-content-md-start">
-															Moješcik Alexandr
-														</li>
-														<li class="justify-content-center">1921</li>
-														<li class="justify-content-center">trenér</li>
-														<li>
-															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
-																Smazat trenéra
-															</button>
-														</li>
-													</ul>
-												</div>
-												<div class="tournamentItem">
-													<ul class="tournamentItem__list">
-														<li class="fw-semibold justify-content-center justify-content-md-start">
-															Moješcik AlexandrAlexandr-Alexandr
-														</li>
-														<li class="justify-content-center">1921</li>
-														<li class="justify-content-center">Hl. trenér</li>
-														<li>
-															<button class="button-accent ms-md-auto mx-md-0 mx-auto text-sm-regular py-2 px-4 rounded-6">
-																Smazat trenéra
-															</button>
-														</li>
-													</ul>
-												</div>
+
 											</div>
 											<form class="d-flex flex-column gap-6" action="https://mizza-cz.github.io/skolni-liga-hazena/build/01.0_homepage.html" method="post">
 												<div class="row g-6">
@@ -459,7 +498,7 @@
 													</div>
 													<div class="col-lg-6 col-xl-4">
 														<label class="text-sm-regular d-block mb-1 text-primary" for="boysTrainer-numberid">
-															Rodné číslo <i>(nepovinný údaj)</i>
+															Rodné číslo <i class="text-sm-regular">(nepovinný údaj)</i>
 														</label>
 														<input type="text" name="boysTrainer-numberid" id="boysTrainer-numberid" placeholder="123456/7890" />
 													</div>
