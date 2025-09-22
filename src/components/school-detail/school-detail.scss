@@ -40,4 +40,15 @@ a.detailBox:hover {
   svg path {
     stroke: var(--color-white);
   }
+  .detailBox__file svg path {
+    fill: var(--color-white);
+  }
+}
+.detailBox__file svg {
+  width: 32px !important;
+  height: 44px !important;
+  path {
+    fill: var(--color-accent);
+    transition: all 0.3s;
+  }
 }
