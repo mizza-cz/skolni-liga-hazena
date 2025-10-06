@@ -1,7 +1,45 @@
 {% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
 block main %} {% include "@components/hero/hero.twig" %} {% include
-"@components/linksBoard/linksBoard.twig" %} {% include
-"@components/hp-news/hp-news.twig" %} {% include
+"@components/linksBoard/linksBoard.twig" %}
+
+<div class="pubs">
+  <div class="container">
+    <div class="row g-lg-8 g-6 mb-8">
+      <div class="col-12">
+        <a class="pub__primary" href="#">
+          <img
+            class="w-100"
+            loading="lazy"
+            srcset="https://picsum.photos/1200/190"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="pub__secondary" href="#">
+          <img
+            class="w-100"
+            loading="lazy"
+            srcset="https://picsum.photos/1200/148"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <a class="pub__secondary" href="#">
+          <img
+            class="w-100"
+            loading="lazy"
+            srcset="https://picsum.photos/1200/148"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "@components/hp-news/hp-news.twig" %} {% include
 "@components/hp-map/hp-map.twig" %} {% include
 "@components/hp-tournaments/hp-tournaments.twig" %} {% include
 "@components/hp-social/hp-social.twig" %} {% include

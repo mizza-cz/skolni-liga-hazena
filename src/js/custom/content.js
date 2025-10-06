@@ -1,5 +1,5 @@
 tablesWrap();
-iframesWrap();
+iframesAndVideosWrap();
 
 // TABLE (wysiwyg editor) responsive
 function tablesWrap() {
@@ -10,7 +10,6 @@ function tablesWrap() {
     contentTables[i].classList.add("table");
 
     var contentTableWrap = document.createElement("div");
-
     contentTableWrap.classList.add("table-responsive");
 
     contentTables[i].parentNode.insertBefore(
@@ -22,21 +21,22 @@ function tablesWrap() {
   }
 }
 
-// IFRAME youtube/google (wysiwyg editor) responsive
-function iframesWrap() {
-  var contentIframes = document.querySelectorAll(".o-content iframe"),
+// IFRAME & VIDEO responsive
+function iframesAndVideosWrap() {
+  var elements = document.querySelectorAll(
+      ".o-content iframe, .o-content video"
+    ),
     i;
 
-  for (i = 0; i < contentIframes.length; ++i) {
-    contentIframes[i].removeAttribute("height");
-    contentIframes[i].removeAttribute("width");
+  for (i = 0; i < elements.length; ++i) {
+    elements[i].removeAttribute("height");
+    elements[i].removeAttribute("width");
 
-    var iframeWrap = document.createElement("div");
-    iframeWrap.classList.add("ratio");
-    iframeWrap.classList.add("ratio-16x9");
+    var wrap = document.createElement("div");
+    wrap.classList.add("ratio");
+    wrap.classList.add("ratio-16x9");
 
-    contentIframes[i].parentNode.insertBefore(iframeWrap, contentIframes[i]);
-
-    iframeWrap.appendChild(contentIframes[i]);
+    elements[i].parentNode.insertBefore(wrap, elements[i]);
+    wrap.appendChild(elements[i]);
   }
 }
