@@ -13,6 +13,20 @@
     flex-wrap: wrap;
     gap: 4px;
   }
+  &__link {
+    color: var(--color-accent);
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.015em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration-color: transparent;
+    margin-top: 12px;
+    &:hover {
+      text-decoration-color: inherit;
+    }
+  }
   [class^="tag"] {
     display: inline-flex;
     align-items: center;
