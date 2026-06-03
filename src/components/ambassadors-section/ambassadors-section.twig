@@ -63,57 +63,161 @@
         Potkej svoje oblíbené ambasadory na jedné z následujících akcí.
       </p>
       <div class="ambassadors-tournaments">
-        <div class="bg-light p-md-10 p-6 p-md-6 p-5 rounded-md-4 d-grid gap-4">
-          <a href="#" class="tournamentItem">
-            <ul class="tournamentItem__list">
-              <li class="fw-semibold">12. 5. 2024</li>
-              <li>Jméno Ambasadora</li>
-              <li class="d-flex align-items-center gap-4">
-                {% include "@images/pin.svg" %} Ledeč nad Sázavou
-              </li>
-            </ul>
-            {% include "@images/chevron-right.svg" %}
-          </a>
-          <a href="#" class="tournamentItem">
-            <ul class="tournamentItem__list">
-              <li class="fw-semibold">12. 5. 2024</li>
-              <li>Jméno Ambasadora</li>
-              <li class="d-flex align-items-center gap-4">
-                {% include "@images/pin.svg" %} Ledeč nad Sázavou
-              </li>
-            </ul>
-            {% include "@images/chevron-right.svg" %}
-          </a>
-          <a href="#" class="tournamentItem">
-            <ul class="tournamentItem__list">
-              <li class="fw-semibold">12. 5. 2024</li>
-              <li>Jméno Ambasadora</li>
-              <li class="d-flex align-items-center gap-4">
-                {% include "@images/pin.svg" %} Ledeč nad Sázavou
-              </li>
-            </ul>
-            {% include "@images/chevron-right.svg" %}
-          </a>
-          <a href="#" class="tournamentItem">
-            <ul class="tournamentItem__list">
-              <li class="fw-semibold">12. 5. 2024</li>
-              <li>Jméno Ambasadora</li>
-              <li class="d-flex align-items-center gap-4">
-                {% include "@images/pin.svg" %} Ledeč nad Sázavou
-              </li>
-            </ul>
-            {% include "@images/chevron-right.svg" %}
-          </a>
-          <a href="#" class="tournamentItem">
-            <ul class="tournamentItem__list">
-              <li class="fw-semibold">12. 5. 2024</li>
-              <li>Jméno Ambasadora</li>
-              <li class="d-flex align-items-center gap-4">
-                {% include "@images/pin.svg" %} Ledeč nad Sázavou
-              </li>
-            </ul>
-            {% include "@images/chevron-right.svg" %}
-          </a>
+        <div class="bg-light p-md-10 p-6 p-md-6 p-5 rounded-md-4">
+          <ul
+            class="nav nav-tabs ambassadorsTabs flex-wrap mb-8 gap-lg-10 gap-6"
+            id="myTab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="ambassadorsTabs-link active"
+                id="future-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#future"
+                type="button"
+                role="tab"
+                aria-controls="future"
+                aria-selected="true"
+              >
+                Budoucí
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="ambassadorsTabs-link"
+                id="past-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#past"
+                type="button"
+                role="tab"
+                aria-controls="past"
+                aria-selected="false"
+              >
+                Minulé
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="ambassadors-tabContent">
+            <div
+              class="tab-pane show active"
+              id="future"
+              role="tabpanel"
+              aria-labelledby="future-tab"
+            >
+              <div class="d-grid gap-4">
+                <a href="#" class="tournamentItem">
+                  <ul class="tournamentItem__list">
+                    <li class="fw-semibold">12. 5. 2024</li>
+                    <li>Jméno Ambasadora</li>
+                    <li class="d-flex align-items-center gap-4">
+                      {% include "@images/pin.svg" %} Ledeč nad Sázavou
+                    </li>
+                  </ul>
+                  {% include "@images/chevron-right.svg" %}
+                </a>
+                <a href="#" class="tournamentItem">
+                  <ul class="tournamentItem__list">
+                    <li class="fw-semibold">12. 5. 2024</li>
+                    <li>Jméno Ambasadora</li>
+                    <li class="d-flex align-items-center gap-4">
+                      {% include "@images/pin.svg" %} Ledeč nad Sázavou
+                    </li>
+                  </ul>
+                  {% include "@images/chevron-right.svg" %}
+                </a>
+                <a href="#" class="tournamentItem">
+                  <ul class="tournamentItem__list">
+                    <li class="fw-semibold">12. 5. 2024</li>
+                    <li>Jméno Ambasadora</li>
+                    <li class="d-flex align-items-center gap-4">
+                      {% include "@images/pin.svg" %} Ledeč nad Sázavou
+                    </li>
+                  </ul>
+                  {% include "@images/chevron-right.svg" %}
+                </a>
+                <a href="#" class="tournamentItem">
+                  <ul class="tournamentItem__list">
+                    <li class="fw-semibold">12. 5. 2024</li>
+                    <li>Jméno Ambasadora</li>
+                    <li class="d-flex align-items-center gap-4">
+                      {% include "@images/pin.svg" %} Ledeč nad Sázavou
+                    </li>
+                  </ul>
+                  {% include "@images/chevron-right.svg" %}
+                </a>
+                <a href="#" class="tournamentItem">
+                  <ul class="tournamentItem__list">
+                    <li class="fw-semibold">12. 5. 2024</li>
+                    <li>Jméno Ambasadora</li>
+                    <li class="d-flex align-items-center gap-4">
+                      {% include "@images/pin.svg" %} Ledeč nad Sázavou
+                    </li>
+                  </ul>
+                  {% include "@images/chevron-right.svg" %}
+                </a>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="past"
+              role="tabpanel"
+              aria-labelledby="past-tab"
+            >
+              <div class="d-grid gap-4">
+                <a href="#" class="tournamentItem">
+                  <ul class="tournamentItem__list">
+                    <li class="fw-semibold">12. 5. 2024</li>
+                    <li>Jméno Ambasadora</li>
+                    <li class="d-flex align-items-center gap-4">
+                      {% include "@images/pin.svg" %} Ledeč nad Ledeč
+                    </li>
+                  </ul>
+                  {% include "@images/chevron-right.svg" %}
+                </a>
+                <a href="#" class="tournamentItem">
+                  <ul class="tournamentItem__list">
+                    <li class="fw-semibold">12. 5. 2024</li>
+                    <li>Jméno Ambasadora</li>
+                    <li class="d-flex align-items-center gap-4">
+                      {% include "@images/pin.svg" %} Sázavou nad Sázavou
+                    </li>
+                  </ul>
+                  {% include "@images/chevron-right.svg" %}
+                </a>
+                <a href="#" class="tournamentItem">
+                  <ul class="tournamentItem__list">
+                    <li class="fw-semibold">12. 5. 2024</li>
+                    <li>Jméno Ambasadora</li>
+                    <li class="d-flex align-items-center gap-4">
+                      {% include "@images/pin.svg" %}Sázavou Sázavou Ledeč nad
+                    </li>
+                  </ul>
+                  {% include "@images/chevron-right.svg" %}
+                </a>
+                <a href="#" class="tournamentItem">
+                  <ul class="tournamentItem__list">
+                    <li class="fw-semibold">12. 5. 2024</li>
+                    <li>Jméno Ambasadora</li>
+                    <li class="d-flex align-items-center gap-4">
+                      {% include "@images/pin.svg" %} Ledeč nad Sázavou
+                    </li>
+                  </ul>
+                  {% include "@images/chevron-right.svg" %}
+                </a>
+                <a href="#" class="tournamentItem">
+                  <ul class="tournamentItem__list">
+                    <li class="fw-semibold">12. 5. 2024</li>
+                    <li>Jméno Ambasadora</li>
+                    <li class="d-flex align-items-center gap-4">
+                      {% include "@images/pin.svg" %} Ledeč nad Sázavou
+                    </li>
+                  </ul>
+                  {% include "@images/chevron-right.svg" %}
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

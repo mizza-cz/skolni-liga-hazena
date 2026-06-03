@@ -246,3 +246,32 @@
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #fff;
 }
+
+.ambassadorsTabs {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  &-link {
+    color: var(--color-primary);
+    background: transparent;
+    border: none;
+    display: block;
+    position: relative;
+    border-bottom: 4px solid transparent;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.015em;
+    padding: 0 0 6px 0;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-decoration: none;
+    &:hover {
+      color: var(--color-text-primary);
+    }
+  }
+  &-link.active {
+    color: var(--color-primary) !important;
+    border-color: var(--color-primary);
+  }
+}

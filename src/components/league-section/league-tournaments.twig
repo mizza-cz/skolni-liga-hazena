@@ -54,6 +54,21 @@
           </div>
         </form>
         <div class="tournBoard">
+          <ul
+            class="d-flex align-items-center ambassadorsTabs flex-wrap mb-8 gap-lg-10 gap-6"
+            id="myTab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <a href="#" class="ambassadorsTabs-link active">Všechny</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a href="#" class="ambassadorsTabs-link"> Budoucí </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a href="#" class="ambassadorsTabs-link"> Odehrané </a>
+            </li>
+          </ul>
           <ul class="d-grid gap-4">
             {% for i in 1..10 %}
             <li class="tournItem">
