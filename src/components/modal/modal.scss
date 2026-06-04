@@ -63,3 +63,35 @@ body.no-scroll {
     max-width: 51.4rem !important;
   }
 }
+
+.modal-lg {
+  .modal-dialog {
+    max-width: 1120px !important;
+  }
+  .modal-content {
+    padding: 40px !important;
+  }
+}
+
+.modalPlayersForm {
+  .formular__checkbox {
+    cursor: pointer;
+  }
+  .custom-checkbox {
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--color-accent);
+  }
+  .formular__checkbox input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: var(--color-accent);
+  }
+  .formular__checkbox input[type="checkbox"]:checked + .custom-checkbox:after {
+    top: 2px !important;
+    height: 12px;
+    width: 7px;
+  }
+}
+.modal-lg .modal-dialog {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}

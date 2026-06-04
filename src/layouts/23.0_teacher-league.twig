@@ -106,7 +106,12 @@
                     <div
                       class="d-flex gap-2 flex-wrap border-top-stroke-1 pt-4 mt-4"
                     >
-                      <a href="#" class="button-stroke py-2 px-5">
+                      <a
+                        href="#"
+                        class="button-stroke py-2 px-5"
+                        data-bs-toggle="modal"
+                        data-bs-target="#editPlayersModal"
+                      >
                         <span class="d-md-block d-none">
                           Upravit turnajovou soupisku
                         </span>
@@ -174,7 +179,12 @@
                     <div
                       class="d-flex gap-2 flex-wrap border-top-stroke-1 pt-4 mt-4"
                     >
-                      <a href="#" class="button-stroke py-2 px-5">
+                      <a
+                        href="#"
+                        class="button-stroke py-2 px-5"
+                        data-bs-toggle="modal"
+                        data-bs-target="#editPlayersModal"
+                      >
                         <span class="d-md-block d-none">
                           Upravit turnajovou soupisku
                         </span>
@@ -286,7 +296,12 @@
                     <div
                       class="d-flex gap-2 flex-wrap border-top-stroke-1 pt-4 mt-4"
                     >
-                      <a href="#" class="button-stroke py-2 px-5">
+                      <a
+                        href="#"
+                        class="button-stroke py-2 px-5"
+                        data-bs-toggle="modal"
+                        data-bs-target="#editPlayersModal"
+                      >
                         <span class="d-md-block d-none">
                           Upravit turnajovou soupisku
                         </span>
@@ -311,5 +326,5 @@
     </div>
   </div>
 </section>
-
-{% include "@components/partnersSlider/partnersSlider.twig" %} {% endblock %}
+{% include "@components/modal/moda-editPlayers.twig" %} {% include
+"@components/partnersSlider/partnersSlider.twig" %} {% endblock %}

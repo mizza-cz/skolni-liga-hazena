@@ -1,0 +1,56 @@
+<div
+  class="modal fade modal-lg"
+  id="editPlayersModal"
+  aria-labelledby="editPlayersLabel"
+  tabindex="-1"
+  role="dialog"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <h4 class="h2 fw-semibold mb-md-10 mb-6" id="editPlayesModalLabel">
+        Úprava soupisky
+      </h4>
+      <form action="" class="modalPlayersForm">
+        <div class="mb-10">
+          <label class="text-sm-regular d-block mb-1 text-primary" for="school">
+            Vyberte soupisku, kterou chcete upravit
+          </label>
+          <div class="formular__select">
+            <select class="js-select" id="school" name="club">
+              <option>Soupiska chlapci 1</option>
+              <option>Soupiska chlapci 2</option>
+              <option>Soupiska chlapci 3</option>
+              <option>SVSoupiska chlapci 4K</option>
+            </select>
+          </div>
+        </div>
+        <h5 class="h5 mb-4">Hráči</h5>
+        <div class="d-grid gap-4">
+          {% for i in 1..5 %}
+          <div
+            class="bg-white rounded-md-4 px-6 py-4 d-flex align-items-center gap-10"
+          >
+            <label class="formular__checkbox d-flex align-items-center gap-2">
+              <input name="petrNovotny" type="checkbox" />
+              <span class="custom-checkbox"></span>
+              <div class="h5">Petr Novotný</div>
+            </label>
+            <ul class="tournamentItem__info">
+              <li class="d-flex gap-2">
+                <div class="tag-deco-2">2. třída</div>
+              </li>
+              <li class="d-flex gap-2">
+                <div class="tag-deco-3">CZ</div>
+              </li>
+              <li class="text-base-normal">20.4.2001</li>
+            </ul>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="mt-10 text-center">
+          <button class="button-accent text-center">Uložit změny</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
