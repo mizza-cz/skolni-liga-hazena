@@ -68,6 +68,12 @@
 .border-bottom-secondary-1 {
   border-bottom: 1px solid var(--color-body-secondary);
 }
+.border-bottom-stroke-1 {
+  border-bottom: 1px solid var(--color-stroke-secondary);
+}
+.border-top-stroke-1 {
+  border-top: 1px solid var(--color-stroke-secondary);
+}
 .gap-1-4 {
   gap: 4px 16px;
 }

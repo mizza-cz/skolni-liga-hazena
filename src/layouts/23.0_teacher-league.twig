@@ -1,0 +1,315 @@
+{% extends "@components/base/base.twig" %} {% set title = "23.0_teacher-league"
+%} {% block main %}
+
+<section class="registered-section">
+  <div class="header-section">
+    <div class="container">
+      <div class="header-section__inner">
+        <h1 class="h1 text-white title-decore">ZŠ Petra Bezruče</h1>
+      </div>
+    </div>
+  </div>
+  <div class="registered-section__content">
+    <div class="container">
+      <div class="decore-bottom">
+        <ul class="menuLinks">
+          <li>
+            <a
+              href="https://mizza-cz.github.io/skolni-liga-hazena/build/19.0_registered-teacher.html"
+              >Základní informace
+            </a>
+          </li>
+          <li>
+            <a
+              class="active"
+              href="https://mizza-cz.github.io/skolni-liga-hazena/build/20.0_registered-teacher-league.html"
+              >Školní ligy
+            </a>
+          </li>
+          <li>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#passwordModal"
+              >Změna hesla
+            </a>
+          </li>
+          <li>
+            <a href="#"> Odhlásit se </a>
+          </li>
+        </ul>
+        {% include "@components/modal/modal-password.twig" %}
+
+        <section class="registered-teacher">
+          <h2 class="h2 text-center mb-xl-10 mb-md-8 mb-6">Školní liga MG 3</h2>
+          <div class="bg-light p-lg-10 p-6 rounded-4">
+            <ul
+              class="nav nav-tabs ambassadorsTabs flex-wrap mb-8 gap-lg-10 gap-6"
+              id="myTab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="ambassadorsTabs-link active"
+                  id="soupiska-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#soupiska"
+                  type="button"
+                  role="tab"
+                  aria-controls="soupiska"
+                  aria-selected="true"
+                >
+                  Soupisky
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="ambassadorsTabs-link"
+                  id="zapasy-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#zapasy"
+                  type="button"
+                  role="tab"
+                  aria-controls="zapasy"
+                  aria-selected="false"
+                >
+                  Turnaje a zápasy
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="registeredTeacher-tabContent">
+              <div
+                class="tab-pane show active"
+                id="soupiska"
+                role="tabpanel"
+                aria-labelledby="soupiska-tab"
+              >
+                <div class="mb-6">
+                  <a href="#" class="button-accent">Nová soupiska</a>
+                </div>
+                <div class="d-grid gap-4">
+                  {% for i in 1..3 %}
+                  <div class="rounded-6 bg bg-white px-6 py-lg-10 py-6">
+                    <h3 class="h5 pb-4 border-bottom-stroke-1 mb-4">
+                      Soupiska chlapci 1
+                    </h3>
+                    <ul class="tournamentItem__info">
+                      <li class="text-base-normal">Trenéři: 1</li>
+                      <li class="text-base-normal">Hráčů: 12</li>
+                      <li class="d-flex gap-2">
+                        <div class="tag-deco-1">Dívky</div>
+                        <div class="tag-deco-2">Chlapci</div>
+                        <div class="tag-deco-3">Smíšený</div>
+                      </li>
+                      <li class="d-flex gap-2">
+                        <div class="tag-deco-2">4. třída</div>
+                        <div class="tag-deco-2">2. třída</div>
+                      </li>
+                    </ul>
+                    <div
+                      class="d-flex gap-2 flex-wrap border-top-stroke-1 pt-4 mt-4"
+                    >
+                      <a href="#" class="button-stroke py-2 px-5">
+                        <span class="d-md-block d-none">
+                          Upravit turnajovou soupisku
+                        </span>
+
+                        <span class="d-md-none">Upravit</span>
+                      </a>
+                      <a href="#" class="button-stroke py-2 px-5">
+                        <span class="d-md-block d-none">
+                          Smazat turnajovou soupisku
+                        </span>
+                        <span class="d-md-none">Smazat</span>
+                      </a>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="zapasy"
+                role="tabpanel"
+                aria-labelledby="zapasy-tab"
+              >
+                <div class="d-grid gap-4">
+                  <div class="rounded-6 bg bg-white px-6 py-lg-10 py-6">
+                    <div
+                      class="d-flex align-items-center justify-content-between flex-wrap-reverse gap-4 pb-4 border-bottom-stroke-1 mb-4"
+                    >
+                      <h3 class="h5">
+                        Jablonecká školní liga miniházené - starší - 1. turnaj
+                      </h3>
+                      <div class="tag-deco-3">
+                        <img
+                          src="images/ico/done.svg"
+                          width="14"
+                          height="14"
+                          alt="error"
+                          class="object-fit-content"
+                        />
+                        Přihlášený
+                      </div>
+                    </div>
+                    <ul class="tournamentItem__info">
+                      <li class="text-base-normal">23.10.2025</li>
+                      <li class="text-base-semibold text-primary">
+                        Liberecký kraj
+                      </li>
+                      <li class="d-flex gap-2 text-base-normal">
+                        <img
+                          src="images/ico/pin.svg"
+                          width="17"
+                          height="20"
+                          class="object-fit-content"
+                          alt="pin"
+                        />
+                        U Přehrady 4747/20, Jablonec nad Nisou 2
+                      </li>
+                      <li class="d-flex gap-2">
+                        <div class="tag-deco-3">Smíšený</div>
+                      </li>
+                      <li class="d-flex gap-2">
+                        <div class="tag-deco-2">2. třída</div>
+                      </li>
+                    </ul>
+                    <div
+                      class="d-flex gap-2 flex-wrap border-top-stroke-1 pt-4 mt-4"
+                    >
+                      <a href="#" class="button-stroke py-2 px-5">
+                        <span class="d-md-block d-none">
+                          Upravit turnajovou soupisku
+                        </span>
+
+                        <span class="d-md-none">Upravit</span>
+                      </a>
+                      <a href="#" class="button-stroke py-2 px-5"> Zápasy </a>
+                      <a href="#" class="button-stroke py-2 px-5">
+                        <span class="d-md-block d-none">
+                          Odhlásit se z turnaje
+                        </span>
+                        <span class="d-md-none">Odhlásit se</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="rounded-6 bg bg-white px-6 py-lg-10 py-6">
+                    <div
+                      class="d-flex align-items-center justify-content-between flex-wrap-reverse gap-4 pb-4 border-bottom-stroke-1 mb-4"
+                    >
+                      <h3 class="h5">
+                        Jablonecká školní liga miniházené - starší - 1. turnaj
+                      </h3>
+                      <div class="tag-deco-1 text-accent">
+                        <img
+                          src="images/ico/error.svg"
+                          width="14"
+                          height="14"
+                          alt="error"
+                          class="object-fit-content"
+                        />
+                        Neřihlášený
+                      </div>
+                    </div>
+                    <ul class="tournamentItem__info">
+                      <li class="text-base-normal">23.10.2025</li>
+                      <li class="text-base-semibold text-primary">
+                        Liberecký kraj
+                      </li>
+                      <li class="d-flex gap-2 text-base-normal">
+                        <img
+                          src="images/ico/pin.svg"
+                          width="17"
+                          height="20"
+                          class="object-fit-content"
+                          alt="pin"
+                        />
+                        U Přehrady 4747/20, Jablonec nad Nisou 2
+                      </li>
+                      <li class="d-flex gap-2">
+                        <div class="tag-deco-3">Smíšený</div>
+                      </li>
+                      <li class="d-flex gap-2">
+                        <div class="tag-deco-2">4. třída</div>
+                      </li>
+                    </ul>
+                    <div
+                      class="d-flex gap-2 flex-wrap border-top-stroke-1 pt-4 mt-4"
+                    >
+                      <a href="#" class="button-accent py-2 px-5">
+                        <span class="d-md-block d-none">
+                          Přihlásit se na turnaj
+                        </span>
+
+                        <span class="d-md-none">Přihlásit se</span>
+                      </a>
+                      <a href="#" class="button-stroke py-2 px-5"> Zápasy </a>
+                    </div>
+                  </div>
+                  <div class="rounded-6 bg bg-white px-6 py-lg-10 py-6">
+                    <div
+                      class="d-flex align-items-center justify-content-between flex-wrap-reverse gap-4 pb-4 border-bottom-stroke-1 mb-4"
+                    >
+                      <h3 class="h5">
+                        Jablonecká školní liga miniházené - starší - 1. turnaj
+                      </h3>
+                      <div class="tag-deco-3">
+                        <img
+                          src="images/ico/done.svg"
+                          width="14"
+                          height="14"
+                          alt="error"
+                          class="object-fit-content"
+                        />
+                        Přihlášený
+                      </div>
+                    </div>
+                    <ul class="tournamentItem__info">
+                      <li class="text-base-normal">23.10.2025</li>
+                      <li class="text-base-semibold text-primary">
+                        Liberecký kraj
+                      </li>
+                      <li class="d-flex gap-2 text-base-normal">
+                        <img
+                          src="images/ico/pin.svg"
+                          width="17"
+                          height="20"
+                          class="object-fit-content"
+                          alt="pin"
+                        />
+                        U Přehrady 4747/20, Jablonec nad Nisou 2
+                      </li>
+                      <li class="d-flex gap-2">
+                        <div class="tag-deco-3">Smíšený</div>
+                      </li>
+                      <li class="d-flex gap-2">
+                        <div class="tag-deco-2">2. třída</div>
+                      </li>
+                    </ul>
+                    <div
+                      class="d-flex gap-2 flex-wrap border-top-stroke-1 pt-4 mt-4"
+                    >
+                      <a href="#" class="button-stroke py-2 px-5">
+                        <span class="d-md-block d-none">
+                          Upravit turnajovou soupisku
+                        </span>
+
+                        <span class="d-md-none">Upravit</span>
+                      </a>
+                      <a href="#" class="button-stroke py-2 px-5"> Zápasy </a>
+                      <a href="#" class="button-stroke py-2 px-5">
+                        <span class="d-md-block d-none">
+                          Odhlásit se z turnaje
+                        </span>
+                        <span class="d-md-none">Odhlásit se</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "@components/partnersSlider/partnersSlider.twig" %} {% endblock %}

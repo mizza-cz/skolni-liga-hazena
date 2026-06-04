@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+
+<head>
+	<meta charset="utf-8" />
+	<title>23.0_teacher-league - Školní liga miniházené</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<!--****** Favicon ******-->
+	<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+	<link rel="shortcut icon" href="favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+	<link rel="manifest" href="favicon/site.webmanifest" />
+	<!--****** Fonts ******-->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+	<!--****** Styles  ******-->
+	<link rel="preload" href="css/styles.css" as="style" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
+	<link rel="stylesheet" media="print" href="css/prints.css" />
+	<link rel="stylesheet" type="text/css" href="css/cookie-consent.css" />
+	<!--****** Styles  ******-->
+
+	<!--****** Scripts  ******-->
+	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
+	<link rel="preload" href="js/scripts.js" as="script" />
+	<!-- ****** scripts ****** -->
+</head>
+
+<body>
+	<div class="base">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="#" class="header__logo">
+						<img src="images/ico/logo.svg" alt="logo" />
+					</a>
+					<div class="header__content">
+						<nav class="navbar">
+							<ul class="navbar__menu">
+								<li class="navbar__menu-list">
+									<a href="#" class="navbar__menu-item"> Miniházená </a>
+								</li>
+								<li class="navbar__menu-list">
+									<a href="#" class="navbar__menu-item"> Chci se zapojit </a>
+								</li>
+								<li class="navbar__menu-list">
+									<div class="navbar__menu-item">Školní ligy</div>
+									<ul class="dropdown-menu">
+										<li class="dropdown-menu__list">
+											<a href="#">Články</a>
+										</li>
+										<li class="dropdown-menu__list">
+											<a href="#">Zápasy & výsledky </a>
+										</li>
+										<li class="dropdown-menu__list">
+											<a href="#">Statistiky </a>
+										</li>
+										<li class="dropdown-menu__list">
+											<a href="#">Dokumenty </a>
+										</li>
+									</ul>
+								</li>
+								<li class="navbar__menu-list">
+									<a href="#" class="navbar__menu-item"> Jak trénovat </a>
+								</li>
+								<li class="navbar__menu-list">
+									<a href="#" class="navbar__menu-item"> Ambasadoři </a>
+								</li>
+								<li class="navbar__menu-list">
+									<a href="#" class="navbar__menu-item"> Kontakty </a>
+								</li>
+							</ul>
+							<button data-bs-toggle="modal" data-bs-target="#loginModal" class="button button-accent">
+								Přihlášení
+							</button>
+						</nav>
+						<button class="c-header__opener js-header__opener" type="button">
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="modal fade" id="loginModal" aria-labelledby="loginModalLabel" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+						<img src="images/ico/close.svg" alt="" />
+					</button>
+					<h4 class="h4 fw-semibold mb-6" id="loginModalLabel">Přihlásit se</h4>
+					<form class="mb-8 formular p-0">
+						<label class="text-sm-regular d-block mb-1 text-primary" for="mail">E-mail</label>
+						<div class="input-icon mb-3">
+							<input id="mail" type="email" />
+						</div>
+
+						<label class="text-sm-regular d-block mb-1 text-primary" for="password">Heslo</label>
+						<div class="input-icon">
+							<input name="password" type="password" />
+						</div>
+						<div class="d-flex my-5 justify-content-between gap-3 flex-wrap align-items-center">
+							<div class="text-sm-semibold text-gray-500">
+								Zapamatovat přihlášení?
+							</div>
+							<input name="agree" checked type="checkbox" class="inputCheck" />
+						</div>
+						<button class="button button-accent w-100">Přihlásit se</button>
+					</form>
+
+					<div class="text-center">
+						Ještě nemáte účet?
+						<a href="#" class="d-block text-base-semibold text-accent">
+							Vytvořte si ho
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="main" aria-label="Hlavní obsah">
+
+			<section class="registered-section">
+				<div class="header-section">
+					<div class="container">
+						<div class="header-section__inner">
+							<h1 class="h1 text-white title-decore">ZŠ Petra Bezruče</h1>
+						</div>
+					</div>
+				</div>
+				<div class="registered-section__content">
+					<div class="container">
+						<div class="decore-bottom">
+							<ul class="menuLinks">
+								<li>
+									<a href="https://mizza-cz.github.io/skolni-liga-hazena/build/19.0_registered-teacher.html">Základní informace
+									</a>
+								</li>
+								<li>
+									<a class="active" href="https://mizza-cz.github.io/skolni-liga-hazena/build/20.0_registered-teacher-league.html">Školní ligy
+									</a>
+								</li>
+								<li>
+									<a href="#" data-bs-toggle="modal" data-bs-target="#passwordModal">Změna hesla
+									</a>
+								</li>
+								<li>
+									<a href="#"> Odhlásit se </a>
+								</li>
+							</ul>
+							<div class="modal fade" id="passwordModal" aria-labelledby="passwordModalLabel" tabindex="-1" role="dialog">
+								<div class="modal-dialog modal-dialog-centered">
+									<div class="modal-content">
+										<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+											<img src="images/ico/close.svg" alt="" />
+										</button>
+										<h4 class="h4 fw-semibold mb-6" id="passwordModalLabel">Změnit heslo</h4>
+										<form class="mb-8 formular p-0">
+											<label class="text-sm-regular d-block mb-1 text-primary" for="passOld">
+												Aktuální heslo
+											</label>
+											<div class="input-icon mb-3">
+												<input id="passOld" name="passOld" type="password" />
+											</div>
+
+											<label class="text-sm-regular d-block mb-1 text-primary" for="passNew">Nové heslo</label>
+											<div class="input-icon mb-3">
+												<input id="passNew" name="passNew" type="password" />
+											</div>
+											<label class="text-sm-regular d-block mb-1 text-primary" for="passNew-2">Potvrzení nového hesla</label>
+											<div class="input-icon">
+												<input id="passNew-2" name="passNew-2" type="password" />
+											</div>
+											<div class="d-flex my-5 justify-content-between gap-3 flex-wrap align-items-center">
+												<div class="text-sm-semibold text-gray-500">Zapamatovat heslo?</div>
+												<input name="agree" checked type="checkbox" class="inputCheck" />
+											</div>
+											<button class="button button-accent w-100">Změnit</button>
+										</form>
+									</div>
+								</div>
+							</div>
+
+							<section class="registered-teacher">
+								<h2 class="h2 text-center mb-xl-10 mb-md-8 mb-6">Školní liga MG 3</h2>
+								<div class="bg-light p-lg-10 p-6 rounded-4">
+									<ul class="nav nav-tabs ambassadorsTabs flex-wrap mb-8 gap-lg-10 gap-6" id="myTab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<button class="ambassadorsTabs-link active" id="soupiska-tab" data-bs-toggle="tab" data-bs-target="#soupiska" type="button" role="tab" aria-controls="soupiska" aria-selected="true">
+												Soupisky
+											</button>
+										</li>
+										<li class="nav-item" role="presentation">
+											<button class="ambassadorsTabs-link" id="zapasy-tab" data-bs-toggle="tab" data-bs-target="#zapasy" type="button" role="tab" aria-controls="zapasy" aria-selected="false">
+												Turnaje a zápasy
+											</button>
+										</li>
+									</ul>
+									<div class="tab-content" id="registeredTeacher-tabContent">
+										<div class="tab-pane show active" id="soupiska" role="tabpanel" aria-labelledby="soupiska-tab">
+											<div class="mb-6">
+												<a href="#" class="button-accent">Nová soupiska</a>
+											</div>
+											<div class="d-grid gap-4">
+												<div class="rounded-6 bg bg-white px-6 py-lg-10 py-6">
+													<h3 class="h5 pb-4 border-bottom-stroke-1 mb-4">
+														Soupiska chlapci 1
+													</h3>
+													<ul class="tournamentItem__info">
+														<li class="text-base-normal">Trenéři: 1</li>
+														<li class="text-base-normal">Hráčů: 12</li>
+														<li class="d-flex gap-2">
+															<div class="tag-deco-1">Dívky</div>
+															<div class="tag-deco-2">Chlapci</div>
+															<div class="tag-deco-3">Smíšený</div>
+														</li>
+														<li class="d-flex gap-2">
+															<div class="tag-deco-2">4. třída</div>
+															<div class="tag-deco-2">2. třída</div>
+														</li>
+													</ul>
+													<div class="d-flex gap-2 flex-wrap border-top-stroke-1 pt-4 mt-4">
+														<a href="#" class="button-stroke py-2 px-5">
+															<span class="d-md-block d-none">
+																Upravit turnajovou soupisku
+															</span>
+
+															<span class="d-md-none">Upravit</span>
+														</a>
+														<a href="#" class="button-stroke py-2 px-5">
+															<span class="d-md-block d-none">
+																Smazat turnajovou soupisku
+															</span>
+															<span class="d-md-none">Smazat</span>
+														</a>
+													</div>
+												</div>
+												<div class="rounded-6 bg bg-white px-6 py-lg-10 py-6">
+													<h3 class="h5 pb-4 border-bottom-stroke-1 mb-4">
+														Soupiska chlapci 1
+													</h3>
+													<ul class="tournamentItem__info">
+														<li class="text-base-normal">Trenéři: 1</li>
+														<li class="text-base-normal">Hráčů: 12</li>
+														<li class="d-flex gap-2">
+															<div class="tag-deco-1">Dívky</div>
+															<div class="tag-deco-2">Chlapci</div>
+															<div class="tag-deco-3">Smíšený</div>
+														</li>
+														<li class="d-flex gap-2">
+															<div class="tag-deco-2">4. třída</div>
+															<div class="tag-deco-2">2. třída</div>
+														</li>
+													</ul>
+													<div class="d-flex gap-2 flex-wrap border-top-stroke-1 pt-4 mt-4">
+														<a href="#" class="button-stroke py-2 px-5">
+															<span class="d-md-block d-none">
+																Upravit turnajovou soupisku
+															</span>
+
+															<span class="d-md-none">Upravit</span>
+														</a>
+														<a href="#" class="button-stroke py-2 px-5">
+															<span class="d-md-block d-none">
+																Smazat turnajovou soupisku
+															</span>
+															<span class="d-md-none">Smazat</span>
+														</a>
+													</div>
+												</div>
+												<div class="rounded-6 bg bg-white px-6 py-lg-10 py-6">
+													<h3 class="h5 pb-4 border-bottom-stroke-1 mb-4">
+														Soupiska chlapci 1
+													</h3>
+													<ul class="tournamentItem__info">
+														<li class="text-base-normal">Trenéři: 1</li>
+														<li class="text-base-normal">Hráčů: 12</li>
+														<li class="d-flex gap-2">
+															<div class="tag-deco-1">Dívky</div>
+															<div class="tag-deco-2">Chlapci</div>
+															<div class="tag-deco-3">Smíšený</div>
+														</li>
+														<li class="d-flex gap-2">
+															<div class="tag-deco-2">4. třída</div>
+															<div class="tag-deco-2">2. třída</div>
+														</li>
+													</ul>
+													<div class="d-flex gap-2 flex-wrap border-top-stroke-1 pt-4 mt-4">
+														<a href="#" class="button-stroke py-2 px-5">
+															<span class="d-md-block d-none">
+																Upravit turnajovou soupisku
+															</span>
+
+															<span class="d-md-none">Upravit</span>
+														</a>
+														<a href="#" class="button-stroke py-2 px-5">
+															<span class="d-md-block d-none">
+																Smazat turnajovou soupisku
+															</span>
+															<span class="d-md-none">Smazat</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="zapasy" role="tabpanel" aria-labelledby="zapasy-tab">
+											<div class="d-grid gap-4">
+												<div class="rounded-6 bg bg-white px-6 py-lg-10 py-6">
+													<div class="d-flex align-items-center justify-content-between flex-wrap-reverse gap-4 pb-4 border-bottom-stroke-1 mb-4">
+														<h3 class="h5">
+															Jablonecká školní liga miniházené - starší - 1. turnaj
+														</h3>
+														<div class="tag-deco-3">
+															<img src="images/ico/done.svg" width="14" height="14" alt="error" class="object-fit-content" />
+															Přihlášený
+														</div>
+													</div>
+													<ul class="tournamentItem__info">
+														<li class="text-base-normal">23.10.2025</li>
+														<li class="text-base-semibold text-primary">
+															Liberecký kraj
+														</li>
+														<li class="d-flex gap-2 text-base-normal">
+															<img src="images/ico/pin.svg" width="17" height="20" class="object-fit-content" alt="pin" />
+															U Přehrady 4747/20, Jablonec nad Nisou 2
+														</li>
+														<li class="d-flex gap-2">
+															<div class="tag-deco-3">Smíšený</div>
+														</li>
+														<li class="d-flex gap-2">
+															<div class="tag-deco-2">2. třída</div>
+														</li>
+													</ul>
+													<div class="d-flex gap-2 flex-wrap border-top-stroke-1 pt-4 mt-4">
+														<a href="#" class="button-stroke py-2 px-5">
+															<span class="d-md-block d-none">
+																Upravit turnajovou soupisku
+															</span>
+
+															<span class="d-md-none">Upravit</span>
+														</a>
+														<a href="#" class="button-stroke py-2 px-5"> Zápasy </a>
+														<a href="#" class="button-stroke py-2 px-5">
+															<span class="d-md-block d-none">
+																Odhlásit se z turnaje
+															</span>
+															<span class="d-md-none">Odhlásit se</span>
+														</a>
+													</div>
+												</div>
+												<div class="rounded-6 bg bg-white px-6 py-lg-10 py-6">
+													<div class="d-flex align-items-center justify-content-between flex-wrap-reverse gap-4 pb-4 border-bottom-stroke-1 mb-4">
+														<h3 class="h5">
+															Jablonecká školní liga miniházené - starší - 1. turnaj
+														</h3>
+														<div class="tag-deco-1 text-accent">
+															<img src="images/ico/error.svg" width="14" height="14" alt="error" class="object-fit-content" />
+															Neřihlášený
+														</div>
+													</div>
+													<ul class="tournamentItem__info">
+														<li class="text-base-normal">23.10.2025</li>
+														<li class="text-base-semibold text-primary">
+															Liberecký kraj
+														</li>
+														<li class="d-flex gap-2 text-base-normal">
+															<img src="images/ico/pin.svg" width="17" height="20" class="object-fit-content" alt="pin" />
+															U Přehrady 4747/20, Jablonec nad Nisou 2
+														</li>
+														<li class="d-flex gap-2">
+															<div class="tag-deco-3">Smíšený</div>
+														</li>
+														<li class="d-flex gap-2">
+															<div class="tag-deco-2">4. třída</div>
+														</li>
+													</ul>
+													<div class="d-flex gap-2 flex-wrap border-top-stroke-1 pt-4 mt-4">
+														<a href="#" class="button-accent py-2 px-5">
+															<span class="d-md-block d-none">
+																Přihlásit se na turnaj
+															</span>
+
+															<span class="d-md-none">Přihlásit se</span>
+														</a>
+														<a href="#" class="button-stroke py-2 px-5"> Zápasy </a>
+													</div>
+												</div>
+												<div class="rounded-6 bg bg-white px-6 py-lg-10 py-6">
+													<div class="d-flex align-items-center justify-content-between flex-wrap-reverse gap-4 pb-4 border-bottom-stroke-1 mb-4">
+														<h3 class="h5">
+															Jablonecká školní liga miniházené - starší - 1. turnaj
+														</h3>
+														<div class="tag-deco-3">
+															<img src="images/ico/done.svg" width="14" height="14" alt="error" class="object-fit-content" />
+															Přihlášený
+														</div>
+													</div>
+													<ul class="tournamentItem__info">
+														<li class="text-base-normal">23.10.2025</li>
+														<li class="text-base-semibold text-primary">
+															Liberecký kraj
+														</li>
+														<li class="d-flex gap-2 text-base-normal">
+															<img src="images/ico/pin.svg" width="17" height="20" class="object-fit-content" alt="pin" />
+															U Přehrady 4747/20, Jablonec nad Nisou 2
+														</li>
+														<li class="d-flex gap-2">
+															<div class="tag-deco-3">Smíšený</div>
+														</li>
+														<li class="d-flex gap-2">
+															<div class="tag-deco-2">2. třída</div>
+														</li>
+													</ul>
+													<div class="d-flex gap-2 flex-wrap border-top-stroke-1 pt-4 mt-4">
+														<a href="#" class="button-stroke py-2 px-5">
+															<span class="d-md-block d-none">
+																Upravit turnajovou soupisku
+															</span>
+
+															<span class="d-md-none">Upravit</span>
+														</a>
+														<a href="#" class="button-stroke py-2 px-5"> Zápasy </a>
+														<a href="#" class="button-stroke py-2 px-5">
+															<span class="d-md-block d-none">
+																Odhlásit se z turnaje
+															</span>
+															<span class="d-md-none">Odhlásit se</span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="partnersSlider">
+				<h6 class="h2 mb-12 text-center px-5">Partneři české miniházené</h6>
+				<div class="swiper partners-swiper">
+					<ul role="list" class="swiper-wrapper infinite-scroll-swiper">
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-8.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-7.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-6.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-5.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-4.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-3.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-2.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-1.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-8.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-7.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-6.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-5.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-4.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-3.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-2.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-1.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-8.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-7.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-6.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-5.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-4.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-3.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-2.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-1.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-8.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-7.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-6.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-5.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-4.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-3.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-2.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-1.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-8.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-7.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-6.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-5.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-4.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-3.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-2.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-1.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-8.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-7.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-6.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-5.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-4.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-3.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-2.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-1.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-8.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-7.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-6.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-5.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-4.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-3.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-2.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-1.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-8.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-7.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-6.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-5.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-4.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-3.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-2.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" target="_blank" rel="noopener noreferrer" class="outline-none" tabindex="-1">
+								<img src="images/content/partner-1.png" width="142" height="64" class="no-placeholder aspect-square" loading="lazy" alt="" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="d-flex flex-lg-row flex-column justify-content-lg-between justify-content-center align-items-center g-10 flex-wrap border-top border-color-primary py-lg-10 py-8 border-bottom gap-8">
+					<a href="#" class="footer__logo">
+						<img src="images/content/logo.png" width="107 " height="64" class="object-fit-content" alt="" />
+					</a>
+					<ul class="footer__menu d-flex align-items-center flex-wrap hover-underline">
+						<li>
+							<a href="#"> Miniházená</a>
+						</li>
+						<li>
+							<a href="#">Chci se zapojit</a>
+						</li>
+						<li>
+							<a href="#">Školní ligy</a>
+						</li>
+						<li>
+							<a href="#">Jak trénovat</a>
+						</li>
+						<li>
+							<a href="#">Ambasadoři</a>
+						</li>
+						<li>
+							<a href="#">Kontakty</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="footer__bottom py-lg-10 py-8 hover-underline text-sm-regular">
+					<li>
+						© Copyright 2025 Školní liga miniházené &
+						<a href="https://esportsmedia.cz/" target="_blank">Esports s.r.o</a>.
+					</li>
+					<li>
+						<a href="#">Ochrana osobních údajů</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" data-cc="c-settings" aria-haspopup="dialog">Nastavení cookies</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="js/cookie-consent-config.js"></script>
+	<script src="js/cookie-consent.js"></script>
+	<script defer src="js/scripts.js"></script>
+</body>
+
+</html>

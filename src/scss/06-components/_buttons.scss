@@ -48,3 +48,13 @@
     color: var(--color-white);
   }
 }
+.button-stroke {
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  background: var(--color-white);
+  text-align: center;
+  &:hover {
+    background: var(--color-accent);
+    color: var(--color-white);
+  }
+}

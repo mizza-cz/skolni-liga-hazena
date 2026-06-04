@@ -127,3 +127,24 @@ a.tournamentItem:hover {
     }
   }
 }
+
+.tournamentItem__info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+  gap: 8px 0;
+  li {
+    padding: 0 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  li:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 16px;
+    background: var(--color-stroke-secondary);
+  }
+}
