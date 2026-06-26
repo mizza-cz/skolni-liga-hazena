@@ -203,7 +203,7 @@
 									<div class="tab-content" id="registeredTeacher-tabContent">
 										<div class="tab-pane show active" id="soupiska" role="tabpanel" aria-labelledby="soupiska-tab">
 											<div class="mb-6">
-												<a href="#" class="button-accent">Nová soupiska</a>
+												<a data-bs-toggle="modal" data-bs-target="#createPlayersModal" href="#" class="button-accent">Nová soupiska</a>
 											</div>
 											<div class="d-grid gap-4">
 												<div class="rounded-6 bg bg-white px-6 py-lg-10 py-6">
@@ -441,6 +441,222 @@
 					</div>
 				</div>
 			</section>
+			<div class="modal fade modal-lg" id="createPlayersModal" aria-labelledby="createPlayersLabel" tabindex="-1" role="dialog">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<form action="" class="formular p-0">
+							<label class="text-sm-regular d-block mb-1 text-primary" for="rosterName">
+								Název soupisky
+							</label>
+							<input id="rosterName" name="rosterName" type="text" class="createPlayers__input mb-10" />
+							<ul class="tournamentItem__info mb-10">
+								<li class="text-base-normal">Trenéři: 1</li>
+								<li class="text-base-normal">Hráčů: 12</li>
+								<li class="d-flex gap-2">
+									<div class="tag-deco-2">Chlapci</div>
+								</li>
+								<li class="d-flex gap-2">
+									<div class="tag-deco-2">4. třída</div>
+									<div class="tag-deco-2">2. třída</div>
+								</li>
+							</ul>
+
+							<h5 class="h5 mb-4">Hráči</h5>
+
+							<div class="d-grid gap-4 mb-10">
+								<div class="bg-white rounded-md-4 px-6 py-4 d-flex align-items-center justify-content-between gap-4 flex-wrap">
+									<div class="d-flex align-items-center gap-md-10 gap-4 flex-wrap">
+										<h6 class="h5">Petr Novotný</h6>
+										<ul class="tournamentItem__info">
+											<li class="d-flex gap-2">
+												<div class="tag-deco-2">2. třída</div>
+											</li>
+											<li class="d-flex gap-2">
+												<div class="tag-deco-3">CZ</div>
+											</li>
+											<li class="text-base-normal">20.4.2001</li>
+										</ul>
+									</div>
+									<div class="d-flex gap-2 flex-wrap">
+										<button class="button-stroke py-2 px-5">Upravit</button>
+										<button class="button-stroke py-2 px-5">Smazat hráče</button>
+									</div>
+								</div>
+								<div class="bg-white rounded-md-4 px-6 py-4 d-flex align-items-center justify-content-between gap-4 flex-wrap">
+									<div class="d-flex align-items-center gap-md-10 gap-4 flex-wrap">
+										<h6 class="h5">Petr Novotný</h6>
+										<ul class="tournamentItem__info">
+											<li class="d-flex gap-2">
+												<div class="tag-deco-2">2. třída</div>
+											</li>
+											<li class="d-flex gap-2">
+												<div class="tag-deco-3">CZ</div>
+											</li>
+											<li class="text-base-normal">20.4.2001</li>
+										</ul>
+									</div>
+									<div class="d-flex gap-2 flex-wrap">
+										<button class="button-stroke py-2 px-5">Upravit</button>
+										<button class="button-stroke py-2 px-5">Smazat hráče</button>
+									</div>
+								</div>
+								<div class="bg-white rounded-md-4 px-6 py-4 d-flex align-items-center justify-content-between gap-4 flex-wrap">
+									<div class="d-flex align-items-center gap-md-10 gap-4 flex-wrap">
+										<h6 class="h5">Petr Novotný</h6>
+										<ul class="tournamentItem__info">
+											<li class="d-flex gap-2">
+												<div class="tag-deco-2">2. třída</div>
+											</li>
+											<li class="d-flex gap-2">
+												<div class="tag-deco-3">CZ</div>
+											</li>
+											<li class="text-base-normal">20.4.2001</li>
+										</ul>
+									</div>
+									<div class="d-flex gap-2 flex-wrap">
+										<button class="button-stroke py-2 px-5">Upravit</button>
+										<button class="button-stroke py-2 px-5">Smazat hráče</button>
+									</div>
+								</div>
+								<div class="bg-white rounded-md-4 px-6 py-4 d-flex align-items-center justify-content-between gap-4 flex-wrap">
+									<div class="d-flex align-items-center gap-md-10 gap-4 flex-wrap">
+										<h6 class="h5">Petr Novotný</h6>
+										<ul class="tournamentItem__info">
+											<li class="d-flex gap-2">
+												<div class="tag-deco-2">2. třída</div>
+											</li>
+											<li class="d-flex gap-2">
+												<div class="tag-deco-3">CZ</div>
+											</li>
+											<li class="text-base-normal">20.4.2001</li>
+										</ul>
+									</div>
+									<div class="d-flex gap-2 flex-wrap">
+										<button class="button-stroke py-2 px-5">Upravit</button>
+										<button class="button-stroke py-2 px-5">Smazat hráče</button>
+									</div>
+								</div>
+								<div class="bg-white rounded-md-4 px-6 py-4 d-flex align-items-center justify-content-between gap-4 flex-wrap">
+									<div class="d-flex align-items-center gap-md-10 gap-4 flex-wrap">
+										<h6 class="h5">Petr Novotný</h6>
+										<ul class="tournamentItem__info">
+											<li class="d-flex gap-2">
+												<div class="tag-deco-2">2. třída</div>
+											</li>
+											<li class="d-flex gap-2">
+												<div class="tag-deco-3">CZ</div>
+											</li>
+											<li class="text-base-normal">20.4.2001</li>
+										</ul>
+									</div>
+									<div class="d-flex gap-2 flex-wrap">
+										<button class="button-stroke py-2 px-5">Upravit</button>
+										<button class="button-stroke py-2 px-5">Smazat hráče</button>
+									</div>
+								</div>
+							</div>
+							<h5 class="h5 mb-4">Trenéři</h5>
+
+							<div class="bg-white rounded-md-4 px-6 py-4 d-flex align-items-center justify-content-between gap-4 flex-wrap">
+								<div class="d-flex align-items-center gap-md-10 gap-4 flex-wrap">
+									<h6 class="h5">Petr Novotný</h6>
+
+									<div class="tag-deco-2">Název funkce</div>
+								</div>
+								<div class="d-flex gap-2 flex-wrap">
+									<button class="button-stroke py-2 px-5">Upravit</button>
+									<button class="button-stroke py-2 px-5">Smazat trenéra</button>
+								</div>
+							</div>
+							<hr />
+
+							<h5 class="h5 mb-4">Přidat nového hráče</h5>
+							<div class="row g-6">
+								<div class="col-lg-4 col-sm-6">
+									<label class="text-sm-regular d-block mb-1 text-primary" for="name-player">Jméno a příjmení *</label>
+									<input required type="text" name="name-player" id="name-player" />
+								</div>
+								<div class="col-lg-4 col-sm-6">
+									<label class="text-sm-regular d-block mb-1 text-primary" for="birthday-player">Datum narození *</label>
+									<input required type="text" name="birthday-player" id="birthday-player" />
+								</div>
+								<div class="col-lg-4 col-sm-6">
+									<label class="text-sm-regular d-block mb-1 text-primary" for="group-player">Třída *
+									</label>
+
+									<div class="formular__select">
+										<select required class="js-select" id="group-player" name="group-player">
+											<option>Vyberte třídu</option>
+											<option>třída 1</option>
+											<option>třída 2</option>
+											<option>třída 3</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6">
+									<label class="text-sm-regular d-block mb-1 text-primary" for="nationality-player">Národnost *
+									</label>
+
+									<div class="formular__select">
+										<select required class="js-select" id="nationality-player" name="nationality-player">
+											<option>Vyberte národnost</option>
+											<option>CZE</option>
+											<option>GBA</option>
+											<option>SVK</option>
+											<option>CZE</option>
+											<option>GBA</option>
+											<option>SVK</option>
+											<option>CZE</option>
+											<option>GBA</option>
+											<option>SVK</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-4 col-sm-6">
+									<label class="text-sm-regular d-block mb-1 text-primary" for="number-player">Rodné číslo</label>
+									<input type="text" name="number-player" id="number-player" />
+								</div>
+							</div>
+							<div class="mt-4 text-center">
+								<button class="button-stroke py-2 px-5 text-center">
+									Přidat hráče
+								</button>
+							</div>
+							<hr />
+							<h5 class="h5 mb-4">Přidat trenéra</h5>
+							<div class="row g-6">
+								<div class="col-lg-4 col-sm-6">
+									<label class="text-sm-regular d-block mb-1 text-primary" for="name-coach">Jméno a příjmení *</label>
+									<input required type="text" name="name-coach" id="name-coach" />
+								</div>
+								<div class="col-lg-4 col-sm-6">
+									<label class="text-sm-regular d-block mb-1 text-primary" for="birthday-coach">Datum narození *</label>
+									<input required type="text" name="birthday-coach" id="birthday-coach" />
+								</div>
+
+								<div class="col-lg-4 col-sm-6">
+									<label class="text-sm-regular d-block mb-1 text-primary" for="function-coach">Název funkce
+									</label>
+									<input type="text" name="function-coach" id="function-coach" />
+								</div>
+								<div class="col-lg-4 col-sm-6">
+									<label class="text-sm-regular d-block mb-1 text-primary" for="number-coach">Rodné číslo</label>
+									<input type="text" name="number-coach" id="number-coach" />
+								</div>
+							</div>
+							<div class="mt-4 text-center">
+								<button class="button-stroke py-2 px-5 text-center">
+									Přidat trenéra
+								</button>
+							</div>
+							<hr />
+							<div class="text-center">
+								<button class="button-accent text-center">Uložit změny</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 			<div class="modal fade modal-lg" id="editPlayersModal" aria-labelledby="editPlayersLabel" tabindex="-1" role="dialog">
 				<div class="modal-dialog modal-dialog-centered">
 					<div class="modal-content">
