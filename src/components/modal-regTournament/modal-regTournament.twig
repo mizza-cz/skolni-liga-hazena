@@ -1,0 +1,281 @@
+<div
+  class="modal modal-lg fade"
+  id="tournamentRegModal"
+  tabindex="-1"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered tournament-modal">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <!-- STEP 1 -->
+        <div class="tournament-step" data-step="1">
+          <h2 class="mb-10 h2">Přihlášení na turnaj (1)</h2>
+          <label
+            class="text-sm-regular d-block mb-1 text-primary"
+            for="tournamentList"
+          >
+            Vyberte soupisku, kterou chcete přihlásit
+          </label>
+          <div class="formular__select">
+            <select
+              required
+              class="js-select js-roster-select"
+              id="tournamentList"
+              name="tournamentList"
+            >
+              <option value="">Vyberte soupisku</option>
+              <option value="1">Soupiska chlapci 1</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="tournament-step d-none" data-step="2">
+          <h2 class="mb-10 h2">Přihlášení na turnaj (2)</h2>
+
+          <form
+            class="modalPlayersForm"
+            action="
+         "
+          >
+            <div class="mb-10">
+              <label
+                class="text-sm-regular d-block mb-1 text-primary"
+                for="school"
+              >
+                Vyberte soupisku, kterou chcete upravit
+              </label>
+              <div class="formular__select">
+                <select
+                  class="js-select"
+                  id="tournamentList-2"
+                  name="tournamentList-2"
+                >
+                  <option>Soupiska chlapci 1</option>
+                  <option>Soupiska chlapci 2</option>
+                  <option>Soupiska chlapci 3</option>
+                  <option>SVSoupiska chlapci 4K</option>
+                </select>
+              </div>
+            </div>
+            <h5 class="h5 mb-4">Hráči</h5>
+            <div class="d-grid gap-4">
+              {% for i in 1..5 %}
+              <div
+                class="bg-white rounded-md-4 px-6 py-4 d-flex align-items-center gap-lg-10 gap-6 flex-wrap tournament-player"
+              >
+                <label
+                  class="formular__checkbox d-flex align-items-center gap-2"
+                >
+                  <input name="petrNovotny{{ i }}" type="checkbox" checked />
+                  <span class="custom-checkbox"></span>
+                  <div class="h5">Petr Novotný</div>
+                </label>
+
+                <ul class="tournamentItem__info">
+                  <li class="d-flex gap-2">
+                    <div class="tag-deco-2">2. třída</div>
+                  </li>
+                  <li class="d-flex gap-2">
+                    <div class="tag-deco-3">CZ</div>
+                  </li>
+                  <li class="text-base-normal">20.4.2001</li>
+                </ul>
+              </div>
+              {% endfor %}
+            </div>
+          </form>
+
+          <div class="mt-10 text-center">
+            <button
+              type="button"
+              class="button-accent text-center js-submit-roster"
+            >
+              Uložit změny
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="tournament-step d-none" data-step="3">
+          <h2 class="mb-10 h2">Přihlášení na turnaj (3)</h2>
+
+          <h6 class="h5 mb-4">Přihlášené soupisky</h6>
+
+          <div class="d-grid gap-4 mb-10">
+            {% for i in 1..3 %}
+            <div class="rounded-6 bg bg-white px-6 py-lg-10 py-6">
+              <h3 class="h5 pb-4 border-bottom-stroke-1 mb-4">
+                Soupiska chlapci 1
+              </h3>
+              <div class="d-flex gap-2 flex-wrap">
+                <a
+                  href="#"
+                  class="button-stroke py-2 px-5"
+                  data-bs-toggle="modal"
+                  data-bs-target="#editPlayersModal"
+                >
+                  <span class="d-md-block d-none">
+                    Upravit turnajovou soupisku
+                  </span>
+
+                  <span class="d-md-none">Upravit</span>
+                </a>
+                <button class="button-stroke py-2 px-5">
+                  <span class="d-md-block d-none">
+                    Smazat turnajovou soupisku
+                  </span>
+                  <span class="d-md-none">Smazat</span>
+                </button>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+          <div
+            class="alert alert-success d-flex align-items-center justify-content-between fade show"
+            role="alert"
+          >
+            Soupiska byla úspěšně přihlášena.
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            >
+              {% include "@images/close.svg" %}
+            </button>
+          </div>
+          <hr />
+          <h6 class="h5 mb-4">Přihlásit další soupisku</h6>
+
+          <label
+            class="text-sm-regular d-block mb-1 text-primary"
+            for="tournamentList-3"
+          >
+            Vyberte soupisku, kterou chcete upravit
+          </label>
+          <div class="formular__select">
+            <select
+              class="js-select js-roster-select"
+              id="tournamentList-3"
+              name="tournamentList-3"
+            >
+              <option value="">Vyberte soupisku</option>
+              <option value="1">Soupiska chlapci 1</option>
+              <option value="2">Soupiska chlapci 2</option>
+              <option value="3">Soupiska chlapci 3</option>
+              <option value="4">SVSoupiska chlapci 4K</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="tournament-step d-none" data-step="4">
+          <h2 class="mb-4">Přihlášení na turnaj (4)</h2>
+
+          <h6 class="h5 mb-4">Přihlášené soupisky</h6>
+
+          <div class="d-grid gap-4 mb-10">
+            <div class="rounded-6 bg bg-white px-6 py-lg-10 py-6">
+              <h3 class="h5 pb-4 border-bottom-stroke-1 mb-4">
+                Soupiska chlapci 1
+              </h3>
+              <div class="d-flex gap-2 flex-wrap">
+                <a
+                  href="#"
+                  class="button-stroke py-2 px-5"
+                  data-bs-toggle="modal"
+                  data-bs-target="#editPlayersModal"
+                >
+                  <span class="d-md-block d-none">
+                    Upravit turnajovou soupisku
+                  </span>
+
+                  <span class="d-md-none">Upravit</span>
+                </a>
+                <button class="button-stroke py-2 px-5">
+                  <span class="d-md-block d-none">
+                    Smazat turnajovou soupisku
+                  </span>
+                  <span class="d-md-none">Smazat</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="alert alert-success d-flex align-items-center justify-content-between fade show"
+            role="alert"
+          >
+            Soupiska byla úspěšně přihlášena.
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            >
+              {% include "@images/close.svg" %}
+            </button>
+          </div>
+          <hr />
+          <form action="" class="modalPlayersForm">
+            <h6 class="h5 mb-4">Přihlásit další soupisku</h6>
+
+            <label
+              class="text-sm-regular d-block mb-1 text-primary"
+              for="tournamentList-3"
+            >
+              Vyberte soupisku, kterou chcete upravit
+            </label>
+            <div class="formular__select mb-10">
+              <select
+                class="js-select js-roster-select"
+                id="tournamentList-4"
+                name="tournamentList-4"
+              >
+                <option value="">Vyberte soupisku</option>
+                <option value="1">Soupiska chlapci 1</option>
+                <option value="2">Soupiska chlapci 2</option>
+                <option value="3">Soupiska chlapci 3</option>
+                <option value="4">SVSoupiska chlapci 4K</option>
+              </select>
+            </div>
+            <h5 class="h5 mb-4">Hráči</h5>
+            <div class="d-grid gap-4">
+              {% for i in 1..5 %}
+              <div
+                class="bg-white rounded-md-4 px-6 py-4 d-flex align-items-center gap-lg-10 gap-6 flex-wrap tournament-player"
+              >
+                <label
+                  class="formular__checkbox d-flex align-items-center gap-2"
+                >
+                  <input name="petrNovotny{{ i }}" type="checkbox" checked />
+                  <span class="custom-checkbox"></span>
+                  <div class="h5">Petr Novotný</div>
+                </label>
+
+                <ul class="tournamentItem__info">
+                  <li class="d-flex gap-2">
+                    <div class="tag-deco-2">2. třída</div>
+                  </li>
+                  <li class="d-flex gap-2">
+                    <div class="tag-deco-3">CZ</div>
+                  </li>
+                  <li class="text-base-normal">20.4.2001</li>
+                </ul>
+              </div>
+              {% endfor %}
+            </div>
+          </form>
+
+          <div class="text-center mt-10">
+            <button class="button-accent text-center">Přihlásit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

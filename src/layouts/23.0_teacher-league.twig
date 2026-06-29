@@ -249,7 +249,12 @@
                     <div
                       class="d-flex gap-2 flex-wrap border-top-stroke-1 pt-4 mt-4"
                     >
-                      <a href="#" class="button-accent py-2 px-5">
+                      <a
+                        href="#"
+                        class="button-accent py-2 px-5"
+                        data-bs-toggle="modal"
+                        data-bs-target="#tournamentRegModal"
+                      >
                         <span class="d-md-block d-none">
                           Přihlásit se na turnaj
                         </span>
@@ -332,6 +337,8 @@
     </div>
   </div>
 </section>
-{% include "@components/modal/modal-createPlayers.twig" %} {% include
+
+{% include "@components/modal-regTournament/modal-regTournament.twig" %} {%
+include "@components/modal/modal-createPlayers.twig" %} {% include
 "@components/modal/modal-editPlayers.twig" %} {% include
 "@components/partnersSlider/partnersSlider.twig" %} {% endblock %}
